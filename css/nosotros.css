@@ -28,3 +28,10 @@
     color: #21005D;
     text-align: justify;
 }
+.fontbold{
+    font-weight: 700;
+}
+.rd{
+    border-radius: 30px;
+
+}
