@@ -1,0 +1,12 @@
+.titulo{
+    
+    font-weight: 400;
+    font-size: 73px;
+    line-height: 86px;
+    text-align: center;
+    color: #512A5F; 
+}
+.ancla{
+    display: flex;
+    justify-content: right;
+}
