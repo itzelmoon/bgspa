@@ -17,3 +17,14 @@
     text-align: justify;
     color:  #512A5F; 
 }
+
+.fondocard{
+    background: #FFFFFF;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 6px 6px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #21005D;
+    text-align: justify;
+}
