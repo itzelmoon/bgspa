@@ -39,6 +39,19 @@
     height: auto;
 }
 
+.descripcion{
+    margin-top: 2rem;
+}
+
+.ancla{
+    display: flex;
+    justify-content: right;
+}
+
+.ancla:hover{
+    color: #512A5F;
+}
+
 @media screen and (max-width: 576px) {
     .cont{
         display: flex;
