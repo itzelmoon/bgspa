@@ -1,5 +1,4 @@
 .titulo{
-    
     font-weight: 400;
     font-size: 73px;
     line-height: 86px;
@@ -33,5 +32,25 @@
 }
 .rd{
     border-radius: 30px;
+}
+
+@media screen and (max-width: 576px) {
+    .cont{
+        display: flex;
+        flex-direction: column;
+     
+    }
+    .descripcion{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 2rem;
+    }
+    .fondocard{
+        font-size: 16px;
+
+    }
+    .espacio{
+        margin-top: 2rem;
+    }
 
 }
