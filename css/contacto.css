@@ -39,3 +39,23 @@ body {
     display: flex;
     justify-content: center;
 }
+.btnEnviar{
+    align-content: center;
+    background: #A97798; 
+    border-radius: 10px; 
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+.holder{
+    background: #F9F9F9; 
+    border-radius: 10px; 
+    border: none;
+    font-family: 'Raleway'; 
+    font-style: normal; 
+    font-weight: 700; 
+    font-size: 18px; 
+    line-height: 15px; /* or 68% */ 
+    color: #C7C7C7
+}
