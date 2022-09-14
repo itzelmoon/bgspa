@@ -6,8 +6,12 @@ btnSubmit.addEventListener("click", function(e){
     let apellido = document.getElementById("Apellido");
     let campoMensaje = document.getElementById("campoMensaje");
     let campoTelefono = document.getElementById("validationNumber");
+    let correoe = document.getElementById("correo");
     let confirmarCorreo = document.getElementById("validationCorreo");
-
+    let valorcorreo = document.getElementById("correo").value;
+    let confirmar = document.getElementById("validationCorreo").value;
+    let empresa = document.getElementById("Empresa");
+    
 
     //validación de nombre
     nombre.classList.remove("is-invalid");
@@ -101,9 +105,20 @@ btnSubmit.addEventListener("click", function(e){
         campoMensaje.classList.add("is-invalid");
     }
 
-
-
-
+    //validacion correo
+    function validarCorreo (correo) {
+        let expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+        let verificar = expReg.test(correo);
+        console.log(verificar)
+        if(verificar){
+            correoe.classList.remove("is-invalid");
+            correoe.classList.add("is-valid");
+        } else {
+            correoe.classList.remove("is-valid");
+            correoe.classList.add("is-invalid");
+        }
+    }
+    validarCorreo(valorcorreo);
 
 
 
@@ -114,5 +129,15 @@ btnSubmit.addEventListener("click", function(e){
     } else {
         confirmarCorreo.classList.remove("is-valid");
         confirmarCorreo.classList.add("is-invalid");
+    }
+
+
+    //validación empresa
+    if ((empresa.value.length >= 3) && (empresa.value.length<=30)) { //validacion Nombre
+        empresa.classList.remove("is-invalid");
+        empresa.classList.add("is-valid");
+    } else {
+        empresa.classList.remove("is-valid");
+        empresa.classList.add("is-invalid");
     }
 });
