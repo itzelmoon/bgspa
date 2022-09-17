@@ -8,35 +8,34 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/header-footer.css">
 
     <title>Nosotros</title>
   </head>
 
   <header>
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand"><img src="../img/blanco_bg.png" style="background-color: black;" alt=""> BG SPA</a>
+    <nav class="navbar prueba2">
+        <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG SPA</strong></span></a>
         <form class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" >
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="bi bi-search"></i></button>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="bi bi-cart4"></i></button>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="bi bi-person"></i></button>
+          <input class="form-control mr-sm-2" id="btnBq" type="search" placeholder="Search" aria-label="Search" >
+          <button class="btn my-2 my-sm-0" type="submit" id="btnBq"><i class="bi bi-search"></i></button>
+          <button class="btn my-2 my-sm-0" type="submit"><i class="bi bi-cart4 bi-movil binav"></i></button>
+          <button class="btn my-2 my-sm-0" type="submit"><i class="bi bi-person bi-movil binav"></i></button>
 
         </form>
       </nav>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
       
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content:center;">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Inicio</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-primary" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                 Catálogo
               </a>
               <div class="dropdown-menu">
@@ -56,21 +55,24 @@
                 
               </div>
               <li class="nav-item">
-                <a class="nav-link" href="#">Nosotros</a>
+                <a class="nav-link text-primary" href="#">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Distribuidor</a>
-              </li>
-       
-        </div>
+                <a class="nav-link text-primary" href="#">Distribuidor</a>
+              </li>       
+        </div >
       </nav>
-
-
+      <div class="prueba pruebaPosi1">
+        <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG SPA</strong></span></a>
+          <button class="btn my-2 my-sm-0" type="submit"><i class="bi bi-cart4 bi-movil binav"></i></button>
+          <button class="btn my-2 my-sm-0" type="submit"><i class="bi bi-person bi-movil binav"></i></button>
+      </div>
 </header>
+
   <body>
     <main class="container">
         <div class="row">
-        <div class="titulo col-sm-12">Sobre nosotros</div>
+        <div class="titulo titulo-principal col-sm-12">Sobre nosotros</div>
         
         <div class="descripcion">
             <p> El desarrollo de este proyecto consta de crear la arquitectura y diseño web de la empresa
@@ -190,22 +192,19 @@
 
           </div>
     </main>
+
     <footer>
-    
         <div class="card-body row">
         
-            <!-- <i class="bi bi-telephone-fill">(332)-254-0774<br>(331)-892-7807</i>
-            <i class="bi bi-envelope-fill">example@gmail.com</i> -->
-            <!--PRIMER CARD-->
-            <div class="col-md-2 col-sm-12">
+            <div class="col-md-3 col-sm-12 car1">
               <div class="card-body">
-                <h5 class="card-title">Contacto</h5>
+                <h5 class="card-title titulo1">Contacto</h5>
                 <div class="row"> <!--row telefono-->
                   <div class="col-2">
                     <i class="bi bi-telephone-fill"></i>
                   </div>
                   <div class="col-10">
-                    <p><i class="bi bi-circle-fill"></i> (332)-254-0774  <i class="bi bi-circle-fill"></i> (331)-892-7807</p>
+                    <p>(332)-254-0774 - (331)-892-7807</p>
                   </div>
                 </div> <!--row telefono-->
                 <div class="row">
@@ -227,47 +226,50 @@
               </div>
             </div>
             <!--SEGUNDO CARD-->
-            <div class="col-md-2 col-sm-12">
-              <div class="card-body">
+            <div class="col-md-3 col-sm-12">
+              <div class="card-body container carAten">
                 <h5 class="card-title">Atención a Clientes</h5>
-                <a href="#" class="card-text ancla">Formas de pago y envío</a>
-                <a href="#" class="card-text ancla">Terminos y condiciones</a>
-                <a href="#" class="card-text ancla">Aviso de Privacidad</a>
+                  <a href="#" class="card-text clase1">Formas de pago y envío</a><br>
+                  <a href="#" class="card-text clase1">Terminos y condiciones</a><br>
+                  <a href="#" class="card-text clase1">Aviso de Privacidad</a>
               </div>
             </div>
             <!--TERCER CARD-->
                 <div class="col-md-2 col-sm-12">
-                  <div class="card-body">
-                    <h5 class="card-title">Siguenos</h5>
-                    <a href="https://www.instagram.com/bgspaoficial/?igshid=YmMyMTA2M2Y%3D" class="bi bi-instagram"></a>
-                    <a href="https://www.facebook.com/people/BG-SPA/100063504614562/" class="bi bi-facebook"></a>
-                    <a href="https://wa.me/3322540774" class="bi bi-whatsapp "></a>
+                  <div class="card-body container">
+                    <h5 class="card-title titulo3">Siguenos</h5>
+                    <a href="https://www.instagram.com/bgspaoficial/?igshid=YmMyMTA2M2Y%3D" class="redes bi bi-instagram"></a>
+                    <a href="https://www.facebook.com/people/BG-SPA/100063504614562/" class="redes bi bi-facebook"></a>
+                    <a href="https://wa.me/3322540774" class="redes bi bi-whatsapp"></a>
                   </div>
                 </div>
           
               <!--CUARTA CARD-->
-              <div class="col-md-6 col-sm-12">
+              <div class="col-md-4 col-sm-12">
                 <div class="card-body">
-                  <h5 class="card-title">¡Entérate de nuestras ofertas!</h5>
-                  <form class="form-inline">
-                    <div class="form-group mx-sm-3 mb-2">
-                      <label for="inputPassword2" class="sr-only">Correo electrónico</label>
-                      <input type="password" class="form-control" id="inputPassword2" placeholder="Correo electrónico">
-                    </div>
-                    <button type="button" class="col-md-4 btnEnviar">SUSCRIBIRSE</button>
-                  </form>
+                  <h5 class="card-title titulo4">¡Entérate de nuestras ofertas!</h5>
+                  <!-- <form class="form-inline"> -->
+                    <div class="form-col dfg">
+                      <div class="form-group row-12">
+                        <label for="inputEmail" class="sr-only" >Correo electrónico</label>
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Correo electrónico">
+                      </div>
+                      <div class="row-12 card text-center">
+                        <button type="button" class="btnSuscribirse">SUSCRIBIRSE</button>
+                      </div>
+                  </div>
+                  <!-- </form> -->
                 </div>
               </div>
-
-              <!--ROW GENERAL-->
-        </div>
+        </div> <!--ROW GENERAL-->
     
       <!--ROW INFERIOR-->
-      <div class="card">
+      <div class="card card-footer">
         <div class="card-body">
           <img src="../img/logo_spa_morado.png" alt="">
           <em>Derechos reservados &#169 BG SPA.</em>
-           Desarrollado por <a href="https://github.com/itzelmoon/bgspa">jvlovers</a>
+          Desarrollado por
+          <a href="https://github.com/itzelmoon/bgspa"> <span class="textjv">jvlovers</span></a>
         </div>
       </div>
 
