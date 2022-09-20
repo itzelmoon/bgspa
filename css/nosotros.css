@@ -56,13 +56,17 @@
     .cont{
         display: flex;
         flex-direction: column;
-     
     }
     .descripcion{
         margin-left: 1rem;
         margin-right: 1rem;
         margin-top: 2rem;
+        font-size: 20px;
     }
+    .titulo-principal{
+        font-size: 45px;
+    }
+
     .fondocard{
         font-size: 16px;
 
