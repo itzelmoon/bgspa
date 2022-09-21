@@ -17,7 +17,7 @@ btnSubmit.addEventListener("click", function(e){
     nombre.classList.remove("is-invalid");
     nombre.classList.add("is-valid");
 
-    if ( nombre.value.length > 3 && nombre.value.length < 20) {
+    if ( nombre.value.length >= 3 && nombre.value.length < 20) {
         nombre.classList.add("is-valid"); 
     }
     else{  
@@ -53,7 +53,7 @@ btnSubmit.addEventListener("click", function(e){
     apellido.classList.remove("is-invalid");
     apellido.classList.add("is-valid");
 
-    if ( apellido.value.length > 3 && apellido.value.length < 20) {
+    if ( apellido.value.length >= 3 && apellido.value.length < 20) {
         apellido.classList.add("is-valid"); 
     }
     else{  
@@ -88,7 +88,10 @@ btnSubmit.addEventListener("click", function(e){
 
 
     //Validacion Telefono
-    if((campoTelefono.value.length == 10) && (!isNaN(campoTelefono.value))) {
+    if((campoTelefono.value.length == 10) 
+    && (!isNaN(campoTelefono.value))
+    && (campoTelefono.value!=0)
+    ) {
         campoTelefono.classList.remove("is-invalid");
         campoTelefono.classList.add("is-valid");
     } else {
@@ -123,7 +126,7 @@ btnSubmit.addEventListener("click", function(e){
 
 
       //confirmacion correo
-      if (valorcorreo === confirmar){
+      if ((valorcorreo === confirmar) && (confirmarCorreo.value.length!=0)){
         confirmarCorreo.classList.remove("is-invalid");
         confirmarCorreo.classList.add("is-valid");
     } else {
