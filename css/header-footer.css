@@ -46,6 +46,24 @@ footer{
     border: 1px solid #FFFFFF;
     margin-bottom: 0%;
 }
+
+/*.footer_contacto{ ESTA CLASE SE PUSO POR UN RENGLON EN BLANCO QUE APARECIA EN MONITOR ALAM
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100vw;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: auto;
+
+
+    background: linear-gradient(180deg, rgba(190, 162, 218, 0) 4.32%, #B69BD1 63.78%);
+    border: 1px solid #FFFFFF;
+    margin-bottom: 0%;
+}*/
+
 .card-body{
     margin: 0% 0%;
 }
