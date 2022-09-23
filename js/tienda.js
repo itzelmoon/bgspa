@@ -42,6 +42,24 @@ function filtrar (event){
 };//filtrar
 
 
+function addItem(item){
+    const itemHTML = `<div class="${getClassCategory(item.categoria)} all col-md-3 col-lg-3 col-xl-3 col-sm-6">
+    <div class="rd" style="width:auto;">
+    <a href="#"><img src="${item.img}" class="card-img-top" data-toggle="modal" data-target="#modal_${item.id}" alt="..." /></a>
+    </div>
+    <br>
+    <div class="card-body fondocard carta">
+      <p class="fontbold cardRe">${item.name}</p>
+      <p class="card-text">$ ${item.precio}</p>
+      <p class="card-text">${item.description.slice(0,25)}...<i class="bi bi-caret-right-fill" data-toggle="modal" data-target="#modal1_${item.id}" ></i></p>
+      <br>
+      <div class="container btnAnadir">
+        <button type="button" class="btnEnviar" id="btnValidar">Añadir</button>
+      </div>
+    </div>
+  </div>
+
+
 
 
 
@@ -147,3 +165,33 @@ addItem({'name':'Bath Bomb Colección RAINBOW',
     'description':'12 piezas',
     'precio':'',
     'categoria':'Bombas Efervescentes' });
+
+    addItem({'name':'Bath Bomb Colección GEMSTONE',
+    'img':'/img/Productos/Bombas Efervescentes/BOMBAS_EFERVESCENTES_GEMSTONE.png',
+    'description':'12 piezas',
+    'precio':'',
+    'categoria':'Bombas Efervescentes'});
+
+addItem({'name':'Bath Bomb Colección HEALING',
+    'img':'',
+    'description':'12 piezas',
+    'precio':'',
+    'categoria':'Bombas Efervescentes'});
+
+addItem({'name':'Adhesivo para Foil',
+    'img':'',
+    'description':'15 ml',
+    'precio':'',
+    'categoria':'Complementos'});
+
+addItem({'name':'Látex Líquido',
+    'img':'',
+    'description':'15 ml',
+    'precio':'',
+    'categoria':'Complementos'});
+
+addItem({'name':'Removedor del Gel',
+    'img':'',
+    'description':'15 ml',
+    'precio':'',
+    'categoria':'Complementos'});
