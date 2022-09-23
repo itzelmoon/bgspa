@@ -31,12 +31,6 @@ a.text-primary:focus, a.text-primary:hover {
 .prueba{
     display: none;
 }
-.nav1{
-    display: block;
-}
-.nav2{
-    display: none;
-}
 
 
 
@@ -207,23 +201,9 @@ footer{
     #btnBq{
         display: none;
     }
-    /* .bi-movil{
-        font-size: 28px;
-        top: 20px;
-    } */
-    .bi-person{
-        font-size: 15px;
-    }
-    .bi-cart4{
-        font-size: 15px;
-    }
-    a.btn.my-2.my-sm-0{
-        justify-content: center;
-        margin: 0% 0%;
-        padding: 0% 0%;
-        padding-right: 1rem;
-        font-size: 15px;
-        
+    .bi-movil{
+        font-size: 26px;
+        top: 50px;
     }
 
     .card-body {
@@ -340,39 +320,8 @@ footer{
         display: none;
     }
 
-    .nav1{
-        display: none;
-    }
-    .nav2{
-        display: block;
-    }
-
-    /* .centro{
-        /* text-align: center; */
-        /* align-items: center; */
-        /* align-content: center; */
-        /* display: flex;
-        flex-wrap: wrap; */
-
-    /* } */ 
-    .centrogrande{
-        display: flexbox;
-        -ms-flex-align: center;
-    }
-    .imgSpa{
-        width: 25px;
-        height: 25px;
-        justify-content: center;
-       
-
-    }
-    .textobg{
-        font-size: 15px;
-        text-align: center;
-        
-    }
-   
 
 
 }
+
 
