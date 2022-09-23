@@ -66,6 +66,61 @@ function addItem(item){
 
 
 
+
+  function getClassCategory(cat){
+    let c = "";
+    switch (cat) {
+        case "Aceites para masaje":
+            c = "aceite";
+            break;
+        case "Básicos":
+            c = "basicos"
+            break;
+        case "Bio Jelly Spa":
+            c = "jelly"
+            break;
+        case "Bombas Efervescentes":
+            c = "bombas"
+            break;
+        case "Complementos":
+            c="comple"
+            break;
+        case "Cremas Hidratantes":
+            c="cremas"
+            break;
+        case "Exfoliantes":
+            c="exfo";
+            break;
+        case "Hidratantes Bifásicos":
+            c="hidra";
+            break;
+        case "Kit":
+            c="kit";
+            break;
+        case "Mascarillas":
+            c="masc";
+            break;
+        case "Sales Efervescentes":
+            c="sales";
+            break;
+        case "Sales Minerales":
+            c="salmin";
+            break;
+        case "Sanitizantes y Limpiadores":
+            c="san";
+            break;
+        default:
+            c="all";
+            break;
+    }//switch
+    return c;
+}//getClassCategory
+
+
+
+
+
+
 addItem({'name':'Aceite para masaje',
     'img':'/img/Productos/Aceite para Masaje/ACEITE_MASAJE_ALMENDRAS.png',
     'description':'Almendras',
