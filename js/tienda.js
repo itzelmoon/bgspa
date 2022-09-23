@@ -76,3 +76,33 @@ addItem({'name':'BIO JELLY - Té verde',
     'precio':'', 
     'categoria':'Bio Jelly Spa',
     'id':'10'});
+
+    addItem({'name':'BIO JELLY - Naranja',
+    'img':'/img/Productos/Bio Jelly Spa/BIO_JELLY_90g(6).png',
+    'description':'90 g',
+    'precio':'',
+    'categoria':'Bio Jelly Spa'})
+
+addItem({'name':'BIO JELLY - Flowers',
+    'img':'/img/Productos/Bio Jelly Spa/BIO_JELLY_90g(7).png',
+    'description':'90 g',
+    'precio':'',
+    'categoria':'Bio Jelly Spa' });
+
+addItem({'name':'BIO JELLY - Limón',
+    'img':'/img/Productos/Bio Jelly Spa/BIO_JELLY_90g(8).png',
+    'description':'90 g',
+    'precio':'',
+    'categoria':'Bio Jelly Spa'});
+
+addItem({'name':'BIO JELLY - Lavanda',
+    'img':'/img/Productos/Bio Jelly Spa/BIO_JELLY_90g.png',
+    'description':'90 g',
+    'precio':'',
+    'categoria':'Bio Jelly Spa'});
+
+addItem({'name':'Bath Bomb Colección RAINBOW',
+    'img':'/img/Productos/Bombas Efervescentes/BOMBAS_EFERVESCENTES_RAINBOW.png',
+    'description':'12 piezas',
+    'precio':'',
+    'categoria':'Bombas Efervescentes' });
