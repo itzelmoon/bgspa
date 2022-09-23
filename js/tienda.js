@@ -1,4 +1,45 @@
+//let div = document.getElementById("divData");
+//let mainProds = document.getElementById("mainProductos");
+let check1 = document.getElementById("customCheck1");
+let check2 = document.getElementById("customCheck2");
+let check3 = document.getElementById("customCheck3");
+let check4 = document.getElementById("customCheck4");
+let check5 = document.getElementById("customCheck5");
+let check6 = document.getElementById("customCheck6");
+let check7 = document.getElementById("customCheck7");
+let check8 = document.getElementById("customCheck8");
+let check9 = document.getElementById("customCheck9");
+let check10 = document.getElementById("customCheck10");
+let check11 = document.getElementById("customCheck11");
+let check12 = document.getElementById("customCheck12");
+let check13 = document.getElementById("customCheck13");
 
+
+check1.addEventListener("click", filtrar);
+check2.addEventListener("click", filtrar);
+check3.addEventListener("click", filtrar);
+check4.addEventListener("click", filtrar);
+check5.addEventListener("click", filtrar);
+check6.addEventListener("click", filtrar);
+check7.addEventListener("click", filtrar);
+check8.addEventListener("click", filtrar);
+check9.addEventListener("click", filtrar);
+check10.addEventListener("click", filtrar);
+check11.addEventListener("click", filtrar);
+check12.addEventListener("click", filtrar);
+check13.addEventListener("click", filtrar);
+
+function filtrar (event){
+    console.log(event.target.value);
+    let elementos = Array.from(document.getElementsByClassName(event.target.value)); //Array.from convierte algo en un arreglo.
+    elementos.forEach((e)=>{
+        if (event.target.checked){
+            e.style.display="block";
+        } else {
+            e.style.display="none";
+        }// if
+    });
+};//filtrar
 
 
 
