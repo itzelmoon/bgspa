@@ -80,12 +80,23 @@ btnSubmit.addEventListener("click", function(e){
         flag.nombre = false
     }
 
-
-
-
-
-
-
+        //validacion precio
+        function validarC (campoPrecio){
+            precio.classList.add("is-invalid");
+            let expReg=  /^\d+(?:\.\d{0,2})$/;
+            let validar= expReg.test(campoPrecio);
+            if (validar){
+                precio.classList.remove("is-invalid");
+                precio.classList.add("is-valid");
+                flag.precio = true
+            }//if
+            else{
+                precio.classList.remove("is-valid");
+                precio.classList.add("is-invalid");
+                flag.precio = false
+            }//else
+        }//fuction
+        validarC (envia);
 
     
     //Validacion categoria
@@ -111,7 +122,20 @@ btnSubmit.addEventListener("click", function(e){
     flag.descripcion = false
     }
 
-
+        // validacion campo Archivo
+        console.log(archivo.value) 
+        if(archivo.value==""){
+                flag.archivo= false;
+                archivo.classList.remove("is-valid");
+                archivo.classList.add("is-invalid");
+    
+            }//if
+            else{
+                flag.archivo=true;
+                archivo.classList.remove("is-invalid");
+                archivo.classList.add("is-valid");
+            }//else
+    
 
 
 
