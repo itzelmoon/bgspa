@@ -11,8 +11,14 @@ btnSubmit.addEventListener("click", function(e){
     let archivo = document.getElementById("campoArchivo");
     let categoria = document.getElementById("inlineFormCustomSelect");
     let precio = document.getElementById("campoPrecio");
+    let envia = document.getElementById("campoPrecio").value;
     let descripcion = document.getElementById("campoDescripcion");
+    let alertexitosa = document.getElementById("alertaexitosa");
+    let alerterror = document.getElementById("alertaerror");
+    let formulario = document.getElementById("formulario"); 
 
+
+    ///JSON Y LOCAL STORAGE
     let arregloProductos = {
         "id" : cont,
         "name": nombre.value,
@@ -52,6 +58,50 @@ btnSubmit.addEventListener("click", function(e){
      console.log(d);
      console.log(p);
      console.log(c);
+
+     //VALIDACIONES DE FORMULARIO
+     const flag = {
+        nombre: false,
+        precio: false,
+        categoria: false,
+        descripcion: false,
+        archivo:false
+    }
+    //validación de nombreProducto
+    nombre.classList.remove("is-invalid");
+    nombre.classList.add("is-valid");
+
+    if ((nombre.value.length >= 5) && !(nombre.value.trim() == "") && (nombre.value[0] != " ")) {
+        nombre.classList.add("is-valid"); 
+        flag.nombre = true
+    }
+    else{  
+        nombre.classList.add("is-invalid");
+        flag.nombre = false
+    }
+
+    
+
+
+
+
+
+
+
+    //ALERTA GENERAL
+    if (flag.nombre && flag.precio && flag.descripcion && flag.categoria && flag.archivo){
+        alertexitosa.style.display = "block";
+        setTimeout(()=>{alertexitosa.style.display = "none"}, (5000));
+        formulario.reset();
+        nombre.classList.remove("is-valid")
+        precio.classList.remove("is-valid")
+        descripcion.classList.remove("is-valid")
+        categoria.classList.remove("is-valid")
+        archivo.classList.remove("is-valid")
+    } else {
+        alerterror.style.display = "block";
+        setTimeout(()=>{alerterror.style.display = "none"}, (7000));
+    }
       
 
 

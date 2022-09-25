@@ -90,11 +90,13 @@
             
                 <div class="form-group inputs col-md-6">
                     <label for="campoArchivo">Adjuntar Archivo</label>
-                    <input type="file"  id="campoArchivo" >
+                    <input type="file"  id="campoArchivo" accept=".jpg,.png">
                     <div class="invalid-feedback alertaWarning">
-                        Selecciona un archivo.
-                    </div>  
-              <!-- <input class="btn btn-primary" type="button" value="Input"> -->
+                        Selecciona una imagen.
+                    </div>
+                    <div class="valid-feedback alertaWarning">
+                        Imagen cargada exitosamente.
+                    </div>   
                 </div>
             </div>
 
@@ -119,16 +121,6 @@
     
     <br>
     <br>
-    <footer></footer>
-
-   
-
-
-
-
-
-
-
 <!--------------------------------------------------------------------------->
     <script src="/js/bgadmin.js"></script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
