@@ -34,6 +34,24 @@ btnSubmit.addEventListener("click", function(e){
    
     //Agregar a la tabla
     $("#lista").append(fila_todascolumnas); //
+
+     //------------LocalStorage--------------------------------------
+     JSON.stringify(productos);
+     localStorage.setItem(key, JSON.stringify(productos));
+ 
+     //Comprobación de valores en la consola.
+     let n = nombre.value;
+     let a = archivo.value;
+     let d = descripcion.value;
+     let p = parseFloat(precio.value);
+     let c = categoria.value;
+ 
+ 
+     console.log(n);
+     console.log(a);
+     console.log(d);
+     console.log(p);
+     console.log(c);
       
 
 
