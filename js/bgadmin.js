@@ -80,7 +80,36 @@ btnSubmit.addEventListener("click", function(e){
         flag.nombre = false
     }
 
+
+
+
+
+
+
+
     
+    //Validacion categoria
+    if (categoria.selectedIndex!=0){   //validar estados
+        categoria.classList.remove("is-invalid")
+        categoria.classList.add("is-valid");
+        flag.categoria = true
+    } else {
+        categoria.classList.remove("is-valid");
+        categoria.classList.add("is-invalid");
+        flag.categoria = false
+    }; // != 0
+
+    // validacion de la descripcion
+    descripcion.classList.remove("is-invalid");
+    descripcion.classList.add("is-valid");
+
+    if ((descripcion.value.length >=10) && !(nombre.value.trim() == "") && (descripcion.value[0] != " ")){
+    descripcion.classList.add("is-valid");
+    flag.descripcion = true
+    } else {
+    descripcion.classList.add("is-invalid");
+    flag.descripcion = false
+    }
 
 
 
