@@ -36,6 +36,24 @@ btnSubmit.addEventListener("click", function(e){
     let alerterror = document.getElementById("alertaerror");
     let formulario = document.getElementById("formulario"); 
 
+    //JSON Y LOCAL STORAGE
+    let arregloUsuario = {
+        "id" : cont,
+        "name": nombre.value,
+        "apellido": apellido.value,
+        "telefono": telefono.value,
+        "correo": correo.value,
+        "contraseña": valcontraseña.value
+    };
+
+
+
+
+
+
+
+
+
      //VALIDACIONES DE FORMULARIO
      const flag = {
         nombre: false,
