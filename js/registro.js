@@ -46,7 +46,9 @@ btnSubmit.addEventListener("click", function(e){
         "contraseña": valcontraseña.value
     };
 
-
+    cont++;
+    infoUsuario.push(arregloUsuario);
+    console.log(infoUsuario);
 
 
 
