@@ -98,7 +98,58 @@ btnSubmit.addEventListener("click", function(e){
      }
      validarCorreo(valorcorreo); 
 
+      //validacion contraseña
+    function validarContraseña (contra) {
+        let expReg =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
+        let verificarcontraseña = expReg.test(contra);
+        console.log(verificarcontraseña)
+        if(verificarcontraseña){
+            contraseña.classList.remove("is-invalid");
+            contraseña.classList.add("is-valid");
+            flag.contraseña = true
+        } else {
+            contraseña.classList.remove("is-valid");
+            contraseña.classList.add("is-invalid");
+            flag.contraseña = false
+        }
+        }
+    validarContraseña(valorcontraseña); 
+        
+    //confirmacion contraseña
+    function confirmarContraseña (verifcontra) {
+        let expReg =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
+        let confirmarcontraseña = expReg.test(verifcontra);   
+        console.log(confirmarcontraseña);
 
+        if ((valorcontraseña === valcontraseña.value) && (valcontraseña.value.length!=0)&&(confirmarcontraseña)){
+            valcontraseña.classList.remove("is-invalid");
+            valcontraseña.classList.add("is-valid");
+            flag.valcontraseña=true
+        } else {
+            valcontraseña.classList.remove("is-valid");
+            valcontraseña.classList.add("is-invalid");
+            flag.valcontraseña=false
+        }
+    }
+    confirmarContraseña(contrase);
+
+
+    //ALERTA GENERAL
+    if (flag.nombre && flag.apellido && flag.telefono && flag.correoe && flag.contraseña && flag.valcontraseña){
+        alertexitosa.style.display = "block";
+        setTimeout(()=>{alertexitosa.style.display = "none"}, (5000));
+        formulario.reset();
+        nombre.classList.remove("is-valid")
+        apellido.classList.remove("is-valid")
+        telefono.classList.remove("is-valid")
+        correoe.classList.remove("is-valid")
+        contraseña.classList.remove("is-valid")
+        valcontraseña.classList.remove("is-valid")
+    } else {
+        alerterror.style.display = "block";
+        setTimeout(()=>{alerterror.style.display = "none"}, (7000));
+    }
+      
 
 
 
