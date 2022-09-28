@@ -1,4 +1,7 @@
 let btnSubmit = document.getElementById("btnRegistrarse");
+let infoUsuario = [];
+let cont = 1;
+const key = "info";
 
 function mostrarContraseña(){
     let tipo = document.getElementById("contraseña");
