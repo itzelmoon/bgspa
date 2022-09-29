@@ -1,0 +1,78 @@
+.titulo{
+    font-weight: 400;
+    font-size: 73px;
+    line-height: 86px;
+    text-align: center;
+    color: #512A5F; 
+}
+.ancla{
+    display: flex;
+    justify-content: right;
+}
+.descripcion{
+    display: flex;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: justify;
+    color:  #512A5F; 
+}
+
+.fondocard{
+    background: #FFFFFF;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 6px 6px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #21005D;
+    text-align: justify;
+}
+.fontbold{
+    font-weight: 700;
+}
+.rd{
+    border-radius: 30px;
+}
+
+.carta{
+    width: auto;
+    height: auto;
+}
+
+.descripcion{
+    margin-top: 2rem;
+}
+
+.ancla{
+    display: flex;
+    justify-content: right;
+}
+
+.ancla:hover{
+    color: #512A5F;
+}
+
+@media screen and (max-width: 576px) {
+    .cont{
+        display: flex;
+        flex-direction: column;
+    }
+    .descripcion{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 2rem;
+        font-size: 20px;
+    }
+    .titulo-principal{
+        font-size: 45px;
+    }
+
+    .fondocard{
+        font-size: 16px;
+
+    }
+    .espacio{
+        margin-top: 2rem;
+    }
+
+}
