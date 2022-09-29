@@ -32,3 +32,52 @@ body {
     line-height: 15px;
     color: #393F42; 
 }
+
+.holder{
+    background: #F9F9F9; 
+    border-radius: 10px; 
+    border: none;
+    font-family: 'Raleway'; 
+    font-style: normal; 
+    font-weight: 700; 
+    font-size: 18px; 
+    line-height: 15px; /* or 68% */ 
+    color: #C7C7C7
+}
+
+.btnRegistrar{
+    text-align: center;
+    align-content: center;
+    background: #A97798; 
+    border-radius: 10px; 
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+.boton{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.compos{
+padding-top: 1rem;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+@media screen and (max-width: 576px) {
+    .titulo{
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 40px;
+    }
+}

@@ -50,10 +50,9 @@ btnSubmit.addEventListener("click", function(e){
     infoUsuario.push(arregloUsuario);
     console.log(infoUsuario);
 
-
-
-
-
+    //------------LocalStorage--------------------------------------
+    //JSON.stringify(infoUsuario);
+    localStorage.setItem(key, JSON.stringify(infoUsuario));
 
 
      //VALIDACIONES DE FORMULARIO
