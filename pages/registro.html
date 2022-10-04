@@ -96,7 +96,7 @@ o ver repositorio en Github-->
 
                 <div class="form-group inputs compos">
                   <label for="validationNumber">Teléfono</label>
-                  <input type="number" oninput="if(value.length>10)value=value.slice(0,10)" class="form-control holder" id="validationNumber" placeholder="(xxx-xxx-xxxx)">
+                  <input type="number" oninput="if(value.length>10)value=value.slice(0,10)" class="form-control holder" id="validationNumber" placeholder="Número de Teléfono">
                   <div class="invalid-feedback alertaWarning" id="alertacampo3">
                     Verifique que el campo contenga 10 caracteres. 
                   </div>
@@ -214,9 +214,12 @@ o ver repositorio en Github-->
             <div class="form-group row-12">
               <label for="inputEmail" class="sr-only">Correo electrónico</label>
               <input type="text" class="form-control" id="inputEmail" placeholder="Correo electrónico">
+              <div class="invalid-feedback alertaWarning" id="alertacampo5">
+                Verifique su correo. 
+              </div>
             </div>
             <div class="row-12 card text-center">
-              <button type="button" class="btnSuscribirse">SUSCRIBIRSE</button>
+              <button type="button" class="btnSuscribirse" id="btnSuscribirse">SUSCRIBIRSE</button>
             </div>
           </div>
           <!-- </form> -->
@@ -240,6 +243,7 @@ o ver repositorio en Github-->
 
   <!--Script para bootstrap 4.6-->
   <script src="../js/registro.js"></script>
+  <script src="../js/valfooter.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>

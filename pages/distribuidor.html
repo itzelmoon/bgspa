@@ -69,17 +69,24 @@
         <p class="subtitulo">Contáctate con BG spa para convertirte en distribuidor</p>
         <br>
         <br>
-
-        <form>
+        <div class="alert alert-success" role="alert" style="display: none" id="alertaexitosa"> Registro exitoso.</div>
+        <div class="alert alert-danger" role="alert" style="display: none" id="alertaerror"> Error: Revisa que todos los campos se hayan llenando correctamente.</div>
+        <form id="formulario">
             <!--Primer fila-->
             <div class="form-row">
                 <div class="form-group inputs col-md-6">
                     <label for="Nombre">Nombre (s)</label>
                     <input type="text" class="form-control holder" id="Nombre" placeholder="Tu nombre(s) aquí">
+                    <div class="invalid-feedback alertaWarning" id="alertacampo1">
+                      Verifique que el campo contenga mas de 3 caracteres. 
+                    </div>
                 </div>
                 <div class="form-group inputs col-md-6">
                     <label for="Apellido">Apellido (s)</label>
                     <input type="text" class="form-control holder" id="Apellido" placeholder="Tu apellido(s) aquí">
+                    <div class="invalid-feedback alertaWarning" id="alertacampo2">
+                      Verifique que el campo contenga mas de 3 caracteres. 
+                    </div>
                 </div>
             </div>
 
@@ -87,12 +94,18 @@
             <div class="form-row campos">
                 <div class="form-group inputs col-md-6">
                     <label for="validationNumber">Teléfono</label>
-                    <input type="number" oninput="if(value.length>10)value=value.slice(0,10)" class="form-control holder" id="validationNumber" placeholder="(xxx-xxx-xxxx)">
+                    <input type="number" oninput="if(value.length>10)value=value.slice(0,10)" class="form-control holder" id="validationNumber" placeholder="Número de Teléfono">
+                    <div class="invalid-feedback alertaWarning" id="alertacampo3">
+                      Verifique que el campo contenga 10 caracteres. 
+                    </div>
                 </div>
 
                 <div class="form-group inputs col-md-6">
                     <label for="Empresa">Empresa</label>
                     <input type="text" class="form-control holder" id="Empresa" placeholder="Empresa (Opcional)">
+                    <div class="invalid-feedback alertaWarning" id="alertacampo3">
+                      Verifique que el campo contenga 10 caracteres. 
+                    </div>
                 </div>
             </div>
             <!--Tercera fila-->
@@ -100,11 +113,17 @@
                 <div class="form-group inputs col-md-6">
                     <label for="correo">Email</label>
                     <input type="email" class="form-control holder" id="correo" placeholder="correo@ejemplo.com">
+                    <div class="invalid-feedback alertaWarning" id="alertacampo5">
+                      Verifique su correo. 
+                    </div>
                 </div>
                 <div class="form-group inputs col-md-6">
                     <label for="validationCorreo">Confirma tu email</label>
                     <input type="email" class="form-control holder" id="validationCorreo"
                         placeholder="correo@ejemplo.com">
+                    <div class="invalid-feedback alertaWarning" id="alertacampo6">
+                      Verifique su correo. 
+                    </div>
                 </div>
             </div>
             <!--Cuarta fila-->
@@ -113,6 +132,9 @@
                     <label for="campoMensaje">Tu mensaje</label>
                     <textarea class="form-control holder" id="campoMensaje"
                         placeholder="¡Hola! Me gustaría convertirme en distribuidor." rows="7"></textarea>
+                    <div class="invalid-feedback alertaWarning" id="alertacampo7">
+                      Verifique que el campo contenga mas de 10 caracteres. 
+                    </div>
                 </div>
             </div>
         </form>
@@ -185,9 +207,12 @@
                       <div class="form-group row-12">
                         <label for="inputEmail" class="sr-only" >Correo electrónico</label>
                         <input type="text" class="form-control" id="inputEmail" placeholder="Correo electrónico">
+                        <div class="invalid-feedback alertaWarning" id="alertacampo5">
+                          Verifique su correo. 
+                        </div>
                       </div>
                       <div class="row-12 card text-center">
-                        <button type="button" class="btnSuscribirse">SUSCRIBIRSE</button>
+                        <button type="button" class="btnSuscribirse" id="btnSuscribirse">SUSCRIBIRSE</button>
                       </div>
                   </div>
                   <!-- </form> -->
@@ -207,6 +232,7 @@
     </footer>
 
     <script src="../js/distribuidor.js"></script>
+    <script src="../js/valfooter.js"></script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
