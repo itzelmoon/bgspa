@@ -173,6 +173,41 @@ btnSubmit.addEventListener("click", function(e){
     if (flag.nombre && flag.apellido && flag.campoTelefono && flag.campoMensaje && flag.correoe && flag.confirmarCorreo){
         alertexitosa.style.display = "block";
         setTimeout(()=>{alertexitosa.style.display = "none"}, (5000));
+
+         //---------------------CORREO------------------------------------------
+    function sendEmail(){
+        
+    let Body = 
+    '¡Hola! '+nombre.value+' esta interesado en formar parte del equipo BG SPA.<br>Soñemos en grande y sigamos creciendo.<br><br>'+
+    'Nombre: '+nombre.value+'<br>Apellido: '+apellido.value+'<br>Teléfono: '+campoTelefono.value+'<br>Empresa: '+empresa.value+'<br>Correo electrónico: '+correoe.value+'<br>Mensaje: '+campoMensaje.value;
+          Email.send({
+              Host : "smtp.elasticemail.com",
+              Username : "bgspacompany@gmail.com",
+              Password : "DD76DC61EDD1EC165A9B8D27BE92A40E263A",
+              To : 'alamatzin@ciencias.unam.mx', 
+              From : 'bgspacompany@gmail.com',  
+              Subject : "DISTRIBUIDOR BG SPA",
+              Body : Body
+          }).then(
+            message => {
+  
+              if(message=='OK'){
+                alert('¡Gracias! Tu mensaje ha sido enviado exitosamente.');
+              }else{
+                console.error(message);
+                alert('Lo sentimos, hubo un error al enviar el mensaje. Inténtalo de nuevo.');
+              }
+            }
+            
+          );
+      }//function
+      console.log(sendEmail());
+      console.log(nombre.value);
+      console.log(apellido.value);
+
+///--------------------------------------------------------------------
+
+
         formulario.reset();
         nombre.classList.remove("is-valid")
         apellido.classList.remove("is-valid")
@@ -184,5 +219,8 @@ btnSubmit.addEventListener("click", function(e){
     } else {
         alerterror.style.display = "block";
         setTimeout(()=>{alerterror.style.display = "none"}, (7000));
-    }
-});
+    }//else
+
+
+
+});//function

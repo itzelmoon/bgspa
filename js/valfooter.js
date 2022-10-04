@@ -1,5 +1,5 @@
 let btnSuscribirse = document.getElementById("btnSuscribirse");
-
+let cOferta = document.getElementById("inputEmail");
 
 btnSuscribirse.addEventListener("click", function(e){
     e.preventDefault();
@@ -23,6 +23,65 @@ btnSuscribirse.addEventListener("click", function(e){
             flagfooter = false
         }
     }
+
+    
     validarCorreo(valorcorreofooter);
+    
+    if (flagfooter){
+
+    //--------Correo---------------------------------
+    function emailOfertas(){
+        
+        let Body = 
+        '¡Hola! Tienes un nuevo suscriptor interesado en recibir notificaciones para las futuras ofertas de BG SPA.<br><br>'+
+        'Correo electrónico: '+cOferta.value;
+              Email.send({
+                  Host : "smtp.elasticemail.com",
+                  Username : "bgspacompany@gmail.com",
+                  Password : "DD76DC61EDD1EC165A9B8D27BE92A40E263A",
+                  To : 'edubarajas98@gmail.com', 
+                  From : 'bgspacompany@gmail.com',  
+                  Subject : "NUEVO SUSCRIPTOR BG SPA",
+                  Body : Body
+              }).then(
+                message => {
+      
+                  if(message=='OK'){
+                    alert('¡Gracias! Ahora recibiras notificaciones por parte de BG SPA.');
+                  }else{
+                    console.error(message);
+                    alert('Lo sentimos, hubo un error al enviar el mensaje. Inténtalo de nuevo.');
+                  }
+                }
+                
+              );
+          }//function
+          console.log(emailOfertas());
+          console.log(cOferta.value);
+
+
+          ///--------------------------------------------------------------------
+
+function emailOfertasUser(){
+        
+    let Body = 
+    '¡Hola! Muchas gracias por suscribirte a BG SPA.<br>A partir de ahora recibirá notificaciones sobre nuestros productos en oferta.'
+          Email.send({
+              Host : "smtp.elasticemail.com",
+              Username : "bgspacompany@gmail.com",
+              Password : "DD76DC61EDD1EC165A9B8D27BE92A40E263A",
+              To : cOferta.value, 
+              From : 'bgspacompany@gmail.com',  
+              Subject : "CONFIRMACIÓN DE SUSCRIPCIÓN A BG SPA",
+              Body : Body
+          })
+      }//function
+      console.log(emailOfertasUser());
+
+    //----------------------------------------------
+    cOferta.value="";
+    correofooter.classList.remove("is-valid");
+
+    }//flag
 
 });
