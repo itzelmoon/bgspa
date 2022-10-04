@@ -9,6 +9,15 @@
     display: flex;
     justify-content: right;
 }
+
+.ico{
+    color: #512A5F !important;
+}
+
+.ico:hover{
+    color: #8f52a5 !important;
+}
+
 .descripcion{
     display: flex;
     font-size: 30px;
