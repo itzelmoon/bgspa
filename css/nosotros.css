@@ -8,6 +8,10 @@
 .ancla{
     display: flex;
     justify-content: right;
+    font-size: 20px;
+    padding: 8px;
+    letter-spacing: 8px;
+    margin-bottom: auto;
 }
 
 .ico{
