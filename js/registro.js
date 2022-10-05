@@ -42,18 +42,11 @@ btnSubmit.addEventListener("click", function(e){
         "name": nombre.value,
         "apellido": apellido.value,
         "telefono": telefono.value,
-        "correo": correo.value,
+        "correo": correoe.value,
         "contraseña": valcontraseña.value
     };
 
-    cont++;
-    infoUsuario.push(arregloUsuario);
     console.log(infoUsuario);
-
-    //------------LocalStorage--------------------------------------
-    //JSON.stringify(infoUsuario);
-    localStorage.setItem(key, JSON.stringify(infoUsuario));
-
 
      //VALIDACIONES DE FORMULARIO
      const flag = {
@@ -122,7 +115,7 @@ btnSubmit.addEventListener("click", function(e){
 
       //validacion contraseña
     function validarContraseña (contra) {
-        let expReg =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
+        let expReg =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,15}$/;
         let verificarcontraseña = expReg.test(contra);
         console.log(verificarcontraseña)
         if(verificarcontraseña){
@@ -139,7 +132,7 @@ btnSubmit.addEventListener("click", function(e){
         
     //confirmacion contraseña
     function confirmarContraseña (verifcontra) {
-        let expReg =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
+        let expReg =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,15}$/;
         let confirmarcontraseña = expReg.test(verifcontra);   
         console.log(confirmarcontraseña);
 
@@ -158,6 +151,9 @@ btnSubmit.addEventListener("click", function(e){
 
     //ALERTA GENERAL
     if (flag.nombre && flag.apellido && flag.telefono && flag.correoe && flag.contraseña && flag.valcontraseña){
+        cont++;
+        infoUsuario.push(arregloUsuario);
+        localStorage.setItem(key, JSON.stringify(infoUsuario));
         alertexitosa.style.display = "block";
         setTimeout(()=>{alertexitosa.style.display = "none"}, (5000));
         formulario.reset();

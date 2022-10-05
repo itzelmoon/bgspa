@@ -1,0 +1,291 @@
+<!doctype html>
+<!--Código fuente de la página BGspa
+desarrollado por JV-Lovers/Generation.
+Para informes acerca de desarrollo
+enviar correo a: example@correo.com
+o ver repositorio en Github-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--Bootstrap 4.6 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <!--CSS propio-->
+  <!--<link rel="stylesheet" href="../css/logIn.css">    Por el momento este css choca con el disenio general de la pagina-->  
+  <link rel="stylesheet" href="../css/headerFooter.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/catalogo.css">
+  <style>
+    .custom-control-input:checked~.custom-control-label::before{
+      background-color: #A97798;
+      border-color: #A97798;
+    }
+    @media screen and (max-width: 576px) {
+  .carousel {
+    display: none;
+  }
+}
+  </style>
+
+  <title>BGSpa</title>
+</head>
+
+<body>
+  <!--header de la página web-->
+
+  <!-- <div class="btn-group b" id="a">     ESTE CODIGO ESTA EN PROCESO DE MEJORA
+    <button class="btn btn-secondary btn-sm dropdown-toggle btn1" type="button" data-toggle="dropdown" aria-expanded="false">
+      Activo
+    </button>
+    <div class="dropdown-menu">
+    <a href="#" id="cerrar">Cerrar Sesión</a>
+    </div>
+  </div> -->
+
+<header>
+  <nav class="navbar prueba2">
+    <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG SPA</strong></span></a>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" id="btnBq" type="search" placeholder="Buscar" aria-label="Search">
+      <a class="btn my-2 my-sm-0" type="submit" id="btnBq"><i class="bi bi-search"></i></a>
+      <a class="btn my-2 my-sm-0" type="submit" href="./carrito.html" ><i class="bi bi-cart4 bi-movil binav"></i></a>
+      <a class="btn my-2 my-sm-0" type="submit" href="./logIn.html"><i class="bi bi-person bi-movil binav"></i></a>
+    </form>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content:center;">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="../index.html">Inicio</a>
+        </li>
+       
+        <li class="nav-item">
+            <a class="nav-link text-primary" href="./catalogo.html">Catálogo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="./nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="./distribuidor.html">Distribuidor</a>
+        </li>
+    </div>
+  </nav>
+  <div class="prueba pruebaPosi1">
+    <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG SPA</strong></span></a>
+    <button class="btn my-2 my-sm-0" type="submit"><i class="bi bi-cart4 bi-movil binav"></i></button>
+    <button class="btn my-2 my-sm-0" type="submit"><i class="bi bi-person bi-movil binav"></i></button>
+  </div>
+</header>
+
+<!--carrusel del banner-->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../img/esteticos/port1.jpg" class="d-block w-100 img-fliud" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/esteticos/port2.jpg" class="d-block w-100 img-fliud" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/esteticos/port3.jpg" class="d-block w-100 img-fliud" alt="...">
+    </div>
+  </div>
+</div>
+
+
+
+ <!--Productos destacados-->
+ <div class="container-fluid">
+    <div class="row">
+<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 marginCon" style="align-items:center;">
+    <p style="font-size: 28px">Categorias</p>
+    <div id="divData"></div>  
+    <!--Checkbox-->
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="customCheck1" checked value="aceite">
+    <label class="custom-control-label" for="customCheck1">Aceites para masaje</label>
+  </div>
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="customCheck2" checked value="basicos">
+    <label class="custom-control-label" for="customCheck2">Básicos</label>
+  </div>
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="customCheck3" checked value="jelly">
+    <label class="custom-control-label" for="customCheck3">Bio Jelly Spa</label>
+  </div>
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="customCheck4" checked value="bombas">
+    <label class="custom-control-label" for="customCheck4">Bombas Efervescentes</label>
+</div>
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck5" checked value="comple">
+  <label class="custom-control-label" for="customCheck5">Complementos</label>
+</div>
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck6" checked value="cremas">
+  <label class="custom-control-label" for="customCheck6">Cremas Hidratantes</label>
+</div>
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck7" checked value="exfo">
+  <label class="custom-control-label" for="customCheck7">Exfoliantes</label>
+</div>
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck8" checked value="hidra">
+  <label class="custom-control-label" for="customCheck8">Hidratantes Bifásicos</label>
+</div>
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck9" checked value="kit">
+  <label class="custom-control-label" for="customCheck9">Kit</label>
+</div>
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck10" checked value="masc">
+  <label class="custom-control-label" for="customCheck10">Mascarillas</label>
+</div>
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck11" checked value="sales">
+  <label class="custom-control-label" for="customCheck11">Sales Efervescentes</label>
+</div>
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck12" checked value="salmin">
+  <label class="custom-control-label" for="customCheck12">Sales Minerales</label>
+</div>
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck13" checked value="san">
+  <label class="custom-control-label" for="customCheck13">Sanitizantes y Limpiadores</label>
+</div>
+  <br>
+</div>
+<div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 marginCon">
+  <p style="font-size: 28px">Productos destacados</p>
+  <hr>
+  <br>
+  <div class="row cont list-items" id="mediaQ3">
+      
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+<!--footer de la pagina web-->
+<footer>
+  <div class="card-body row">
+    <div class="col-md-3 col-sm-12 car1">
+      <div class="card-body">
+        <h5 class="card-title titulo1">Contacto</h5>
+        <div class="row">
+          <!--row telefono-->
+          <div class="col-2">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <div class="col-10">
+            <p>(332)-254-0774 - (331)-892-7807</p>
+          </div>
+        </div>
+        <!--row telefono-->
+        <div class="row">
+          <div class="col-2">
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+          <div class="col-10">
+            <p>bgspa.contacto@gmail.com</p>
+          </div>
+        </div>
+        <!--row email-->
+        <div class="row">
+          <div class="col-2">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <div class="col-10">
+            <p>Guadalajara, Jalisco, Mex.</p>
+          </div>
+        </div>
+        <!--row telefono-->
+      </div>
+    </div>
+    <!--SEGUNDO CARD-->
+    <div class="col-md-3 col-sm-12">
+      <div class="card-body container carAten">
+        <h5 class="card-title">Atención a Clientes</h5>
+        <a href="#" class="card-text clase1">Formas de pago y envío</a><br>
+        <a href="#" class="card-text clase1">Terminos y condiciones</a><br>
+        <a href="#" class="card-text clase1">Aviso de Privacidad</a>
+      </div>
+    </div>
+    <!--TERCER CARD-->
+    <div class="col-md-2 col-sm-12">
+      <div class="card-body container">
+        <h5 class="card-title titulo3">Siguenos</h5>
+        <a href="https://www.instagram.com/bgspaoficial/?igshid=YmMyMTA2M2Y%3D" class="redes bi bi-instagram"></a>
+        <a href="https://www.facebook.com/people/BG-SPA/100063504614562/" class="redes bi bi-facebook"></a>
+        <a href="https://wa.me/3322540774" class="redes bi bi-whatsapp"></a>
+      </div>
+    </div>
+
+    <!--CUARTA CARD-->
+    <div class="col-md-4 col-sm-12">
+      <div class="card-body">
+        <h5 class="card-title titulo4">¡Entérate de nuestras ofertas!</h5>
+        <!-- <form class="form-inline"> -->
+        <div class="form-col dfg">
+          <div class="form-group row-12">
+            <label for="inputEmail" class="sr-only">Correo electrónico</label>
+            <input type="text" class="form-control" id="inputEmail" placeholder="Correo electrónico">
+            <div class="invalid-feedback alertaWarning" id="alertacampo5">
+              Verifique su correo. 
+            </div>
+          </div>
+          <div class="row-12 card text-center">
+            <button type="submit" id="btnSuscribirse" class="btnSuscribirse">SUSCRIBIRSE</button>
+          </div>
+        </div>
+        <!-- </form> -->
+      </div>
+    </div>
+  </div>
+  <!--ROW GENERAL-->
+
+  <!--ROW INFERIOR-->
+  <div class="card card-footer">
+    <div class="card-body">
+      <img src="../img/logo_spa_morado.png" alt="">
+      <em>Derechos reservados &#169 BG SPA.</em>
+      Desarrollado por
+      <a href="./nosotros.html"> <span class="textjv">jvlovers</span></a>
+    </div>
+  </div>
+
+</footer>
+ <!-- <script src="../js/registro.js"></script> -->
+ <script src="../js/logIn.js"></script> <!--Este link no funciona-->
+ <!-- <script src="../js/login.js"></script> -->
+
+
+
+
+    
+     <!--------Correo-------->
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <!--Script para bootstrap 4.6-->
+      <script src="../js/catalogo.js"></script>
+      <script src="../js/valfooter.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    </body>
+    
+    </html>

@@ -8,7 +8,20 @@
 .ancla{
     display: flex;
     justify-content: right;
+    font-size: 20px;
+    padding: 8px;
+    letter-spacing: 8px;
+    margin-bottom: auto;
 }
+
+.ico{
+    color: #512A5F !important;
+}
+
+.ico:hover{
+    color: #8f52a5 !important;
+}
+
 .descripcion{
     display: flex;
     font-size: 30px;
