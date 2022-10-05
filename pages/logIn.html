@@ -70,18 +70,29 @@ o ver repositorio en Github-->
     <h1 class="titulo">Acceder</h1>
     <br>
     <br>
-
+    <div class="alert alert-success" role="alert" style="display: none" id="alertaexitosa"> Registro exitoso.</div>
+    <div class="alert alert-danger" role="alert" style="display: none" id="alertaerror"> Error: Revisa que todos los campos se hayan llenando correctamente.</div>
+    
     <form>
         <!--Primer fila-->
-        <div class="form col-md-6">
-            <div class="form-group inputs">
+        <div class="form col-md-7">
+            <div class="form-group inputs compos">
                 <label for="correo">Correo electrónico</label>
                 <input type="email" class="form-control holder" id="correo" placeholder="correo@ejemplo.com">
+                <div class="invalid-feedback alertaWarning" id="alertacampo4">
+                  Verifique su correo. 
+                </div>
             </div>
-
-            <div class="form-group inputs compos">
+            <div class="row">
+            <div class="form-group col-10 inputs compos" style="margin-left: 15px">
                 <label for="contraseña">Contraseña</label>
                 <input type="password" class="form-control holder" id="contraseña" placeholder="contraseña">
+                <div class="invalid-feedback alertaWarning" id="alertacampo5">Restricciones: De 8 a 15 caracteres, una mayúscula, un numero, sin espacios, un caracter especial.</div>
+            </div>
+
+            <div class="col-1" style="padding:0px 0px;">
+              <button type="button"style="border: none; margin-top: 1.4em; background: none; font-size: 28px; margin-left: 10px" onclick="mostrarContraseña()"><i class="bi bi-eye"></i></button>
+            </div>
             </div>
             <!----------------------------------------------------------------------------------------------------->
    <!--          <div class="form-group inputs">
@@ -105,7 +116,7 @@ o ver repositorio en Github-->
     </form>
 
     <div class="posicion">
-        <button type="submit" value="Submit" onclick="checkData()" class="col-md-6 btnSesion" id="btnIniciarSesion">Iniciar sesión</button>
+        <button type="submit" value="Submit" onclick="checkData()" class="col-md-6 btnSesion" id="btnIniciarSesion"onclick="mostrarContraseña()">Iniciar sesión</button>
     </div>
 
     <div>
