@@ -73,7 +73,7 @@ function addItem(item){
         <img src="${item.img}" class="card-img-top" alt="..." />
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
@@ -94,7 +94,7 @@ function addItem(item){
         ${item.description}
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>
@@ -166,131 +166,131 @@ function addItem(item){
 
 
 addItem({'name':'Aceite para masaje',
-    'img':'/img/Productos/Aceite para Masaje/ACEITE_MASAJE_ALMENDRAS.png',
+    'img':'../img/productos/aceitesParaMasaje/aceite_para_masaje_ALMENDRAS_DULCES_1_Litro.png',
     'description':'Almendras',
     'precio':'200', 
     'categoria':'Aceites para masaje',
     'id':'1'});
 
 addItem({'name':'Aceite para masaje',
-    'img':'/img/Productos/Aceite para Masaje/ACEITE_MASAJE_TORONJA.png',
+    'img':'../img/productos/aceitesParaMasaje/aceite_para_masaje_TORONJA_1_Litro.png',
     'description':'Toronja',
     'precio':'200',
     'categoria':'Aceites para masaje',
     'id':'2'});
 
 addItem({'name':'Ablandador de callos',
-    'img':'/img/Productos/Basicos/ABLANDADOR_CALLOS.png',
+    'img':'../img/productos/basicos/ablandador_de_callosidades_60_ml.png',
     'description':'15 ml',
     'precio':'200',
     'categoria':'Básicos',
     'id':'3'});
 
 addItem({'name':'Aceite para cuticula',
-    'img':'/img/Productos/Basicos/ACEITE_CUTICULA.png',
+    'img':'../img/productos/basicos/removedor_de_cuticulas_1_litro.png',
     'description':'15 ml',
     'precio':'250',
     'categoria':'Básicos',
     'id':'4'});
 
 addItem({'name':'Removedor de cuticula',
-    'img':'/img/Productos/Basicos/BG_SPA_BASICOS_REMOVEDOR_DE_CUTICULA.png',
+    'img':'../img/productos/basicos/removedor_de_cuticulas_1_litro.png',
     'description':'15 ml',
     'precio':'250',
     'categoria':'Básicos',
     'id':'5'});
 
-    addItem({'name':'Lija de Pie',
-    'img':'/img/Productos/Basicos/LIJAPIE.png',
+addItem({'name':'Lija de Pie',
+    'img':'../img/productos/basicos/lija_Pie_Pedicure_De_Madera_.png',
     'description':'',
     'precio':'',
     'categoria':'Básicos',
     'id':'6'});
 
 addItem({'name':'BIO JELLY - Tropical',
-    'img':'/img/Productos/Bio Jelly Spa/BIO_JELLY_90g(2).png',
+    'img':'../img/productos/bioJellySpa/BIO JELLY SPA 1 kg. TROPICAL.png',
     'description':'',
     'precio':'',
     'categoria':'Bio Jelly Spa',
     'id':'7'});
 
 addItem({'name':'BIO JELLY - Menta',
-    'img':'/img/Productos/Bio Jelly Spa/BIO_JELLY_90g(3).png',
+    'img':'../img/productos/bioJellySpa/BIO JELLY SPA 1 kg. MENTA.png',
     'description':'',
     'precio':'',
     'categoria':'Bio Jelly Spa',
     'id':'8'});
 
 addItem({'name':'BIO JELLY - Coco',
-    'img':'/img/Productos/Bio Jelly Spa/BIO_JELLY_90g(4).png',
+    'img':'../img/productos/bioJellySpa/BIO JELLY SPA 1 kg. COCONUT.png',
     'description':'',
     'precio':'',
     'categoria':'Bio Jelly Spa',
     'id':'9'});
 
 addItem({'name':'BIO JELLY - Té verde',
-    'img':'/img/Productos/Bio Jelly Spa/BIO_JELLY_90g(5).png',
+    'img':'../img/productos/bioJellySpa/BIO JELLY SPA 1 kg. TÉ VERDE.png',
     'description':'90 g',
     'precio':'', 
     'categoria':'Bio Jelly Spa',
     'id':'10'});
 
     addItem({'name':'BIO JELLY - Naranja',
-    'img':'/img/Productos/Bio Jelly Spa/BIO_JELLY_90g(6).png',
+    'img':'../img/productos/bioJellySpa/BIO JELLY SPA 1 kg. NARANJA.png',
     'description':'90 g',
     'precio':'',
     'categoria':'Bio Jelly Spa'})
 
 addItem({'name':'BIO JELLY - Flowers',
-    'img':'/img/Productos/Bio Jelly Spa/BIO_JELLY_90g(7).png',
+    'img':'../img/productos/bioJellySpa/BIO JELLY SPA 1 kg. FLOWERS.png',
     'description':'90 g',
     'precio':'',
     'categoria':'Bio Jelly Spa' });
 
 addItem({'name':'BIO JELLY - Limón',
-    'img':'/img/Productos/Bio Jelly Spa/BIO_JELLY_90g(8).png',
+    'img':'../img/productos/bioJellySpa/BIO JELLY SPA 1 kg. LIMÓN.png',
     'description':'90 g',
     'precio':'',
     'categoria':'Bio Jelly Spa'});
 
 addItem({'name':'BIO JELLY - Lavanda',
-    'img':'/img/Productos/Bio Jelly Spa/BIO_JELLY_90g.png',
+    'img':'../img/productos/bioJellySpa/BIO JELLY SPA 1 kg. LAVANDA.png',
     'description':'90 g',
     'precio':'',
     'categoria':'Bio Jelly Spa'});
 
 addItem({'name':'Bath Bomb Colección RAINBOW',
-    'img':'/img/Productos/Bombas Efervescentes/BOMBAS_EFERVESCENTES_RAINBOW.png',
+    'img':'../img/productos/bombasEfervescentes/BOMBAS_EFERVESCENTES_RAINBOW.png',
     'description':'12 piezas',
     'precio':'',
     'categoria':'Bombas Efervescentes' });
 
     addItem({'name':'Bath Bomb Colección GEMSTONE',
-    'img':'/img/Productos/Bombas Efervescentes/BOMBAS_EFERVESCENTES_GEMSTONE.png',
+    'img':'../img/productos/bombasEfervescentes/BOMBAS_EFERVESCENTES_GEMSTONE.png',
     'description':'12 piezas',
     'precio':'',
     'categoria':'Bombas Efervescentes'});
 
 addItem({'name':'Bath Bomb Colección HEALING',
-    'img':'',
+    'img':'../img/productos/bombasEfervescentes/BOMBAS_EFERVESCENTES_HEALING.png',
     'description':'12 piezas',
     'precio':'',
     'categoria':'Bombas Efervescentes'});
 
 addItem({'name':'Adhesivo para Foil',
-    'img':'',
+    'img':'../img/productos/complementos/Pegamento para foil  15ml.png',
     'description':'15 ml',
     'precio':'',
     'categoria':'Complementos'});
 
 addItem({'name':'Látex Líquido',
-    'img':'',
+    'img':'../img/productos/complementos/Latex líquido (cubre cuticula) 15ml.png',
     'description':'15 ml',
     'precio':'',
     'categoria':'Complementos'});
 
 addItem({'name':'Removedor del Gel',
-    'img':'',
+    'img':'../img/productos/complementos/Removedor de Gel y acrilico 15ml.png',
     'description':'15 ml',
     'precio':'',
     'categoria':'Complementos'});
