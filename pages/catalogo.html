@@ -15,6 +15,7 @@ o ver repositorio en Github-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <!--CSS propio-->
+  <!--<link rel="stylesheet" href="../css/logIn.css">    Por el momento este css choca con el disenio general de la pagina-->  
   <link rel="stylesheet" href="../css/headerFooter.css">
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/catalogo.css">
@@ -23,6 +24,11 @@ o ver repositorio en Github-->
       background-color: #A97798;
       border-color: #A97798;
     }
+    @media screen and (max-width: 576px) {
+  .carousel {
+    display: none;
+  }
+}
   </style>
 
   <title>BGSpa</title>
@@ -30,6 +36,15 @@ o ver repositorio en Github-->
 
 <body>
   <!--header de la página web-->
+
+  <!-- <div class="btn-group b" id="a">     ESTE CODIGO ESTA EN PROCESO DE MEJORA
+    <button class="btn btn-secondary btn-sm dropdown-toggle btn1" type="button" data-toggle="dropdown" aria-expanded="false">
+      Activo
+    </button>
+    <div class="dropdown-menu">
+    <a href="#" id="cerrar">Cerrar Sesión</a>
+    </div>
+  </div> -->
 
 <header>
   <nav class="navbar prueba2">
@@ -70,6 +85,22 @@ o ver repositorio en Github-->
     <button class="btn my-2 my-sm-0" type="submit"><i class="bi bi-person bi-movil binav"></i></button>
   </div>
 </header>
+
+<!--carrusel del banner-->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../img/esteticos/port1.jpg" class="d-block w-100 img-fliud" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/esteticos/port2.jpg" class="d-block w-100 img-fliud" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/esteticos/port3.jpg" class="d-block w-100 img-fliud" alt="...">
+    </div>
+  </div>
+</div>
+
 
 
  <!--Productos destacados-->
@@ -236,7 +267,9 @@ o ver repositorio en Github-->
   </div>
 
 </footer>
-
+ <!-- <script src="../js/registro.js"></script> -->
+ <script src="../js/logIn.js"></script> <!--Este link no funciona-->
+ <!-- <script src="../js/login.js"></script> -->
 
 
 

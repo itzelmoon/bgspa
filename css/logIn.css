@@ -1,3 +1,22 @@
+#a {
+    display: none;
+    text-align: right;
+    color: #F9F9F9;
+    font-size: 20px;
+     
+}
+
+.b{
+    background: #8D6AAF;
+
+}
+
+.btn1{
+    background-color: #A97798 !important;
+    border: none !important;
+}
+
+
 body {
     font-family: 'Raleway';
 }
@@ -200,6 +219,12 @@ form{
         font-size: 40px;
         line-height: 40px;
     }
+
+    #a {
+        display: none;
+    }
+    
+
 }
 .compos{
     padding-top: 1rem;
@@ -211,4 +236,10 @@ form{
         font-size: 40px;
         line-height: 40px;
     }
+
+    #a {
+        display: none;
+    }
+    
+
 }

@@ -1,3 +1,6 @@
+//Este codigo queda pendiente de corregir ya que unicamente funciona en la pagina de login.js 
+
+
 let btnSubmit = document.getElementById("btnIniciarSesion");
 
 function mostrarContraseña(){
@@ -69,6 +72,7 @@ function checkData(){
     if(enterEmail == getEmail){
         if(enterPwd == getPwd){
             alert("Login Successful");
+            myFunction();
 
     }else{
         alert("wrong password")
@@ -78,3 +82,23 @@ function checkData(){
     }
 
 }
+
+let x = document.getElementById("a");
+
+function myFunction() {
+    if (x.style.display === "none") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+
+let cerrar = document.getElementById("cerrar");
+cerrar.addEventListener("click",function(e){
+e.preventDefault();
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    }
+
+}) 
