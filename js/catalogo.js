@@ -346,3 +346,227 @@ function addItem(item){
     'precio':'219',
     'categoria':'Sanitizantes y Limpiadores',
     'id':'23'});
+
+    addItem({'name':'Shampoo espumante antibacterial aroma arandano 250 ml',
+    'img':'/img/Productos/sanitizanteYLimpiadores/Shampoo_Espumante_Antibacterial_ARANDANO250ml.png',
+    'description':'El shampoo espumante antibacterial es un producto muy efectivo con un agradable aroma dejando el área completamente limpia, suaves y humectada y con su protección antibacterial elimina efectivamente las bacterias causantes de múltiples enfermedades. Este shampoo es biodegradable.',
+    'precio':'59',
+    'categoria':'Sanitizantes y Limpiadores',
+    'id':'24'});
+
+    addItem({'name':'Shampoo espumante antibacterial aroma arandano 1 litro',
+    'img':'/img/Productos/sanitizanteYLimpiadores/Shampoo_Espumante_Antibacterial_ARANDANO250ml.png',
+    'description':'El shampoo espumante antibacterial es un producto muy efectivo con un agradable aroma dejando el área completamente limpia, suaves y humectada y con su protección antibacterial elimina efectivamente las bacterias causantes de múltiples enfermedades. Este shampoo es biodegradable.',
+    'precio':'187',
+    'categoria':'Sanitizantes y Limpiadores',
+    'id':'25'});
+
+    addItem({'name':'Sani Spray Antiseptico 250 ml',
+    'img':'/img/Productos/sanitizanteYLimpiadores/SANI_SPRAY_ANTISEPTICO250ml.png',
+    'description':'Solución antiséptica recomendada para la desinfección de espacios y superficies, además no produce la oxidación de herramientas por lo que también se usa para desinfectar este material.',
+    'precio':'67',
+    'categoria':'Sanitizantes y Limpiadores',
+    'id':'26'});
+
+    addItem({'name':'Sani Spray Antiseptico 1 litro',
+    'img':'/img/Productos/sanitizanteYLimpiadores/Sani Spray Antiseptico 1 litro  .png',
+    'description':'Solución antiséptica recomendada para la desinfección de espacios y superficies, además no produce la oxidación de herramientas por lo que también se usa para desinfectar este material.',
+    'precio':'220',
+    'categoria':'Sanitizantes y Limpiadores',
+    'id':'27'});
+
+
+    // Aceites para masaje
+
+    addItem({'name':'Aceite para masaje aroma toronja 250 ml',
+    'img':'/img/Productos/aceitesParaMasaje/aceite_para_masaje_TORONJA_250_ml.png',
+    'description':'La toronja posee magnificas propiedades cosméticas para la piel, actúa como astringente y reafirmante. ayuda a a reafirmar el tejido. No mancha la ropa, ideal para masaje, brinda tranquilidad, descanso, alivio y relajación al cuerpo.',
+    'precio':'147',
+    'categoria':'Aceites para masaje',
+    'id':'28'});
+
+    addItem({'name':'Aceite para masaje aroma toronja 1 litro',
+    'img':'/img/Productos/aceitesParaMasaje/aceite_para_masaje_TORONJA_1_Litro.png',
+    'description':'La toronja posee magnificas propiedades cosméticas para la piel, actúa como astringente y reafirmante. ayuda a a reafirmar el tejido. No mancha la ropa, ideal para masaje, brinda tranquilidad, descanso, alivio y relajación al cuerpo.',
+    'precio':'347',
+    'categoria':'Aceites para masaje',
+    'id':'29'});
+
+    addItem({'name':'Aceite para masaje aroma almendras dulces 250 ml',
+    'img':'/img/Productos/aceitesParaMasaje/aceite_para_masaje_ALMENDRAS_DULCES_250_ml.png',
+    'description':'Suaviza y proporciona elasticidad a la piel, evita la resequedad de la misma. Tiene efectos emolientes, suaviza y protege la piel.',
+    'precio':'147',
+    'categoria':'Aceites para masaje',
+    'id':'30'});
+
+    addItem({'name':'Aceite para masaje aroma almendras dulces 1 litro',
+    'img':'/img/Productos/aceitesParaMasaje/aceite_para_masaje_ALMENDRAS_DULCES_1_Litro.png',
+    'description':'Suaviza y proporciona elasticidad a la piel, evita la resequedad de la misma. Tiene efectos emolientes, suaviza y protege la piel.',
+    'precio':'347',
+    'categoria':'Aceites para masaje',
+    'id':'31'});
+
+
+    //Locion refrescante NUEVA CATEGORIA
+    
+    addItem({'name':'Locion refrescante para pies 250 ml',
+    'img':'/img/Productos/locionRefrescante/LOCION_REFRESCANTE_PIES.png',
+    'description':'La crema refrescante para pies es un tratamiento auxiliar para piernas y pies cansados. Brinda una sensación de frescura y relajación, suaviza e hidrata la piel. Excelente auxiliar desinflamatorio que activa la circulación en combinación con el masaje. Contiene alcanfor y mentol, desinflamatorio, refrescante, aromatizante y agente antimicrobiano.',
+    'precio':'77',
+    'categoria':'Lociones',
+    'id':'32'});
+
+    addItem({'name':'Locion refrescante para pies 1 litro',
+    'img':'/img/Productos/locionRefrescante/Locion Refrescante para Pies 1 Litro  .png',
+    'description':'La crema refrescante para pies es un tratamiento auxiliar para piernas y pies cansados. Brinda una sensación de frescura y relajación, suaviza e hidrata la piel. Excelente auxiliar desinflamatorio que activa la circulación en combinación con el masaje. Contiene alcanfor y mentol, desinflamatorio, refrescante, aromatizante y agente antimicrobiano.',
+    'precio':'231',
+    'categoria':'Lociones',
+    'id':'33'});
+
+    //Mascarillas
+
+    addItem({'name':'Fade Mask (aclarante) té verde y sándalo 300 g',
+    'img':'/img/Productos/Mascarillas/MASCARILLA_TE_VERDE_SANDALO.png',
+    'description':'Mascarilla nutritiva a base de arcilla blanca, contiene sándalo que es un antienvejecimiento, nos ayuda a reducir marcas de la piel como las cicatrices. Y Té verde que Rejuvenece las células de la piel, ayuda a desin-amar la piel. Limpiando a profundidad regenerando las células de la superficie y estimulando la renovación de estas.',
+    'precio':'165',
+    'categoria':'Mascarillas',
+    'id':'34'});
+
+    addItem({'name':'Fresh Mask (refrescante) mentol y hierbabuena 300g',
+    'img':'/img/Productos/Mascarillas/MASCARILLA_MENTOL_HIERBABUENA.png',
+    'description':'Elimina las células muertas, las impurezas y el exceso de grasa. · Es refrescante y deja la piel limpia, la revitaliza, suaviza, hidrata y nutre. · Regula el exceso de grasa en la piel. La mascarilla Mentol-Hierbabuena ayuda a eliminar células muertas e impurezas y a regular el exceso de grasa cutánea, dejando la piel profundamente limpia, revitalizada, suave e hidratada.',
+    'precio':'165',
+    'categoria':'Mascarillas',
+    'id':'35'});
+
+    // Exfoliantes
+
+    addItem({'name':'Berry Scrub exfoliante profundo de frutos rojos 300 g',
+    'img':'/img/Productos/Exfoliante/EXFOLIANTE_FRUTOS_ROJOS.png',
+    'description':'Exfoliante profundo con ingredientes naturales. Beneficios desintoxicantes, vitamina C, antioxidantes y vitamina E. Con partículas exfoliantes que ayuda a eliminar la piel dañada, las células muertas y las imperfecciones revelando el mejor estado de la piel, sus aceites ayudan a blanquear la piel.',
+    'precio':'165',
+    'categoria':'Exfoliantes',
+    'id':'36'});
+
+    addItem({'name':'Honey Scrub exfoliante oleoso de miel-avena 300 g',
+    'img':'/img/Productos/Exfoliante/EXFOLIANTE_MIEL_AVENA.png',
+    'description':'Ayudan a retirar células muertas dejando una piel más clara y aportando una apariencia más tersa y suave. Avena elimina la piel muerta y deja una piel radiante. Es un gran exfoliante para el cuerpo que sólo contiene ingredientes naturales, dejando la piel más fresca. Ingredientes de exfoliación suave, elimina la suciedad de la piel y tiene el doble efecto de hidratar y suavizar la piel.',
+    'precio':'165',
+    'categoria':'Exfoliantes',
+    'id':'37'});
+
+    //Bio Jelly Spa
+
+    addItem({'name':'Bio Jelly Spa 90g. Tropical',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 90g. TROPICAL .png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'79',
+    'categoria':'Bio Jelly Spa',
+    'id':'38'});
+
+    addItem({'name':'Bio Jelly Spa 90g. Té Verde',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 90g. TÉ VERDE.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'79',
+    'categoria':'Bio Jelly Spa',
+    'id':'39'});
+
+    addItem({'name':'Bio Jelly Spa 90g. Coconut',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 90g. COCONUT.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'79',
+    'categoria':'Bio Jelly Spa',
+    'id':'40'});
+
+    addItem({'name':'Bio Jelly Spa 90g. Flowers',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 1 kg. TROPICAL.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'79',
+    'categoria':'Bio Jelly Spa',
+    'id':'41'});
+
+    addItem({'name':'Bio Jelly Spa 90g. Menta',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 90g. MENTA.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'79',
+    'categoria':'Bio Jelly Spa',
+    'id':'42'});
+
+    addItem({'name':'Bio Jelly Spa 90g. Limón',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 90g. LIMÓN.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'79',
+    'categoria':'Bio Jelly Spa',
+    'id':'43'});
+
+    addItem({'name':'Bio Jelly Spa 90g. Naranja',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 90g. NARANJA.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'79',
+    'categoria':'Bio Jelly Spa',
+    'id':'44'});
+
+    addItem({'name':'Bio Jelly Spa 90g. Lavanda',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 90g. LAVANDA.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'79',
+    'categoria':'Bio Jelly Spa',
+    'id':'45'});
+
+    addItem({'name':'Bio Jelly Spa 500g. Tropical',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 500g. TROPICAL.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'245',
+    'categoria':'Bio Jelly Spa',
+    'id':'46'});
+
+    addItem({'name':'Bio Jelly Spa 500g. Té Verde',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 90g. TÉ VERDE.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'245',
+    'categoria':'Bio Jelly Spa',
+    'id':'47'});
+
+    addItem({'name':'Bio Jelly Spa 500g. Coconut',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 500g. COCONUT.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'245',
+    'categoria':'Bio Jelly Spa',
+    'id':'48'});
+
+    addItem({'name':'Bio Jelly Spa 500g. Flowers',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 500g. FLOWERS.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'245',
+    'categoria':'Bio Jelly Spa',
+    'id':'49'});
+
+    addItem({'name':'Bio Jelly Spa 500g. Menta',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 500g. MENTA.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'245',
+    'categoria':'Bio Jelly Spa',
+    'id':'50'});
+
+    addItem({'name':'Bio Jelly Spa 500g. Limón',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 500g. LIMÓN.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'245',
+    'categoria':'Bio Jelly Spa',
+    'id':'51'});
+
+    addItem({'name':'Bio Jelly Spa 500g. Naranja',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 500g. NARANJA.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'245',
+    'categoria':'Bio Jelly Spa',
+    'id':'52'});
+
+    addItem({'name':'Bio Jelly Spa 500g. Lavanda',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 500g. LAVANDA.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'245',
+    'categoria':'Bio Jelly Spa',
+    'id':'53'});
+
+
