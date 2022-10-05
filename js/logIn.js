@@ -16,11 +16,11 @@ btnSubmit.addEventListener("click", function(e){
     let contraseña = document.getElementById("contraseña");
     let valorcontraseña = document.getElementById("contraseña").value;
 
-         //VALIDACIONES DE FORMULARIO
-         const flag = {
-            correoe: false,
-            contraseña:false
-        }
+    //VALIDACIONES DE FORMULARIO
+    const flag = {
+    correoe: false,
+    contraseña:false
+    }
 
     //validacion correo
      function validarCorreo (correo) {
