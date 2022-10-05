@@ -13,6 +13,7 @@ let check10 = document.getElementById("customCheck10");
 let check11 = document.getElementById("customCheck11");
 let check12 = document.getElementById("customCheck12");
 let check13 = document.getElementById("customCheck13");
+let check14 = document.getElementById("customCheck14");
 
 
 check1.addEventListener("click", filtrar);
@@ -28,6 +29,7 @@ check10.addEventListener("click", filtrar);
 check11.addEventListener("click", filtrar);
 check12.addEventListener("click", filtrar);
 check13.addEventListener("click", filtrar);
+check14.addEventListener("click", filtrar);
 
 function filtrar (event){
     console.log(event.target.value);
@@ -129,14 +131,14 @@ function addItem(item){
         case "Complementos":
             c="comple"
             break;
-        case "Cremas Hidratantes":
-            c="cremas"
+        case "Hidratación":
+            c="hidra"
             break;
         case "Exfoliantes":
             c="exfo";
             break;
-        case "Hidratantes Bifásicos":
-            c="hidra";
+        case "Lociones":
+            c="loci";
             break;
         case "Kit":
             c="kit";
@@ -153,6 +155,9 @@ function addItem(item){
         case "Sanitizantes y Limpiadores":
             c="san";
             break;
+        case "Herramientas":
+            c="herra";
+            break;
         default:
             c="all";
             break;
@@ -160,137 +165,184 @@ function addItem(item){
     return c;
 }//getClassCategory
 
+    // KITS SPA
 
-
-
-
-
-addItem({'name':'Aceite para masaje',
-    'img':'../img/productos/aceitesParaMasaje/aceite_para_masaje_ALMENDRAS_DULCES_1_Litro.png',
-    'description':'Suaviza y proporciona elasticidad a la piel, evita la resequedad de la misma. Tiene efectos emolientes, suaviza y protege la piel.',
-    'precio':'$200', 
-    'categoria':'Aceites para masaje',
+    addItem({'name':'Kit para pedicure (10 pz + bolsa)',
+    'img':'/img/Productos/kitsSpa/KIT_PEDICURE(10Pz_Bolsa).png',
+    'description':'Este set cuenta con todo lo necesario para que puedas dar un masaje de pies y prepararlos para la pedicura. El kit incluye: 1 sal mineral de 350g, 1 sal efervescente 300g, 1 exfoliante 300 g, 1 mascarilla aclaradora o refrescante, 1 lijapie, 1 bomba efervescente, 1 bio jelly spa de 90g (incluye diluyente), 1 crema hidratante, 1 ablandador de callos 60ml, 1 removedor de cuticulas 60ml, ademas de la bolsa cute!!',
+    'precio':'830', 
+    'categoria':'Kit',
     'id':'1'});
 
-addItem({'name':'Aceite para masaje',
-    'img':'../img/productos/aceitesParaMasaje/aceite_para_masaje_TORONJA_1_Litro.png',
-    'description':'Toronja',
-    'precio':'200',
-    'categoria':'Aceites para masaje',
+
+    //Hidratacion
+
+    addItem({'name':'Crema hidratante 250ml aroma coco',
+    'img':'/img/Productos/hidratacion/CREMA_HIDRATANTE250ML_COCO.png',
+    'description':'Su formula permite una rápida absorción, contiene Complejo Vitamina E que ayuda a que la piel luzca joven y radiante. Además de dejarla hidratada, suave y con un delicioso aroma que te acompañara durante el día',
+    'precio':'97',
+    'categoria':'Hidratación',
     'id':'2'});
 
-addItem({'name':'Ablandador de callos',
-    'img':'../img/productos/basicos/ablandador_de_callosidades_60_ml.png',
-    'description':'15 ml',
-    'precio':'200',
-    'categoria':'Básicos',
+    addItem({'name':'Crema hidratante 250ml aroma cherry',
+    'img':'/img/Productos/hidratacion/CREMA_HIDRATANTE250ML_CHERRY.png',
+    'description':'Su formula permite una rápida absorción, contiene Complejo Vitamina E que ayuda a que la piel luzca joven y radiante. Además de dejarla hidratada, suave y con un delicioso aroma que te acompañara durante el día',
+    'precio':'97',
+    'categoria':'Hidratación',
     'id':'3'});
 
-addItem({'name':'Aceite para cuticula',
-    'img':'../img/productos/basicos/removedor_de_cuticulas_1_litro.png',
-    'description':'15 ml',
-    'precio':'250',
-    'categoria':'Básicos',
+    addItem({'name':'Crema hidratante 250ml aroma pera',
+    'img':'/img/Productos/hidratacion/CREMA_HIDRATANTE250ML_PERA.png',
+    'description':'Su formula permite una rápida absorción, contiene Complejo Vitamina E que ayuda a que la piel luzca joven y radiante. Además de dejarla hidratada, suave y con un delicioso aroma que te acompañara durante el día',
+    'precio':'97',
+    'categoria':'Hidratación',
     'id':'4'});
 
-addItem({'name':'Removedor de cuticula',
-    'img':'../img/productos/basicos/removedor_de_cuticulas_1_litro.png',
-    'description':'15 ml',
-    'precio':'250',
-    'categoria':'Básicos',
+    addItem({'name':'Crema hidratante 250ml aroma mango',
+    'img':'/img/Productos/hidratacion/CREMA_HIDRATANTE250ML_MANGO.png',
+    'description':'Su formula permite una rápida absorción, contiene Complejo Vitamina E que ayuda a que la piel luzca joven y radiante. Además de dejarla hidratada, suave y con un delicioso aroma que te acompañara durante el día',
+    'precio':'97',
+    'categoria':'Hidratación',
     'id':'5'});
 
-addItem({'name':'Lija de Pie',
-    'img':'../img/productos/basicos/lija_Pie_Pedicure_De_Madera_.png',
-    'description':'',
-    'precio':'',
-    'categoria':'Básicos',
+    addItem({'name':'Crema hidratante 250ml aroma freesia',
+    'img':'/img/Productos/hidratacion/CREMA_HIDRATANTE250ML_FREESIA.png',
+    'description':'Su formula permite una rápida absorción, contiene Complejo Vitamina E que ayuda a que la piel luzca joven y radiante. Además de dejarla hidratada, suave y con un delicioso aroma que te acompañara durante el día',
+    'precio':'7',
+    'categoria':'Hidratación',
     'id':'6'});
 
-addItem({'name':'BIO JELLY - Tropical',
-    'img':'../img/productos/bioJellySpa/BIO JELLY SPA 1 kg. TROPICAL.png',
-    'description':'',
-    'precio':'',
-    'categoria':'Bio Jelly Spa',
+    addItem({'name':'Spray Hidratante Bifasico aroma Cherry 250 ml',
+    'img':'/img/Productos/hidratacion/Spray_Hidratante_BifasicoCHERRY250ml.png',
+    'description':'Hidrata y brinda suavidad a la piel, humecta y es de rápida absorción, brinda una sensación ligera y suave con un delicioso aroma',
+    'precio':'87',
+    'categoria':'Hidratación',
     'id':'7'});
 
-addItem({'name':'BIO JELLY - Menta',
-    'img':'../img/productos/bioJellySpa/BIO JELLY SPA 1 kg. MENTA.png',
-    'description':'',
-    'precio':'',
-    'categoria':'Bio Jelly Spa',
+    addItem({'name':'Spray Hidratante Bifasico aroma Coco 250 ml',
+    'img':'/img/Productos/hidratacion/Spray_Hidratante_Bifasico_COCO250ml.png',
+    'description':'Hidrata y brinda suavidad a la piel, humecta y es de rápida absorción, brinda una sensación ligera y suave con un delicioso aroma',
+    'precio':'87',
+    'categoria':'Hidratación',
     'id':'8'});
 
-addItem({'name':'BIO JELLY - Coco',
-    'img':'../img/productos/bioJellySpa/BIO JELLY SPA 1 kg. COCONUT.png',
-    'description':'',
-    'precio':'',
-    'categoria':'Bio Jelly Spa',
+    //Básicos
+
+    addItem({'name':'Lija pie de madera para pedicure',
+    'img':'/img/Productos/Basicos/lija_Pie_Pedicure_De_Madera_.png',
+    'description':'De Alta calidad, ergonómica, Para todo tipo de piel, elimina callos y piel muerta, dejando tus pies suaves y tersos',
+    'precio':'18',
+    'categoria':'Básicos',
     'id':'9'});
 
-addItem({'name':'BIO JELLY - Té verde',
-    'img':'../img/productos/bioJellySpa/BIO JELLY SPA 1 kg. TÉ VERDE.png',
-    'description':'90 g',
-    'precio':'', 
-    'categoria':'Bio Jelly Spa',
+    addItem({'name':'Ablandador de callosidades 60ml',
+    'img':'/img/Productos/Basicos/ablandador_de_callosidades_60_ml.png',
+    'description':'Líquido Ideal para eliminar callosidades y células muertas, promueve la regeneración celular revelando la mejor versión de la piel',
+    'precio':'57',
+    'categoria':'Básicos',
+    'id':'9'});
+
+    addItem({'name':'Ablandador de callosidades 1 litro',
+    'img':'/img/Productos/Basicos/ablandador_de_callosidades_1_litro.png',
+    'description':'Líquido Ideal para eliminar callosidades y células muertas, promueve la regeneración celular revelando la mejor versión de la piel',
+    'precio':'490',
+    'categoria':'Básicos',
     'id':'10'});
 
-    addItem({'name':'BIO JELLY - Naranja',
-    'img':'../img/productos/bioJellySpa/BIO JELLY SPA 1 kg. NARANJA.png',
-    'description':'90 g',
-    'precio':'',
-    'categoria':'Bio Jelly Spa'})
+    addItem({'name':'Ablandador de callosidades galon 3,785 l',
+    'img':'/img/Productos/Basicos/ablandador_de_callosidades_Galon_3,785_l.png',
+    'description':'Líquido Ideal para eliminar callosidades y células muertas, promueve la regeneración celular revelando la mejor versión de la piel',
+    'precio':'997',
+    'categoria':'Básicos',
+    'id':'11'});
 
-addItem({'name':'BIO JELLY - Flowers',
-    'img':'../img/productos/bioJellySpa/BIO JELLY SPA 1 kg. FLOWERS.png',
-    'description':'90 g',
-    'precio':'',
-    'categoria':'Bio Jelly Spa' });
+    addItem({'name':'Removedor de cuticulas 60ml',
+    'img':'/img/Productos/Basicos/BG_SPA_BASICOS_REMOVEDOR_DE_CUTICULA.png',
+    'description':'Ayuda a reblandecer la piel muerta o dañada de las cutículas antes de retirarlas. Humecta el contorno de las uñas, deja la piel suave, además de contener emolientes y humectantes desprende fácilmente la cutícula del contorno de las uñas sin lastimarlas',
+    'precio':'37',
+    'categoria':'Básicos',
+    'id':'12'});
 
-addItem({'name':'BIO JELLY - Limón',
-    'img':'../img/productos/bioJellySpa/BIO JELLY SPA 1 kg. LIMÓN.png',
-    'description':'90 g',
-    'precio':'',
-    'categoria':'Bio Jelly Spa'});
+    addItem({'name':'Removedor de cuticulas 1 litro',
+    'img':'/img/Productos/Basicos/removedor_de_cuticulas_1_litro.png',
+    'description':'Ayuda a reblandecer la piel muerta o dañada de las cutículas antes de retirarlas. Humecta el contorno de las uñas, deja la piel suave, además de contener emolientes y humectantes desprende fácilmente la cutícula del contorno de las uñas sin lastimarlas',
+    'precio':'445',
+    'categoria':'Básicos',
+    'id':'13'});
 
-addItem({'name':'BIO JELLY - Lavanda',
-    'img':'../img/productos/bioJellySpa/BIO JELLY SPA 1 kg. LAVANDA.png',
-    'description':'90 g',
-    'precio':'',
-    'categoria':'Bio Jelly Spa'});
+    addItem({'name':'Removedor de cuticulas galon 3,785 l',
+    'img':'/img/Productos/Basicos/removedor_de_cuticulas _Galon_3,785_l.png',
+    'description':'Ayuda a reblandecer la piel muerta o dañada de las cutículas antes de retirarlas. Humecta el contorno de las uñas, deja la piel suave, además de contener emolientes y humectantes desprende fácilmente la cutícula del contorno de las uñas sin lastimarlas',
+    'precio':'945',
+    'categoria':'Básicos',
+    'id':'14'});
 
-addItem({'name':'Bath Bomb Colección RAINBOW',
-    'img':'../img/productos/bombasEfervescentes/BOMBAS_EFERVESCENTES_RAINBOW.png',
-    'description':'12 piezas',
-    'precio':'',
-    'categoria':'Bombas Efervescentes' });
 
-    addItem({'name':'Bath Bomb Colección GEMSTONE',
-    'img':'../img/productos/bombasEfervescentes/BOMBAS_EFERVESCENTES_GEMSTONE.png',
-    'description':'12 piezas',
-    'precio':'',
-    'categoria':'Bombas Efervescentes'});
+    //Complementos
 
-addItem({'name':'Bath Bomb Colección HEALING',
-    'img':'../img/productos/bombasEfervescentes/BOMBAS_EFERVESCENTES_HEALING.png',
-    'description':'12 piezas',
-    'precio':'',
-    'categoria':'Bombas Efervescentes'});
+    addItem({'name':'Serum ácido hialurónico + vitamina c 60ml',
+    'img':'/img/Productos/complementos/Sèrum Ácido Hialurónico + Vitamina C 60ml.png',
+    'description':'•Detiene el avance de la onicomicosis •Contiene vitamina E, Calcio y proteína natural •Su fórmula está diluida con extracto de glicerina para una consistencia flexible. •Promueve el crecimiento de las uñas y aumenta su resistencia, ayudando a evitar su rotura •Favorece la remineralización y reestructuración de las uñas, gracias al aumento de la cantidad y calidad de silicio y keratina. •Devuelve el aspecto natural a las uñas y cutículas',
+    'precio':'129',
+    'categoria':'Complementos',
+    'id':'15'});
 
-addItem({'name':'Adhesivo para Foil',
-    'img':'../img/productos/complementos/Pegamento para foil  15ml.png',
-    'description':'15 ml',
-    'precio':'',
-    'categoria':'Complementos'});
+    addItem({'name':'Removedor de gel y acrilico 15ml',
+    'img':'/img/Productos/complementos/Removedor de Gel y acrilico 15ml.png',
+    'description':'Simplemente quite el brillo, aplique suavemente, espere de 2 a 5 minutos, se vera el progreso en la superficie de la uña, luego retire suavemente la uña con un pequeño empujador de acero. Sin tedioso proceso de eliminación, sin largos tiempos de espera, ahorre tiempo',
+    'precio':'45',
+    'categoria':'Complementos',
+    'id':'16'});
 
-addItem({'name':'Látex Líquido',
-    'img':'../img/productos/complementos/Latex líquido (cubre cuticula) 15ml.png',
-    'description':'15 ml',
-    'precio':'',
-    'categoria':'Complementos'});
+    addItem({'name':'Aceite de cuticula 15ml',
+    'img':'/img/Productos/complementos/Aceite de cuticula 15ml.png',
+    'description':'Hidratante especial para cutícula, con esencias aromáticas. Ideal para hidratar, nutrir y lubricar la piel del área de las cutícula',
+    'precio':'21',
+    'categoria':'Complementos',
+    'id':'17'});
 
-addItem({'name':'Removedor del Gel',
-    'img':'../img/productos/complementos/Removedor de Gel y acrilico 15ml.png',
-    'description':'15 ml',
-    'precio':'',
-    'categoria':'Complementos'});
+    addItem({'name':'Pegamento para foil 15ml',
+    'img':'/img/Productos/complementos/Pegamento para foil  15ml.png',
+    'description':'Aplicar y expandir con la brocha, el producto es de color blanco y solo hay que esperar de 60 a 90 segundos, para que este seque y al hacerlo el producto esta listo, ¿Como sabemos que ya esta listo? Es sencillo hasta que el pegamento de color blanco al aplicar, se vuelva transparente',
+    'precio':'25',
+    'categoria':'Complementos',
+    'id':'18'});
+
+    addItem({'name':'Latex líquido (cubre cuticula) 15ml',
+    'img':'/img/Productos/complementos/Latex líquido (cubre cuticula) 15ml.png',
+    'description':'Fácil de quitar y respetuoso con el medio ambiente. Aplique a las áreas que desee sin esmalte cuando esté pintando sus uñas',
+    'precio':'25',
+    'categoria':'Complementos',
+    'id':'19'});
+
+    //Herramientas CATEGORIA NUEVA 
+
+    addItem({'name':'Tina para pedicure plegable',
+    'img':'/img/Productos/herramientas/Tina para Pedicure Plegable.webp',
+    'description':'Diseño plegable, ahorro de espacio y fácil de llevar al exterior. Lo suficientemente grueso, no es fácil de deformar. Con 4 rodillos de masaje',
+    'precio':'237',
+    'categoria':'Herramientas',
+    'id':'20'});
+
+    addItem({'name':'Tina para pedicure sencilla c/ rodillos',
+    'img':'/img/Productos/herramientas/Tina para pedicure Sencilla c rodillos.png',
+    'description':'Con un diseño moderno y forma anatómica, tiene un amplio espacio para acomodar los pies. Hecha de material altamente resistente a los productos químicos, facilita la limpieza y proporciona durabilidad, lo que permite trabajar con agua caliente o fría',
+    'precio':'110',
+    'categoria':'Herramientas',
+    'id':'21'});
+
+    addItem({'name':'Razor Dead Skin cuchilla removedora de piel muerta',
+    'img':'/img/Productos/herramientas/Razor Dead Skin cuchilla removedora de piel muerta.jpg',
+    'description':' La curva se adapta a cualquier tipo de pie siendo seguro y sin preocupaciones para el ususario. Es una Técnica 100% segura ya que no es  bisturi. Esta técnica también es conocida como técnica de raspado',
+    'precio':'79',
+    'categoria':'Herramientas',
+    'id':'22'});
+
+    // Sanitizante
+
+    addItem({'name':'Sanitizer bombs (para desinfectar la tina de pedicure) 500 g (aprox 40pz)',
+    'img':'/img/Productos/sanitizanteYLimpiadores/Sanitizer Bombs (para desinfectar la tina de pedicure) 500 g (aprox 40pz).png',
+    'description':'Tabletas desinfectantes para tina de pedicura pedicura, ayudan a prevenir hongo, pie de atleta, etc.',
+    'precio':'219',
+    'categoria':'Sanitizantes y Limpiadores',
+    'id':'23'});
