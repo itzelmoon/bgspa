@@ -167,8 +167,8 @@ function addItem(item){
 
 addItem({'name':'Aceite para masaje',
     'img':'../img/productos/aceitesParaMasaje/aceite_para_masaje_ALMENDRAS_DULCES_1_Litro.png',
-    'description':'Almendras',
-    'precio':'200', 
+    'description':'Suaviza y proporciona elasticidad a la piel, evita la resequedad de la misma. Tiene efectos emolientes, suaviza y protege la piel.',
+    'precio':'$200', 
     'categoria':'Aceites para masaje',
     'id':'1'});
 
