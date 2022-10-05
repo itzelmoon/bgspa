@@ -16,11 +16,10 @@ o ver repositorio en Github-->
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <!--CSS propio-->
   <link rel="stylesheet" href="../css/headerFooter.css">
-  <link rel="stylesheet" href="../css/registro.css">
+  <link rel="stylesheet" href="../css/logIn.css">
 
 
   <title>BGSpa</title>
-
 </head>
 
 <body>
@@ -29,10 +28,10 @@ o ver repositorio en Github-->
     <nav class="navbar prueba2">
       <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG SPA</strong></span></a>
       <form class="form-inline">
-        <input class="form-control mr-sm-2" id="btnBq" type="search" placeholder="Buscar" aria-label="Search">
+        <input class="form-control mr-sm-2" id="btnBq" type="search" placeholder="Search" aria-label="Search">
         <a class="btn my-2 my-sm-0" type="submit" id="btnBq"><i class="bi bi-search"></i></a>
-        <a class="btn my-2 my-sm-0" type="submit" href="./carrito.html" ><i class="bi bi-cart4 bi-movil binav"></i></a>
-        <a class="btn my-2 my-sm-0" type="submit" href="./logIn.html"><i class="bi bi-person bi-movil binav"></i></a>
+        <a class="btn my-2 my-sm-0" type="submit" href="./pages/carrito.html" ><i class="bi bi-cart4 bi-movil binav"></i></a>
+        <a class="btn my-2 my-sm-0" type="submit" href="./pages/logIn.html"><i class="bi bi-person bi-movil binav"></i></a>
       </form>
     </nav>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -68,86 +67,63 @@ o ver repositorio en Github-->
 
   <main class="container">
 
-    <h1 class="titulo">Registro</h1>
-    <p class="subtitulo">Crear cuenta</p>
+    <h1 class="titulo">Acceder</h1>
     <br>
     <br>
-    <div class="alert alert-success" role="alert" style="display: none" id="alertaexitosa"> Registro exitoso.</div>
-    <div class="alert alert-danger" role="alert" style="display: none" id="alertaerror"> Error: Revisa que todos los campos se hayan llenando correctamente.</div>
-    
-    <!-- Se añadió acción de LogIn para vincular con el html -->
-    <form id="formulario" action="logIn.html">
+
+    <form>
         <!--Primer fila-->
-        <div class="row"> 
-            <div class="form col-md-6">
-                <div class="form-group inputs"> 
-                    <label for="Nombre">Nombre (s)</label>
-                    <input type="text" class="form-control holder" id="Nombre" placeholder="Tu nombre(s) aquí">
-                    <div class="invalid-feedback alertaWarning" id="alertacampo1">
-                      Verifique que el campo contenga mas de 3 caracteres. 
-                  </div>
-                </div>
-
-                <div class="form-group inputs compos">
-                    <label for="Apellido">Apellido (s)</label>
-                    <input type="text" class="form-control holder" id="Apellido" placeholder="Tu apellido(s) aquí">
-                    <div class="invalid-feedback alertaWarning" id="alertacampo2">
-                      Verifique que el campo contenga mas de 3 caracteres. 
-                  </div>
-                </div>
-
-                <div class="form-group inputs compos">
-                  <label for="validationNumber">Teléfono</label>
-                  <input type="number" oninput="if(value.length>10)value=value.slice(0,10)" class="form-control holder" id="validationNumber" placeholder="Número de Teléfono">
-                  <div class="invalid-feedback alertaWarning" id="alertacampo3">
-                    Verifique que el campo contenga 10 caracteres. 
-                  </div>
-                </div>
-
+        <div class="form col-md-6">
+            <div class="form-group inputs">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" class="form-control holder" id="correo" placeholder="correo@ejemplo.com">
             </div>
 
-            <!--Segunda fila-->
-            <div class="form col-md-6">
-
-                <div class="form-group inputs">
-                  <label for="correo">Correo electrónico</label>
-                  <input type="email" class="form-control holder" id="correo" placeholder="correo@ejemplo.com">
-                  <div class="invalid-feedback alertaWarning" id="alertacampo4">
-                    Verifique su correo. 
-                  </div>
-                </div>
-              <div class="row">
-                <div class="form-group col-10 inputs compos" style="margin-left: 15px;">
-                    <label for="contraseña">Contraseña</label>
-                    <input type="password" class="form-control holder" id="contraseña" placeholder="Contraseña">
-                    <div class="invalid-feedback alertaWarning" id="alertacampo5">Restricciones: De 8 a 15 caracteres, una mayúscula, un numero, sin espacios, un caracter especial.</div>
-                </div>
-              
-                <div class="col-1" style="padding:0px 0px;">
-                    <button type="button" style="border: none; margin-top: 1.4em; background: none; font-size: 28px" onclick="mostrarContraseña()"><i class="bi bi-eye"></i></button>
-                </div>
-              </div>
-              
-              <div class="row">
-                <div class="form-group col-10 inputs compos" style="margin-left: 15px;">
-                    <label for="validacionContraseña">Confirma tu contraseña</label>
-                    <input type="password" class="form-control holder" id="validacionContraseña"placeholder="Confirmar contraseña">
-                    <div class="invalid-feedback alertaWarning" id="alertacampo6">Verifique que las contraseñas coincidan.</div>
-                </div>
-
-                <div class="col-1" style="padding:0px 0px;">
-                  <button type="button"style="border: none; margin-top: 1.4em; background: none; font-size: 28px" onclick="mostrarContraseña2()"><i class="bi bi-eye"></i></button>
-                </div>
-              </div>
-
+            <div class="form-group inputs compos">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" class="form-control holder" id="contraseña" placeholder="contraseña">
             </div>
+            <!----------------------------------------------------------------------------------------------------->
+   <!--          <div class="form-group inputs">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" class="form-control holder" id="correo" placeholder="correo@ejemplo.com">
+          
+            </div>
+          <div class="row">
+            <div class="form-group col-10 inputs compos" style="margin-left: 15px;">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" class="form-control holder" id="contraseña" placeholder="Contraseña">
+            </div>
+           
+          </div> -->
+
+
+             <!----------------------------------------------------------------------------------------------------->
+
+            <p class="olvcontraseña">¿Olvidaste tu contraseña?</p>
         </div>
     </form>
 
-                    <!--boton enviar-->
-      <div class="boton col-md-6">
-        <button type="submit" onclick="addData()" class="col-md-12 btnRegistrar" id="btnRegistrarse">Registrarse</button>
-      </div>
+    <div class="posicion">
+        <button type="submit" value="Submit" onclick="checkData()" class="col-md-6 btnSesion" id="btnIniciarSesion">Iniciar sesión</button>
+    </div>
+
+    <div>
+        <p class="txt">Continua con</p>
+
+        <div class="imgLogin">
+            <img src="/img/Acceder/Google svg.png" alt="" class="imgRedes">
+            <img src="/img/Acceder/Facebook svg.png" alt="" class="imgRedes">
+            <img src="/img/Acceder/Instagram svg.png" alt="" class="imgRedes">
+        </div>
+
+        <p class="txt">¿Aún no tienes cuenta?</p>
+
+    <div class="posicion">
+        <button type="button" class="col-md-6 btnRegistrar" id="btnRegistrarse"> <a href="./registro.html" class="col-md-6 btnRegistrar" style="text-decoration: none; ">Registrarse</a></button>
+    </div>
+
+    </div>
 
 </main>
 
@@ -216,12 +192,9 @@ o ver repositorio en Github-->
             <div class="form-group row-12">
               <label for="inputEmail" class="sr-only">Correo electrónico</label>
               <input type="text" class="form-control" id="inputEmail" placeholder="Correo electrónico">
-              <div class="invalid-feedback alertaWarning" id="alertacampo5">
-                Verifique su correo. 
-              </div>
             </div>
             <div class="row-12 card text-center">
-              <button type="button" class="btnSuscribirse" id="btnSuscribirse">SUSCRIBIRSE</button>
+              <button type="button" class="btnSuscribirse">SUSCRIBIRSE</button>
             </div>
           </div>
           <!-- </form> -->
@@ -236,29 +209,18 @@ o ver repositorio en Github-->
         <img src="../img/logo_spa_morado.png" alt="">
         <em>Derechos reservados &#169 BG SPA.</em>
         Desarrollado por
-        <a href="https://github.com/itzelmoon/bgspa"> <span class="textjv">jvlovers</span></a>
+        <a href="./nosotros.html"> <span class="textjv">jvlovers</span></a>
       </div>
     </div>
 
   </footer>
 
-  <!--Función para LogIn------------------->
-  <script>
-    function addData(){
-        let valorcorreo = document.getElementById("correo").value;
-        let valorcontraseña = document.getElementById("contraseña").value
-        console.log(valorcorreo);
-        console.log(valorcontraseña);
-    
-        localStorage.setItem('userEmail', valorcorreo);
-        localStorage.setItem('userPwd', valorcontraseña);
-    }//addData
-    
-      </script>
-
+  <!-- <script src="../js/registro.js"></script> -->
+  <script src="../js/logIn.js"></script>
+  <!-- <script src="../js/login.js"></script> -->
+  
   <!--Script para bootstrap 4.6-->
-  <script src="../js/registro.js"></script>
-  <script src="../js/valfooter.js"></script>
+  <script src="../js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
