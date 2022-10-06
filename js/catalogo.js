@@ -569,4 +569,219 @@ function addItem(item){
     'categoria':'Bio Jelly Spa',
     'id':'53'});
 
+    addItem({'name':'Bio Jelly Spa 1 Kg. Tropical',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 1 kg. TROPICAL.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'450',
+    'categoria':'Bio Jelly Spa',
+    'id':'54'});
 
+    addItem({'name':'Bio Jelly Spa 1 Kg. Té Verde',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 1 kg. TÉ VERDE.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'450',
+    'categoria':'Bio Jelly Spa',
+    'id':'55'});
+
+    addItem({'name':'Bio Jelly Spa 1 Kg. Coconut',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 1 kg. COCONUT.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'450',
+    'categoria':'Bio Jelly Spa',
+    'id':'56'});
+
+    addItem({'name':'Bio Jelly Spa 1 Kg. Flowers',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 1 kg. FLOWERS.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'450',
+    'categoria':'Bio Jelly Spa',
+    'id':'57'});
+
+    addItem({'name':'Bio Jelly Spa 1 Kg. Menta',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 1 kg. MENTA.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'450',
+    'categoria':'Bio Jelly Spa',
+    'id':'58'});
+
+    addItem({'name':'Bio Jelly Spa 1 Kg. Limón',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 1 kg. LIMÓN.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'450',
+    'categoria':'Bio Jelly Spa',
+    'id':'59'});
+
+    addItem({'name':'Bio Jelly Spa 1 Kg. Naranja',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 1 kg. NARANJA.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'450',
+    'categoria':'Bio Jelly Spa',
+    'id':'60'});
+
+    addItem({'name':'Bio Jelly Spa 1 Kg. Lavanda',
+    'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 1 kg. LAVANDA.png',
+    'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel. Activa la circulación sanguínea. Desinflama tus pies. Relaja músculos. Suaviza la piel. Exfolia ligeramente. Elimina toxinas que se encuentran en nuestro cuerpo.',
+    'precio':'450',
+    'categoria':'Bio Jelly Spa',
+    'id':'61'});
+
+    // Bombas Efervescentes 
+
+    addItem({'name':'Docena Bath bombs Colección RAINBOW BOMBS (Bomba de baño efervescente)',
+    'img':'/img/Productos/bombasEfervescentes/BOMBAS_EFERVESCENTES_RAINBOW.png',
+    'description':'Al sumergirlas generan un efecto relajante, terapéutico y lleno de nutrientes para la piel. Además, son libres de parabenos, aceites minerales, sulfatos, colorantes artificiales o cualquier derivado del petróleo. Después según el aroma y aceites esenciales que posean, tendrán unas propiedades específicas.',
+    'precio':'  197',
+    'categoria':'Bombas Efervescentes',
+    'id':'62'});
+
+    addItem({'name':'Docena Bath bombs Colección GEMNSTONE (Bomba de baño efervescente)',
+    'img':'/img/Productos/bombasEfervescentes/BOMBAS_EFERVESCENTES_GEMSTONE.png',
+    'description':'Al sumergirlas generan un efecto relajante, terapéutico y lleno de nutrientes para la piel. Además, son libres de parabenos, aceites minerales, sulfatos, colorantes artificiales o cualquier derivado del petróleo. Después según el aroma y aceites esenciales que posean, tendrán unas propiedades específicas.',
+    'precio':'  197',
+    'categoria':'Bombas Efervescentes',
+    'id':'63'});
+
+    addItem({'name':'Docena Bath bombs Colección HEALING (Bomba de baño efervescente)',
+    'img':'/img/Productos/bombasEfervescentes/BOMBAS_EFERVESCENTES_HEALING.png',
+    'description':'Al sumergirlas generan un efecto relajante, terapéutico y lleno de nutrientes para la piel. Además, son libres de parabenos, aceites minerales, sulfatos, colorantes artificiales o cualquier derivado del petróleo. Después según el aroma y aceites esenciales que posean, tendrán unas propiedades específicas.',
+    'precio':'  197',
+    'categoria':'Bombas Efervescentes',
+    'id':'64'});
+
+    addItem({'name':'Bath bomb individual (Bomba de baño efervescente)',
+    'img':'/img/Productos/bombasEfervescentes/BATH BOMB INDIVIDUAL (Bomba de baño efervescente).png',
+    'description':'Al sumergirlas generan un efecto relajante, terapéutico y lleno de nutrientes para la piel. Además, son libres de parabenos, aceites minerales, sulfatos, colorantes artificiales o cualquier derivado del petróleo. Después según el aroma y aceites esenciales que posean, tendrán unas propiedades específicas.',
+    'precio':'  18',
+    'categoria':'Bombas Efervescentes',
+    'id':'65'});
+
+    // Sales Efervescentes
+
+    addItem({'name':'Sales efervescentes aroma Menta 300 g.',
+    'img':'/img/Productos/salesEfervescente/SALES_EFERVESCENTES_MENTA.png',
+    'description':'Especialmente indicadas para pies y manos secas, pies agrietados, reduce las cutículas ásperas, el mal olor de pies, sudor, infecciones, picazón en los pies. Alivia el cansancio en los pies. Sales minerales efervescentes ideales para manicure y pedicure, estas están hechas a base de ingredientes naturales, y nos ayuda a blanquear la piel y eliminar ligeras manchas e imperfecciones.',
+    'precio':'  79',
+    'categoria':'Sales Efervescentes',
+    'id':'66'});
+
+    addItem({'name':'Sales efervescentes aroma piña & coco 300 g.',
+    'img':'/img/Productos/salesEfervescente/SALES_EFERVESCENTES_PIÑACOCO.png',
+    'description':'Especialmente indicadas para pies y manos secas, pies agrietados, reduce las cutículas ásperas, el mal olor de pies, sudor, infecciones, picazón en los pies. Alivia el cansancio en los pies. Sales minerales efervescentes ideales para manicure y pedicure, estas están hechas a base de ingredientes naturales, y nos ayuda a blanquear la piel y eliminar ligeras manchas e imperfecciones.',
+    'precio':'  79',
+    'categoria':'Sales Efervescentes',
+    'id':'67'}); 
+
+    addItem({'name':'Sales efervescentes aroma Mix&Match (Tutti Frutti) 300 g',
+    'img':'/img/Productos/salesEfervescente/SALES_EFERVESCENTES_MIX_MATCH.png',
+    'description':'Especialmente indicadas para pies y manos secas, pies agrietados, reduce las cutículas ásperas, el mal olor de pies, sudor, infecciones, picazón en los pies. Alivia el cansancio en los pies. Sales minerales efervescentes ideales para manicure y pedicure, estas están hechas a base de ingredientes naturales, y nos ayuda a blanquear la piel y eliminar ligeras manchas e imperfecciones.',
+    'precio':'  79',
+    'categoria':'Sales Efervescentes',
+    'id':'68'}); 
+
+    //Sales Minerales
+
+    addItem({'name':'Mineral Tuzlar Sales minerales aroma canela 350 g.',
+    'img':'/img/Productos/salesMinerales/SALES_MINERALES350g_CANELA.png',
+    'description':'Las sales minerales BG SPA contiene elementos químicos naturales. Estos elementos de forma natural tienen beneficiosos efectos sobre nuestro cuerpo, entre otros son cicatrizantes y ayudan a eliminar toxinas, combaten el reuma y suavizan la piel. Los baños con sales minerales son relajantes. Alivian los dolores musculares y desintoxican la piel. También contiene aceites esenciales y extractos naturales para exfoliar suavemente, hidratar y dejar la piel con una sensación sedosa y suave.',
+    'precio':'  59',
+    'categoria':'Sales Minerales',
+    'id':'69'}); 
+
+    addItem({'name':'Mineral Tuzlar Sales minerales aroma menta 350 g.',
+    'img':'/img/Productos/salesMinerales/SALES_MINERALES350g_MENTA.png',
+    'description':'Las sales minerales BG SPA contiene elementos químicos naturales. Estos elementos de forma natural tienen beneficiosos efectos sobre nuestro cuerpo, entre otros son cicatrizantes y ayudan a eliminar toxinas, combaten el reuma y suavizan la piel. Los baños con sales minerales son relajantes. Alivian los dolores musculares y desintoxican la piel. También contiene aceites esenciales y extractos naturales para exfoliar suavemente, hidratar y dejar la piel con una sensación sedosa y suave.',
+    'precio':'  59',
+    'categoria':'Sales Minerales',
+    'id':'70'}); 
+
+    addItem({'name':'Mineral Tuzlar Sales minerales aroma lavanda 350 g.',
+    'img':'/img/Productos/salesMinerales/SALES_MINERALES350g_LAVANDA.png',
+    'description':'Las sales minerales BG SPA contiene elementos químicos naturales. Estos elementos de forma natural tienen beneficiosos efectos sobre nuestro cuerpo, entre otros son cicatrizantes y ayudan a eliminar toxinas, combaten el reuma y suavizan la piel. Los baños con sales minerales son relajantes. Alivian los dolores musculares y desintoxican la piel. También contiene aceites esenciales y extractos naturales para exfoliar suavemente, hidratar y dejar la piel con una sensación sedosa y suave.',
+    'precio':'  59',
+    'categoria':'Sales Minerales',
+    'id':'71'}); 
+
+    addItem({'name':'Mineral Tuzlar Sales minerales aroma citricos  350 g.',
+    'img':'/img/Productos/salesMinerales/SALES_MINERALES350g_CITRICOS.png',
+    'description':'Las sales minerales BG SPA contiene elementos químicos naturales. Estos elementos de forma natural tienen beneficiosos efectos sobre nuestro cuerpo, entre otros son cicatrizantes y ayudan a eliminar toxinas, combaten el reuma y suavizan la piel. Los baños con sales minerales son relajantes. Alivian los dolores musculares y desintoxican la piel. También contiene aceites esenciales y extractos naturales para exfoliar suavemente, hidratar y dejar la piel con una sensación sedosa y suave.',
+    'precio':'59',
+    'categoria':'Sales Minerales',
+    'id':'72'}); 
+
+    addItem({'name':'Mineral Tuzlar Sales minerales aroma piña-coco 350 g.',
+    'img':'/img/Productos/salesMinerales/SALES_MINERALES350g_PIÑACOCO.png',
+    'description':'Las sales minerales BG SPA contiene elementos químicos naturales. Estos elementos de forma natural tienen beneficiosos efectos sobre nuestro cuerpo, entre otros son cicatrizantes y ayudan a eliminar toxinas, combaten el reuma y suavizan la piel. Los baños con sales minerales son relajantes. Alivian los dolores musculares y desintoxican la piel. También contiene aceites esenciales y extractos naturales para exfoliar suavemente, hidratar y dejar la piel con una sensación sedosa y suave.',
+    'precio':'59',
+    'categoria':'Sales Minerales',
+    'id':'73'}); 
+    
+    addItem({'name':'Mineral Tuzlar Sales minerales aroma canela 500g.',
+    'img':'/img/Productos/salesMinerales/SALES_MINERALES350g_CANELA.png',
+    'description':'Las sales minerales BG SPA contiene elementos químicos naturales. Estos elementos de forma natural tienen beneficiosos efectos sobre nuestro cuerpo, entre otros son cicatrizantes y ayudan a eliminar toxinas, combaten el reuma y suavizan la piel. Los baños con sales minerales son relajantes. Alivian los dolores musculares y desintoxican la piel. También contiene aceites esenciales y extractos naturales para exfoliar suavemente, hidratar y dejar la piel con una sensación sedosa y suave.',
+    'precio':'95',
+    'categoria':'Sales Minerales',
+    'id':'74'}); 
+    
+    addItem({'name':'Mineral Tuzlar Sales minerales aroma menta 500g.',
+    'img':'/img/Productos/salesMinerales/SALES_MINERALES500G_MENTA.png',
+    'description':'Las sales minerales BG SPA contiene elementos químicos naturales. Estos elementos de forma natural tienen beneficiosos efectos sobre nuestro cuerpo, entre otros son cicatrizantes y ayudan a eliminar toxinas, combaten el reuma y suavizan la piel. Los baños con sales minerales son relajantes. Alivian los dolores musculares y desintoxican la piel. También contiene aceites esenciales y extractos naturales para exfoliar suavemente, hidratar y dejar la piel con una sensación sedosa y suave.',
+    'precio':'95',
+    'categoria':'Sales Minerales',
+    'id':'75'}); 
+
+    addItem({'name':'Mineral Tuzlar Sales minerales aroma lavanda 500g.',
+    'img':'/img/Productos/salesMinerales/SALES_MINERALES500G_LAVANDA.png',
+    'description':'Las sales minerales BG SPA contiene elementos químicos naturales. Estos elementos de forma natural tienen beneficiosos efectos sobre nuestro cuerpo, entre otros son cicatrizantes y ayudan a eliminar toxinas, combaten el reuma y suavizan la piel. Los baños con sales minerales son relajantes. Alivian los dolores musculares y desintoxican la piel. También contiene aceites esenciales y extractos naturales para exfoliar suavemente, hidratar y dejar la piel con una sensación sedosa y suave.',
+    'precio':'95',
+    'categoria':'Sales Minerales',
+    'id':'76'}); 
+
+    addItem({'name':'Mineral Tuzlar Sales minerales aroma citricos 500g.',
+    'img':'/img/Productos/salesMinerales/SALES_MINERALES500G_CITRICOS.png',
+    'description':'Las sales minerales BG SPA contiene elementos químicos naturales. Estos elementos de forma natural tienen beneficiosos efectos sobre nuestro cuerpo, entre otros son cicatrizantes y ayudan a eliminar toxinas, combaten el reuma y suavizan la piel. Los baños con sales minerales son relajantes. Alivian los dolores musculares y desintoxican la piel. También contiene aceites esenciales y extractos naturales para exfoliar suavemente, hidratar y dejar la piel con una sensación sedosa y suave.',
+    'precio':'95',
+    'categoria':'Sales Minerales',
+    'id':'77'}); 
+
+    addItem({'name':'Mineral Tuzlar Sales minerales aroma piña-coco 500g.',
+    'img':'/img/Productos/salesMinerales/SALES_MINERALES500G_PIÑACOCO.png',
+    'description':'Las sales minerales BG SPA contiene elementos químicos naturales. Estos elementos de forma natural tienen beneficiosos efectos sobre nuestro cuerpo, entre otros son cicatrizantes y ayudan a eliminar toxinas, combaten el reuma y suavizan la piel. Los baños con sales minerales son relajantes. Alivian los dolores musculares y desintoxican la piel. También contiene aceites esenciales y extractos naturales para exfoliar suavemente, hidratar y dejar la piel con una sensación sedosa y suave.',
+    'precio':'95',
+    'categoria':'Sales Minerales',
+    'id':'78'}); 
+
+    addItem({'name':'Mineral Tuzlar Sales minerales aroma canela 1 kg.',
+    'img':'/img/Productos/salesMinerales/SALES_MINERALES1KG_CANELA.png',
+    'description':'Las sales minerales BG SPA contiene elementos químicos naturales. Estos elementos de forma natural tienen beneficiosos efectos sobre nuestro cuerpo, entre otros son cicatrizantes y ayudan a eliminar toxinas, combaten el reuma y suavizan la piel. Los baños con sales minerales son relajantes. Alivian los dolores musculares y desintoxican la piel. También contiene aceites esenciales y extractos naturales para exfoliar suavemente, hidratar y dejar la piel con una sensación sedosa y suave.',
+    'precio':'169',
+    'categoria':'Sales Minerales',
+    'id':'79'}); 
+
+    addItem({'name':'Mineral Tuzlar Sales minerales aroma menta 1 kg.',
+    'img':'/img/Productos/salesMinerales/SALES_MINERALES1KG_MENTA.png',
+    'description':'Las sales minerales BG SPA contiene elementos químicos naturales. Estos elementos de forma natural tienen beneficiosos efectos sobre nuestro cuerpo, entre otros son cicatrizantes y ayudan a eliminar toxinas, combaten el reuma y suavizan la piel. Los baños con sales minerales son relajantes. Alivian los dolores musculares y desintoxican la piel. También contiene aceites esenciales y extractos naturales para exfoliar suavemente, hidratar y dejar la piel con una sensación sedosa y suave.',
+    'precio':'169',
+    'categoria':'Sales Minerales',
+    'id':'80'});
+
+    addItem({'name':'Mineral Tuzlar Sales minerales aroma lavanda 1 kg.',
+    'img':'/img/Productos/salesMinerales/SALES_MINERALES1KG_LAVANDA.png',
+    'description':'Las sales minerales BG SPA contiene elementos químicos naturales. Estos elementos de forma natural tienen beneficiosos efectos sobre nuestro cuerpo, entre otros son cicatrizantes y ayudan a eliminar toxinas, combaten el reuma y suavizan la piel. Los baños con sales minerales son relajantes. Alivian los dolores musculares y desintoxican la piel. También contiene aceites esenciales y extractos naturales para exfoliar suavemente, hidratar y dejar la piel con una sensación sedosa y suave.',
+    'precio':'169',
+    'categoria':'Sales Minerales',
+    'id':'81'});
+
+    addItem({'name':'Mineral Tuzlar Sales minerales aroma citricos  1 kg.',
+    'img':'/img/Productos/salesMinerales/SALES_MINERALES1KG_CITRICOS.png',
+    'description':'Las sales minerales BG SPA contiene elementos químicos naturales. Estos elementos de forma natural tienen beneficiosos efectos sobre nuestro cuerpo, entre otros son cicatrizantes y ayudan a eliminar toxinas, combaten el reuma y suavizan la piel. Los baños con sales minerales son relajantes. Alivian los dolores musculares y desintoxican la piel. También contiene aceites esenciales y extractos naturales para exfoliar suavemente, hidratar y dejar la piel con una sensación sedosa y suave.',
+    'precio':'169',
+    'categoria':'Sales Minerales',
+    'id':'82'});
+
+    addItem({'name':'Mineral Tuzlar Sales minerales aroma piña-coco 1 kg.',
+    'img':'/img/Productos/salesMinerales/SALES_MINERALES_1KG_PIÑACOCO.png',
+    'description':'Las sales minerales BG SPA contiene elementos químicos naturales. Estos elementos de forma natural tienen beneficiosos efectos sobre nuestro cuerpo, entre otros son cicatrizantes y ayudan a eliminar toxinas, combaten el reuma y suavizan la piel. Los baños con sales minerales son relajantes. Alivian los dolores musculares y desintoxican la piel. También contiene aceites esenciales y extractos naturales para exfoliar suavemente, hidratar y dejar la piel con una sensación sedosa y suave.',
+    'precio':'169',
+    'categoria':'Sales Minerales',
+    'id':'83'});
+    
