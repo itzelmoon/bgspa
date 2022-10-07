@@ -18,6 +18,8 @@ btnSubmit.addEventListener("click", function(e){
     let valorcorreo = document.getElementById("correo").value;
     let contraseña = document.getElementById("contraseña");
     let valorcontraseña = document.getElementById("contraseña").value;
+    let alerterror = document.getElementById("alertaerror");
+    let formulario = document.getElementById("formulario");    
 
     //VALIDACIONES DE FORMULARIO
     const flag = {
@@ -58,6 +60,15 @@ btnSubmit.addEventListener("click", function(e){
     }
     }
     validarContraseña(valorcontraseña); 
+
+    if (flag.correoe && flag.contraseña){
+        formulario.reset();
+        nombre.classList.remove("is-valid")
+        apellido.classList.remove("is-valid")
+    } else {
+    alerterror.style.display = "block";
+    setTimeout(()=>{alerterror.style.display = "none"}, (7000));      
+    }//else
 
 });//btnSubmit
 

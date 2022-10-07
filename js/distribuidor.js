@@ -1,6 +1,6 @@
-let btnSubmit = document.getElementById("btnValidar");
+let btnSubmit1 = document.getElementById("btnValidar");
 
-btnSubmit.addEventListener("click", function(e){ 
+btnSubmit1.addEventListener("click", function(e){ 
     e.preventDefault();
     let nombre = document.getElementById("Nombre");
     let apellido = document.getElementById("Apellido");
@@ -10,8 +10,7 @@ btnSubmit.addEventListener("click", function(e){
     let confirmarCorreo = document.getElementById("validationCorreo");
     let valorcorreo = document.getElementById("correo").value;
     let confirmar = document.getElementById("validationCorreo").value;
-    let empresa = document.getElementById("Empresa");
-    let alertexitosa = document.getElementById("alertaexitosa");
+    let empresa = document.getElementById("empresa");
     let alerterror = document.getElementById("alertaerror");
     let formulario = document.getElementById("formulario");    
 
@@ -22,13 +21,15 @@ btnSubmit.addEventListener("click", function(e){
         campoTelefono: false,
         campoMensaje: false,
         correoe: false,
-        confirmarCorreo: false
+        confirmarCorreo: false,
+        empresa: false
     }
+
     //validación de nombre
     nombre.classList.remove("is-invalid");
     nombre.classList.add("is-valid");
 
-    if ( nombre.value.length >= 3 && nombre.value.length < 20) {
+    if ((nombre.value.length >= 3) && (nombre.value.length < 20) && !(apellido.value.trim() == "") && (apellido.value[0] != " ")) {
         nombre.classList.add("is-valid"); 
         flag.nombre = true
     }
@@ -63,11 +64,11 @@ btnSubmit.addEventListener("click", function(e){
                 } //if
             }//for
 
-        //validación de apellido
+    //validación de apellido
     apellido.classList.remove("is-invalid");
     apellido.classList.add("is-valid");
 
-    if ( apellido.value.length >= 3 && apellido.value.length < 20) {
+    if ((apellido.value.length >= 3) && (apellido.value.length < 20) && !(apellido.value.trim() == "") && (apellido.value[0] != " ")) {
         apellido.classList.add("is-valid"); 
         flag.apellido = true
     }
@@ -108,6 +109,8 @@ btnSubmit.addEventListener("click", function(e){
     if((campoTelefono.value.length == 10) 
     && (!isNaN(campoTelefono.value))
     && (campoTelefono.value!=0)
+    && !(apellido.value.trim() == "") 
+    && (apellido.value[0] != " ")
     ) {
         campoTelefono.classList.remove("is-invalid");
         campoTelefono.classList.add("is-valid");
@@ -119,7 +122,7 @@ btnSubmit.addEventListener("click", function(e){
     }
 
     // Validacion Mensaje
-    if (campoMensaje.value.length >= 10) { //validacion Nombre
+    if ((campoMensaje.value.length >= 10) && (campoMensaje.value.length <120) && !(apellido.value.trim() == "") && (apellido.value[0] != " ")) {
         campoMensaje.classList.remove("is-invalid");
         campoMensaje.classList.add("is-valid");
         flag.campoMensaje = true
@@ -146,8 +149,6 @@ btnSubmit.addEventListener("click", function(e){
     }
     validarCorreo(valorcorreo);
 
-
-
     //confirmacion correo
     if ((valorcorreo === confirmar) && (confirmarCorreo.value.length!=0)){
         confirmarCorreo.classList.remove("is-invalid");
@@ -159,21 +160,23 @@ btnSubmit.addEventListener("click", function(e){
         flag.confirmarCorreo = false
     }
 
-
     //validación empresa
-    if ((empresa.value.length >= 3) && (empresa.value.length<=30)) { //validacion Nombre
+    if ((empresa.value.length >= 3)
+        && !(apellido.value.trim() == "") 
+        && (apellido.value[0] != " ") 
+        && (empresa.value.length<=30)
+        && (empresa.value.length!=0)) { 
         empresa.classList.remove("is-invalid");
         empresa.classList.add("is-valid");
         flag.empresa = true
     } else {
         empresa.classList.remove("is-valid");
+        empresa.classList.add("is-invalid");
         flag.empresa = false
     }
-    //ALERTA GENERAL
-    if (flag.nombre && flag.apellido && flag.campoTelefono && flag.campoMensaje && flag.correoe && flag.confirmarCorreo){
-        alertexitosa.style.display = "block";
-        setTimeout(()=>{alertexitosa.style.display = "none"}, (5000));
 
+    //ALERTA GENERAL
+    if (flag.nombre && flag.apellido && flag.campoTelefono && flag.campoMensaje && flag.correoe && flag.empresa && flag.confirmarCorreo){
          //---------------------CORREO------------------------------------------
     function sendEmail(){
         
@@ -218,9 +221,9 @@ btnSubmit.addEventListener("click", function(e){
         empresa.classList.remove("is-valid")
     } else {
         alerterror.style.display = "block";
-        setTimeout(()=>{alerterror.style.display = "none"}, (7000));
+        setTimeout(()=>{alerterror.style.display = "none"}, (7000));      
     }//else
 
 
 
-});//function
+});//btnsubmit

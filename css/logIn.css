@@ -84,6 +84,22 @@ body {
     font-size: 18px;
 }
 
+.alert{
+    background-color: #ecd2f5;
+    opacity: 0.6;
+    border-color: #ffffff;
+    color:  #321b3a;
+}
+
+.alertaWarning{
+    font-family: 'Raleway'; 
+    font-style: normal; 
+    font-weight: 10; 
+    font-size: 15px; 
+    line-height: 15px;
+    color: #A97798;
+}
+
 .btnRegistrar{
     margin-bottom: 3rem;
 }

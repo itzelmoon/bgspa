@@ -113,7 +113,7 @@ btnSubmit.addEventListener("click", function(e){
      }
      validarCorreo(valorcorreo); 
 
-      //validacion contraseña
+    //validacion contraseña
     function validarContraseña (contra) {
         let expReg =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,15}$/;
         let verificarcontraseña = expReg.test(contra);
@@ -154,8 +154,6 @@ btnSubmit.addEventListener("click", function(e){
         cont++;
         infoUsuario.push(arregloUsuario);
         localStorage.setItem(key, JSON.stringify(infoUsuario));
-        alertexitosa.style.display = "block";
-        setTimeout(()=>{alertexitosa.style.display = "none"}, (5000));
         formulario.reset();
         nombre.classList.remove("is-valid")
         apellido.classList.remove("is-valid")
@@ -168,8 +166,4 @@ btnSubmit.addEventListener("click", function(e){
         setTimeout(()=>{alerterror.style.display = "none"}, (7000));
     }
       
-
-
-
-
     });//btnSubmit
