@@ -1,6 +1,7 @@
 body, header, footer{
     font-family: 'Raleway';
 }
+
 header{
     background: linear-gradient(180deg, rgba(141, 106, 175, 0.81) 22.97%, rgba(73, 12, 134, 0) 100%);
     background-color: #FFFFFF;
@@ -32,8 +33,6 @@ a.text-primary:focus, a.text-primary:hover {
 .prueba{
     display: none;
 }
-
-
 
 /* ----FOOTER---------------------------------*/
 footer{

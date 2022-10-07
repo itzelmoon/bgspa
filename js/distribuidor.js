@@ -29,7 +29,7 @@ btnSubmit1.addEventListener("click", function(e){
     nombre.classList.remove("is-invalid");
     nombre.classList.add("is-valid");
 
-    if ((nombre.value.length >= 3) && (nombre.value.length < 20) && !(apellido.value.trim() == "") && (apellido.value[0] != " ")) {
+    if ((nombre.value.length >= 3) && (nombre.value.length < 20) && !(nombre.value.trim() == "") && (nombre.value[0] != " ")) {
         nombre.classList.add("is-valid"); 
         flag.nombre = true
     }
@@ -109,8 +109,8 @@ btnSubmit1.addEventListener("click", function(e){
     if((campoTelefono.value.length == 10) 
     && (!isNaN(campoTelefono.value))
     && (campoTelefono.value!=0)
-    && !(apellido.value.trim() == "") 
-    && (apellido.value[0] != " ")
+    && !(campoTelefono.value.trim() == "") 
+    && (campoTelefono.value[0] != " ")
     ) {
         campoTelefono.classList.remove("is-invalid");
         campoTelefono.classList.add("is-valid");
@@ -122,7 +122,7 @@ btnSubmit1.addEventListener("click", function(e){
     }
 
     // Validacion Mensaje
-    if ((campoMensaje.value.length >= 10) && (campoMensaje.value.length <120) && !(apellido.value.trim() == "") && (apellido.value[0] != " ")) {
+    if ((campoMensaje.value.length >= 10) && (campoMensaje.value.length <120) && !(campoMensaje.value.trim() == "") && (campoMensaje.value[0] != " ")) {
         campoMensaje.classList.remove("is-invalid");
         campoMensaje.classList.add("is-valid");
         flag.campoMensaje = true
@@ -162,8 +162,8 @@ btnSubmit1.addEventListener("click", function(e){
 
     //validación empresa
     if ((empresa.value.length >= 3)
-        && !(apellido.value.trim() == "") 
-        && (apellido.value[0] != " ") 
+        && !(empresa.value.trim() == "") 
+        && (empresa.value[0] != " ") 
         && (empresa.value.length<=30)
         && (empresa.value.length!=0)) { 
         empresa.classList.remove("is-invalid");
