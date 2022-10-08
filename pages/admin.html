@@ -15,19 +15,17 @@
     <title>BGSpa Contacto</title>
 </head>
 
-<!-- Header -->
+ <!-- Header -->
 <header>
     <nav class="navbar prueba2">
-        <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG
-                    SPA</strong></span></a>
-        <form class="form-inline">
-            <!-- <a class="btn my-2 my-sm-0" type="submit" href="./logIn.html"><i class="bi bi-person bi-movil binav"></i></a> -->
-        </form>
+      <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG SPA</strong></span></a>
+      <form class="form-inline">
+        <!-- <a class="btn my-2 my-sm-0" type="submit" href="./logIn.html"><i class="bi bi-person bi-movil binav"></i></a> -->
+      </form>
     </nav>
-</header>
+  </header>
 
-<!-- Body -->
-
+ <!-- Body -->
 <body>
     <br>
     <br>
@@ -54,7 +52,7 @@
                 </div>
                 <div class="form-group inputs col-md-6">
                     <label for="campoPrecio">Precio</label>
-                    <input type="text" class="form-control holder" id="campoPrecio" placeholder="000.00">
+                    <input type="text" class="form-control holder" id="campoPrecio" placeholder="00.00">
                     <div class="invalid-feedback alertaWarning">
                         Verifique que el valor ingresado no contenga el símbolo ("$"), espacios (" ") y cuente con 2
                         decimales (ejemplo: 10.00).
@@ -66,7 +64,7 @@
             <div class="form-row campos">
 
                 <div class="form-group inputs col-md-6">
-                    <label for="inlineFormCustomSelect">Categoría</label>
+                    <label for="inlineFormCustomSelect" >Categoría</label>
                     <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                         <option selected disabled value="">Selecciona...</option>
                         <option value="Aceites para masaje">Aceites para masaje</option>
@@ -76,19 +74,38 @@
                         <option value="Complementos">Complementos</option>
                         <option value="Cremas Hidratantes">Hidratación</option>
                         <option value="Exfoliantes">Exfoliantes</option>
-                        <option value="Hidratantes Bifásicos">Hidratantes Bifásicos</option>
+                        <option value="Lociones">Lociones</option>
                         <option value="Kit">Kit</option>
                         <option value="Mascarillas">Mascarillas</option>
                         <option value="Sales Efervescentes">Sales Efervescentes</option>
                         <option value="Sales Minerales">Sales Minerales</option>
                         <option value="Sanitizantes y Limpiadores">Sanitizantes y Limpiadores</option>
+                        <option value="Herramientas">Herramientas</option>
                     </select>
                     <div class="invalid-feedback alertaWarning">
                         Seleccione una categoría.
                     </div>
                 </div>
 
+                <div class="form-group inputs col-md-6">
+                    <label for="campoSKU">SKU</label>
+                    <input type="text" class="form-control holder" id="campoSKU" placeholder="XXXXX">
+                    <div class="invalid-feedback alertaWarning">
+                        Verifique que el valor ingresado contenga solo letras mayúsculas y números).
+                    </div>
+                </div>
+            </div>
 
+            <!--Tercer fila-->
+            <div class="form-row posicion campos">
+                <div class="form-group inputs col-md-6">
+                    <label for="campoDescripcion">Descripción</label>
+                    <textarea class="form-control holder" id="campoDescripcion" rows="7"
+                        placeholder="Descripcion del producto"></textarea>
+                    <div class="invalid-feedback alertaWarning">
+                        Verifique que el valor del campo contenga más de 10 carácteres.
+                    </div>
+                </div>
                 <div class="form-group inputs col-md-6">
                     <label for="campoArchivo">Adjuntar Archivo</label>
                     <input type="file" id="campoArchivo" accept=".jpg,.png">
@@ -100,28 +117,30 @@
                     </div>
                 </div>
             </div>
-
-
-            <!--Cuarta fila-->
-            <div class="form-row posicion campos">
-                <div class="form-group inputs col-md-6">
-                    <label for="campoDescripcion">Descripción</label>
-                    <textarea class="form-control holder" id="campoDescripcion" rows="7"
-                        placeholder="Descripcion del producto"></textarea>
-                    <div class="invalid-feedback alertaWarning">
-                        Verifique que el valor del campo contenga más de 10 carácteres.
-                    </div>
-                </div>
-            </div>
         </form>
+        <br>
+        <br>
         <!--boton enviar-->
         <div class="posicion">
             <button type="button" class="col-md-4 btnEnviar" id="btnAgregar">Agregar</button>
         </div>
     </main>
 
-    <br>
-    <br>
+
+
+    <!--footer de la pagina web-->
+    <footer>
+        <!--ROW INFERIOR-->
+        <div class="card card-footer">
+        <div class="card-body">
+            <img src="../img/logo_spa_morado.png" alt="">
+            <em>Derechos reservados &#169 BG SPA.</em>
+            Desarrollado por
+            <a href="./nosotros.html"> <span class="textjv">JVlovers</span></a>
+        </div>
+        </div>
+    </footer>
+
     <!--------------------------------------------------------------------------->
     <script src="../js/admin.js"></script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
