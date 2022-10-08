@@ -30,7 +30,7 @@ a.text-primary:focus, a.text-primary:hover {
     font-size: 26px;
 }
 
-.prueba{
+.navBotones{
     display: none;
 }
 
@@ -141,7 +141,6 @@ p {
 }/* Styli textjv*/
 
 
-
 @media screen and (max-width: 576px) {
 
     header{
@@ -163,6 +162,15 @@ p {
     }
     .form-inline{
         align-content: center;
+    }
+    .navSuper{
+        display: none;
+    }
+
+    .navBotones{
+        display: block;
+        position: absolute;
+        right: 30px;
     }
 
     body{
