@@ -62,6 +62,7 @@ btnSubmit.addEventListener("click", function(e){
     validarContraseña(valorcontraseña); 
 
     if (flag.correoe && flag.contraseña){
+        AlertLogin();
         formulario.reset();
         nombre.classList.remove("is-valid")
         apellido.classList.remove("is-valid")
@@ -113,3 +114,20 @@ e.preventDefault();
     }
 
 }) 
+
+//------------AlertLogin en Flag general--------------
+const AlertLogin = () => {
+    Swal.fire({
+                    position: 'top',
+                    color: '#A97798',
+                    background: '#F9F9F9',
+                    icon: 'success',
+                    title: '¡Bienvenido!',
+                    text: 'Disfruta la mágia de los productos BG SPA.',
+                    confirmButtonText: 'Aceptar',
+                    confirmButtonColor: '#A058A1',
+                    showConfirmButton: true,
+                    showCloseButton: true,
+                    toast: true
+                  }) 
+                };

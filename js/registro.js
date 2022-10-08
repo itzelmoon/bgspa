@@ -154,6 +154,7 @@ btnSubmit.addEventListener("click", function(e){
         cont++;
         infoUsuario.push(arregloUsuario);
         localStorage.setItem(key, JSON.stringify(infoUsuario));
+        AlertRegistro();
         formulario.reset();
         nombre.classList.remove("is-valid")
         apellido.classList.remove("is-valid")
@@ -167,3 +168,21 @@ btnSubmit.addEventListener("click", function(e){
     }
       
     });//btnSubmit
+
+
+    //-------ALERTA REGISTRO EN FLAGS GENERAL-------
+    const AlertRegistro = () => {
+        Swal.fire({
+                        position: 'top',
+                        color: '#A97798',
+                        background: '#F9F9F9',
+                        icon: 'success',
+                        title: 'Registro exitoso',
+                        text: 'Ahora formas parte de la familia BG SPA.',
+                        confirmButtonText: 'Aceptar',
+                        confirmButtonColor: '#A058A1',
+                        showConfirmButton: true,
+                        showCloseButton: true,
+                        toast: true
+                      }) 
+                    };

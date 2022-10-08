@@ -12,7 +12,10 @@
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <!--<link rel="stylesheet" href="../css/logIn.css">    Por el momento este css choca con el disenio general de la pagina-->
   <link rel="stylesheet" href="../css/headerFooter.css">
-
+  <!--SWEET ALERTS-->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!--Animacion cartas------------>
+ <!--  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
   <title>BGSpa - Nosotros</title>
 </head>
 
@@ -92,8 +95,9 @@
     </div>
     <br>
     <br>
+    <!-------------------------------------------------------->
     <div class="row cont">
-      <div class="col espacio">
+      <div class="col-sm-6 col-md-3 col-lg-3 espacio"  data-aos="zoom-in" data-aos-duration="3000">
         <!--tarjeta nayeli-->
         <div class="rd" style="width: auto;">
           <img src="../img/integrantesDeEquipo/nayeli.png" class="card-img-top" alt="..." />
@@ -111,7 +115,7 @@
 
       </div>
 
-      <div class="col espacio">
+      <div class="col-sm-6 col-md-3 col-lg-3 espacio"  data-aos="zoom-in" data-aos-duration="3000">
         <!--tarjeta alam-->
         <div class="rd" style="width: auto;">
           <img src="../img/integrantesDeEquipo/alam.png" class="card-img-top" alt="..." />
@@ -128,7 +132,7 @@
         </div>
       </div>
 
-      <div class="col espacio">
+      <div class="col-sm-6 col-md-3 col-lg-3 espacio espacio2"  data-aos="zoom-in" data-aos-duration="3000">
         <!--tarjeta alex-->
         <div class="rd" style="width: auto;">
           <img src="../img/integrantesDeEquipo/alex.png" class="card-img-top" alt="..." />
@@ -137,14 +141,14 @@
         <div class="card-body fondocard carta">
           <p class="fontbold">Alexander Delgado</p>
           <p class="card-text">Soy geocientífico de formación; apasionado del desarrollo web, las nuevas tecnologías y
-            las rocas. ¿Te gustaría saber cómo conviven estas aréas?</p>
+            las rocas. ¿Te gustaría saber cómo conviven estas aréas?<br><br></p>
           <p class="ancla"><a href="https://www.linkedin.com/in/aledt/" class=""><i class="bi bi-linkedin ico"></i></a>
             <a href="https://github.com/aledt1" class=""><i class="bi bi-github ico"></i></i></a>
           </p>
         </div>
       </div>
 
-      <div class="col espacio">
+      <div class="col-sm-6 col-md-3 col-lg-3 espacio espacio2"  data-aos="zoom-in" data-aos-duration="3000">
         <!-- Card Valería-->
         <div class="rd" style="width: auto;">
           <img src="../img/integrantesDeEquipo/vale.png" class="card-img-top" alt="..." />
@@ -166,7 +170,7 @@
 
     <!-- segunda fila-->
     <div class="row cont">
-      <div class="col espacio">
+      <div class="col-sm-6 col-md-3 col-lg-3 espacio espacio3"  data-aos="zoom-in" data-aos-duration="3000">
         <!--tarjeta Nohemí-->
         <div class="rd" style="width: auto;">
           <img src="../img/integrantesDeEquipo/nohe.png" class="card-img-top" alt="..." />
@@ -175,7 +179,7 @@
         <div class="card-body fondocard carta">
           <p class="fontbold">Nohemí Castañeda</p>
           <p class="card-text">Soy ingeniera en sistemas y diseñadora gráfica. Organizada, proactiva y decidida; me
-            apasiona programar y crear resultados de calidad en cada una de mis creaciones.<br></p>
+            apasiona programar y crear resultados de calidad en cada una de mis creaciones.<br><br></p>
           <p class="ancla"><a href="https://www.linkedin.com/in/nohemicastañeda" class=""><i
                 class="bi bi-linkedin ico"></i></a>
             <a href="https://github.com/nohemiCasta/portafolio_njcm" class=""><i class="bi bi-github ico"></i></i></a>
@@ -183,7 +187,7 @@
         </div>
       </div>
 
-      <div class="col espacio">
+      <div class="col-sm-6 col-md-3 col-lg-3 espacio"  data-aos="zoom-in" data-aos-duration="3000">
         <!--tarjeta Eduardo-->
         <div class="rd" style="width: auto;">
           <img src="../img/integrantesDeEquipo/lalo.png" class="card-img-top" alt="..." />
@@ -200,7 +204,7 @@
         </div>
       </div>
 
-      <div class="col espacio">
+      <div class="col-sm-6 col-md-3 col-lg-3 espacio espacio2"  data-aos="zoom-in" data-aos-duration="3000">
         <!--tarjeta Omar-->
         <div class="rd" style="width: auto;">
           <img src="../img/integrantesDeEquipo/omar.png" class="card-img-top" alt="..." />
@@ -216,14 +220,15 @@
           </p>
         </div>
       </div>
-      <div class="col espacio">
+      <div class="col-sm-6 col-md-6 col-lg-3 espacio"> 
         <!--espacio para Tarjeta-->
       </div>
     </div>
   </main>
   <br>
   <br>
-  <!--Footer | inicio-->
+
+  <!--Footer | inicio---------------------------------------->
   <footer>
     <div class="row">
       <!--Card Contacto-->
@@ -293,6 +298,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"></script>
-</body>
+  <!-----Animacion Cartas-------------------->
+<!--   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init(); -->
+  </script>
+  </body>
 
 </html>
