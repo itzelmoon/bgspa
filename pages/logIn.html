@@ -14,7 +14,7 @@ o ver repositorio en Github-->
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <!--CSS propio-->
+  <!--CSS propio-->
   <link rel="stylesheet" href="../css/headerFooter.css">
   <link rel="stylesheet" href="../css/logIn.css">
 
@@ -23,23 +23,26 @@ o ver repositorio en Github-->
 </head>
 
 <body>
-      <!--header de la página web-->
+  <!--header de la página web-->
 
-      <div class="btn-group b" id="a">
-        <button class="btn btn-secondary btn-sm dropdown-toggle btn1" type="button" data-toggle="dropdown" aria-expanded="false">
-          Activo
-        </button>
-        <div class="dropdown-menu">
-        <a href="#" id="cerrar">Cerrar Sesión</a>
-        </div>
-      </div>
+  <div class="btn-group b" id="a">
+    <button class="btn btn-secondary btn-sm dropdown-toggle btn1" type="button" data-toggle="dropdown"
+      aria-expanded="false">
+      Activo
+    </button>
+    <div class="dropdown-menu">
+      <a href="#" id="cerrar">Cerrar Sesión</a>
+    </div>
+  </div>
   <header>
     <nav class="navbar prueba2">
       <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG SPA</strong></span></a>
       <form class="form-inline">
-        <input class="form-control mr-sm-2" id="btnBq" type="search" placeholder="Buscar" aria-label="Search" style="border: none;">
+        <input class="form-control mr-sm-2" id="btnBq" type="search" placeholder="Buscar" aria-label="Search"
+          style="border: none;">
         <a class="btn my-2 my-sm-0" type="submit" id="btnBq"><i class="bi bi-search"></i></a>
-        <a class="btn my-2 my-sm-0" type="submit" href="./pages/carrito.html" ><i class="bi bi-cart4 bi-movil binav"></i></a>
+        <a class="btn my-2 my-sm-0" type="submit" href="./pages/carrito.html"><i
+            class="bi bi-cart4 bi-movil binav"></i></a>
         <a class="btn my-2 my-sm-0" type="submit" href="./logIn.html"><i class="bi bi-person bi-movil binav"></i></a>
       </form>
     </nav>
@@ -54,9 +57,9 @@ o ver repositorio en Github-->
           <li class="nav-item">
             <a class="nav-link text-primary" href="../index.html">Inicio</a>
           </li>
-         
+
           <li class="nav-item">
-              <a class="nav-link text-primary" href="./catalogo.html">Catálogo</a>
+            <a class="nav-link text-primary" href="./catalogo.html">Catálogo</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-primary" href="./nosotros.html">Nosotros</a>
@@ -79,31 +82,35 @@ o ver repositorio en Github-->
     <h1 class="titulo">Acceder</h1>
     <br>
     <br>
-    
-    <form>
-        <!--Primer fila-->
-        <div class="form col-md-7">
-          <div class="alert alert-danger" role="alert" style="display: none" id="alertaerror">Revisa que todos los campos se hayan llenando correctamente.</div>
-            <div class="form-group inputs compos">
-                <label for="correo">Correo electrónico</label>
-                <input type="email" class="form-control holder" id="correo" placeholder="correo@ejemplo.com">
-                <div class="invalid-feedback alertaWarning" id="alertacampo4">
-                  Verifique su correo. 
-                </div>
-            </div>
-            <div class="row">
-            <div class="form-group col-10 inputs compos" style="margin-left: 15px">
-                <label for="contraseña">Contraseña</label>
-                <input type="password" class="form-control holder" id="contraseña" placeholder="contraseña">
-                <div class="invalid-feedback alertaWarning" id="alertacampo5">Restricciones: De 8 a 15 caracteres, una mayúscula, un numero, sin espacios, un caracter especial.</div>
-            </div>
 
-            <div class="col-1" style="padding:0px 0px;">
-              <button type="button"style="border: none; margin-top: 1.4em; background: none; font-size: 28px; margin-left: 10px" onclick="mostrarContraseña()"><i class="bi bi-eye"></i></button>
-            </div>
-            </div>
-            <!----------------------------------------------------------------------------------------------------->
-   <!--          <div class="form-group inputs">
+    <form>
+      <!--Primer fila-->
+      <div class="form col-md-7">
+        <div class="alert alert-danger" role="alert" style="display: none" id="alertaerror">Revisa que todos los campos
+          se hayan llenando correctamente.</div>
+        <div class="form-group inputs compos">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" class="form-control holder" id="correo" placeholder="correo@ejemplo.com">
+          <div class="invalid-feedback alertaWarning" id="alertacampo4">
+            Verifique su correo.
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-10 inputs compos" style="margin-left: 15px">
+            <label for="contraseña">Contraseña</label>
+            <input type="password" class="form-control holder" id="contraseña" placeholder="contraseña">
+            <div class="invalid-feedback alertaWarning" id="alertacampo5">Restricciones: De 8 a 15 caracteres, una
+              mayúscula, un numero, sin espacios, un caracter especial.</div>
+          </div>
+
+          <div class="col-1" style="padding:0px 0px;">
+            <button type="button"
+              style="border: none; margin-top: 1.4em; background: none; font-size: 28px; margin-left: 10px"
+              onclick="mostrarContraseña()"><i class="bi bi-eye"></i></button>
+          </div>
+        </div>
+        <!----------------------------------------------------------------------------------------------------->
+        <!--          <div class="form-group inputs">
               <label for="correo">Correo electrónico</label>
               <input type="email" class="form-control holder" id="correo" placeholder="correo@ejemplo.com">
           
@@ -117,34 +124,36 @@ o ver repositorio en Github-->
           </div> -->
 
 
-             <!----------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------------------------------------------->
 
-            <p class="olvcontraseña">¿Olvidaste tu contraseña?</p>
-        </div>
+        <p class="olvcontraseña">¿Olvidaste tu contraseña?</p>
+      </div>
     </form>
 
     <div class="posicion">
-        <button type="submit" value="Submit" onclick="checkData()" class="col-md-6 btnSesion" id="btnIniciarSesion"onclick="mostrarContraseña()">Iniciar sesión</button>
+      <button type="submit" value="Submit" onclick="checkData()" class="col-md-6 btnSesion" id="btnIniciarSesion"
+        onclick="mostrarContraseña()">Iniciar sesión</button>
     </div>
 
     <div>
-        <p class="txt">Continua con</p>
+      <p class="txt">Continua con</p>
 
-        <div class="imgLogin">
-            <img src="../img/logIn/gmail.jpeg" alt="" class="imgRedes">
-            <img src="../img/logIn/Facebook.jpeg" alt="" class="imgRedes">
-            <img src="../img/logIn/Instagram.jpeg" alt="" class="imgRedes">
-        </div>
+      <div class="imgLogin">
+        <img src="../img/logIn/gmail.jpeg" alt="" class="imgRedes">
+        <img src="../img/logIn/Facebook.jpeg" alt="" class="imgRedes">
+        <img src="../img/logIn/Instagram.jpeg" alt="" class="imgRedes">
+      </div>
 
-        <p class="txt">¿Aún no tienes cuenta?</p>
+      <p class="txt">¿Aún no tienes cuenta?</p>
 
-    <div class="posicion">
-        <button type="button" class="col-md-6 btnRegistrar" id="btnRegistrarse"> <a href="./registro.html" class="col-md-6 btnRegistrar" style="text-decoration: none; ">Registrarse</a></button>
+      <div class="posicion">
+        <button type="button" class="col-md-6 btnRegistrar" id="btnRegistrarse"> <a href="./registro.html"
+            class="col-md-6 btnRegistrar" style="text-decoration: none; ">Registrarse</a></button>
+      </div>
+
     </div>
 
-    </div>
-
-</main>
+  </main>
 
 
   <!--footer de la pagina web-->
@@ -210,7 +219,8 @@ o ver repositorio en Github-->
           <div class="form-col dfg">
             <div class="form-group row-12">
               <label for="inputEmail" class="sr-only">Correo electrónico</label>
-              <input type="text" class="form-control" id="inputEmail" placeholder="Correo electrónico" style="border: none;">
+              <input type="text" class="form-control" id="inputEmail" placeholder="Correo electrónico"
+                style="border: none;">
             </div>
             <div class="row-12 card text-center">
               <button type="button" class="btnSuscribirse">SUSCRIBIRSE</button>
@@ -237,7 +247,7 @@ o ver repositorio en Github-->
   <!-- <script src="../js/registro.js"></script> -->
   <script src="../js/logIn.js"></script>
   <!-- <script src="../js/login.js"></script> -->
-  
+
   <!--Script para bootstrap 4.6-->
   <script src="../js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
