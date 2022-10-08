@@ -1,0 +1,36 @@
+/* ----Header---------------------------------*/
+body, header, footer{
+    font-family: 'Raleway';
+}
+header{
+    background: linear-gradient(180deg, rgba(141, 106, 175, 0.81) 22.97%, rgba(73, 12, 134, 0) 100%);
+    background-color: #FFFFFF;
+}
+.textobg{
+    color: white;
+    font-size: 25px;
+}
+
+.btnEnviar{
+    align-content: center;
+    background: #A97798;
+    margin-bottom: 2rem; 
+    border-radius: 10px; 
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+.invalid-feedback{
+    font-size: 5px;
+    background: #FFFFFF;
+}
+
+.card-footer{
+    margin-bottom: 0%;
+}
+
+#alertacampo1, #alertacampo2, #alertacampo3, #alertacampo4, #alertacampo5{
+    font-weight: none;
+    font-size: 14px;
+    color: #A97798;
+}
