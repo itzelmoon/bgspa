@@ -28,7 +28,10 @@ a.text-primary:focus, a.text-primary:hover {
 }
 .binav{
     font-size: 26px;
+    color: white !important;
 }
+
+
 
 .navBotones{
     display: none;
