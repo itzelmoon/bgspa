@@ -16,6 +16,8 @@ btnSubmit.addEventListener("click", function(e){
     let alertexitosa = document.getElementById("alertaexitosa");
     let alerterror = document.getElementById("alertaerror");
     let formulario = document.getElementById("formulario"); 
+    let sku= document.getElementById("campoSKU");
+    let enviosku= document.getElementById("campoSKU").value;
 
 
     ///JSON Y LOCAL STORAGE
@@ -25,7 +27,8 @@ btnSubmit.addEventListener("click", function(e){
         "img": archivo.value,
         "descripcion": descripcion.value,
         "precio": parseFloat(precio.value),
-        "categoria": categoria.value
+        "categoria": categoria.value,
+        "sku": sku.value
     };
 
     cont++;
@@ -36,7 +39,7 @@ btnSubmit.addEventListener("click", function(e){
 
     let id_row = 'row' + cont; //
     let fila_todascolumnas = `<tr id= ${id_row} row-sm-12 row-md-12 ><td> ${ident} </td><td>        
-    ${nombre.value} </td><td> ${archivo.value} </td><td> ${descripcion.value} </td><td>$ ${parseFloat(precio.value)} </td><td> ${categoria.value} </td></tr>`;
+    ${nombre.value} </td><td> ${archivo.value} </td><td> ${descripcion.value} </td><td>$ ${parseFloat(precio.value)} </td><td> ${categoria.value} </td><td> ${sku.value} </td></tr>`;
    
     //Agregar a la tabla
     $("#lista").append(fila_todascolumnas); //
@@ -51,6 +54,7 @@ btnSubmit.addEventListener("click", function(e){
      let d = descripcion.value;
      let p = parseFloat(precio.value);
      let c = categoria.value;
+     let s = sku.value
  
  
      console.log(n);
@@ -58,6 +62,7 @@ btnSubmit.addEventListener("click", function(e){
      console.log(d);
      console.log(p);
      console.log(c);
+     console.log(s);
 
      //VALIDACIONES DE FORMULARIO
      const flag = {
@@ -67,7 +72,7 @@ btnSubmit.addEventListener("click", function(e){
         descripcion: false,
         archivo:false
     }
-    //validación de nombreProducto
+    //validación de nombre producto
     nombre.classList.remove("is-invalid");
     nombre.classList.add("is-valid");
 
@@ -80,7 +85,7 @@ btnSubmit.addEventListener("click", function(e){
         flag.nombre = false
     }
 
-        //validacion precio
+        //validación precio
         function validarC (campoPrecio){
             precio.classList.add("is-invalid");
             let expReg=  /^\d+(?:\.\d{0,2})$/;
@@ -99,7 +104,7 @@ btnSubmit.addEventListener("click", function(e){
         validarC (envia);
 
     
-    //Validacion categoria
+    //Validación categoría
     if (categoria.selectedIndex!=0){   //validar estados
         categoria.classList.remove("is-invalid")
         categoria.classList.add("is-valid");
@@ -110,7 +115,7 @@ btnSubmit.addEventListener("click", function(e){
         flag.categoria = false
     }; // != 0
 
-    // validacion de la descripcion
+    // validación de la descripción
     descripcion.classList.remove("is-invalid");
     descripcion.classList.add("is-valid");
 
@@ -122,7 +127,7 @@ btnSubmit.addEventListener("click", function(e){
     flag.descripcion = false
     }
 
-        // validacion campo Archivo
+        // validación campo Archivo
         console.log(archivo.value) 
         if(archivo.value==""){
                 flag.archivo= false;
@@ -137,6 +142,24 @@ btnSubmit.addEventListener("click", function(e){
             }//else
     
 
+    // validación de campo SKU
+
+    function validarS (campoSKU){
+        sku.classList.add("is-invalid");
+        let expReg= /[A-Z0-9]/ ;
+        let validar= expReg.test(campoSKU);
+        if (validar){
+            sku.classList.remove("is-invalid");
+            sku.classList.add("is-valid");
+            flag.sku = true
+        }//if
+        else{
+            sku.classList.remove("is-valid");
+            sku.classList.add("is-invalid");
+            flag.sku = false
+        }//else
+    }//fuction
+    validarS (enviosku);
 
 
 

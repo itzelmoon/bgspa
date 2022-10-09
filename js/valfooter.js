@@ -8,7 +8,7 @@ btnSuscribirse.addEventListener("click", function(e){
 
     let flagfooter = false;
     
-    //validacion correo footer
+    //Validación correo footer
     function validarCorreo (correo) {
         let expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
         let verificar = expReg.test(correo);
@@ -47,10 +47,10 @@ btnSuscribirse.addEventListener("click", function(e){
                 message => {
       
                   if(message=='OK'){
-                    alert('¡Gracias! Ahora recibiras notificaciones por parte de BG SPA.');
+                    AlertSuscriS();
                   }else{
                     console.error(message);
-                    alert('Lo sentimos, hubo un error al enviar el mensaje. Inténtalo de nuevo.');
+                    AlertSuscriE();
                   }
                 }
                 
@@ -85,3 +85,35 @@ function emailOfertasUser(){
     }//flag
 
 });
+
+
+//----- ALERTAS DE SUSCRIPCION------------------
+const AlertSuscriS = () => {
+  Swal.fire({
+    position: 'top-end',
+    color: '#A97798',
+    background: '#F9F9F9',
+    icon: 'success',
+    title: '¡Gracias!',
+    text: 'Ahora recibiras notificaciones por parte de BG SPA.',
+    confirmButtonText: 'Aceptar',
+    confirmButtonColor: '#A058A1',
+    showConfirmButton: true,
+    toast: true,
+  }) 
+};
+
+const AlertSuscriE = () => {
+  Swal.fire({
+    position: 'top-end',
+    color: '#A97798',
+    background: '#F9F9F9',
+    icon: 'error',
+    title: 'Lo sentimos, hubo un error al enviar el mensaje.',
+    text: 'Inténtalo de nuevo.',
+    confirmButtonText: 'Aceptar',
+    confirmButtonColor: '#A058A1',
+    showConfirmButton: true,
+    toast: true,
+  }) 
+};

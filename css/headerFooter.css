@@ -1,6 +1,7 @@
 body, header, footer{
     font-family: 'Raleway';
 }
+
 header{
     background: linear-gradient(180deg, rgba(141, 106, 175, 0.81) 22.97%, rgba(73, 12, 134, 0) 100%);
     background-color: #FFFFFF;
@@ -27,169 +28,121 @@ a.text-primary:focus, a.text-primary:hover {
 }
 .binav{
     font-size: 26px;
+    color: white !important;
 }
 
-.prueba{
+
+
+.navBotones{
     display: none;
 }
 
-
-
 /* ----FOOTER---------------------------------*/
-footer{
-    background: linear-gradient(180deg, rgba(190, 162, 218, 0) 4.32%, #B69BD1 63.78%);
-    border: 1px solid #FFFFFF;
-    margin-bottom: 0%;
-}
 
-/*.footer_contacto{ ESTA CLASE SE PUSO POR UN RENGLON EN BLANCO QUE APARECIA EN MONITOR ALAM
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-    width: 100vw;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-top: auto;
+body{
+    position: relative;
+    padding-bottom: 15rem ;
+    min-height: 100vh;
+}/* Ajuste body para no alterar footer*/
 
-
-    background: linear-gradient(180deg, rgba(190, 162, 218, 0) 4.32%, #B69BD1 63.78%);
-    border: 1px solid #FFFFFF;
-    margin-bottom: 0%;
-}*/
-
-.card-body{
-    margin: 0% 0%;
-}
-.card-footer{
+.card_footer{
     background-color:  #EEBFFF!important;
     text-align: center;
     padding-top: 0px;
     padding-bottom: 0px;
-}
-.btnSuscribirse{
-    width: auto;
-    justify-content: center;
-    background: #A97798; 
-    border-radius: 10px; 
-    border: none;
-    color: white;
-    font-size: 17px;
-    margin-top: .1rem;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.inputs{
-    justify-content: center;
-}
+} /*Div card_footer*/
 
+footer{
+    background: linear-gradient(180deg, rgba(190, 162, 218, 0) 4.32%, #B69BD1 63.78%);
+    border: 1px solid #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}/* Color footer y posición*/
+
+.card{
+    background:none;
+    border: none;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 20px;
+} /* Omite borde, color y padding de card´s */
+
+.card-body {
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}/* Padding de car´d individuales*/
+
+.cardAtencion, .cardAtencion:hover {
+    color: #512A5F!important;
+}/* hover enlaces Atencion a clientes*/
+
+p {
+    margin-top: 0px;
+    margin-bottom: .3rem;
+} /* separacion entre lineas*/
+
+.row{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 20px;
+}/* margen del div general row*/
 
 .card-title{
     color: #512A5F;
     font-size: 16px;
     font-weight: 700;
-}
-
-/* CARTA 1*/
-.car1{
-    color: #512A5F;
-    font-size: 13px;
-    text-align: left;
-}
-.bi-circle-fill{
-    font-size: 5px;
-}
-.titulo1{
     text-align: center;
-}
-.col-10{
-    padding: 0% 0%;
-}
+}/* Stylo titulos de card´s */
 
-
-/* CARTA 2*/
-.clase1{
-    text-align: left;
-    color: #512A5F;
-    font-size: 13px;
-}
-.carAten{
+.card-text{
     text-align: center;
-}
+    color: #512A5F;
+}/* Stilo texto/parrafo de card´s*/
 
-
-/* CARTE 3*/
-.redes{
-    justify-content: center;
+.redes, .bi{
+    align-content: center;
     font-size: 25px;
-    padding: 8px;
     color: #512A5F;
-}
-.bi:focus, .bi:hover {
-    color: #837295 !important;
-}
-.titulo3{
-    text-align: center;
-}
-.bodysiguenos{
-    align-content: center;
-    padding: 0% 0%;
-}
-
-/* CARTA 4*/
-
-
-.titulo4{
-    text-align: center;
-}
-.textjv{
-    color: #24071a;
-    font-weight: 700;
-    text-decoration: none;
-}
-.card{
-    background:none;
-    border: none;
-}
-
-
-/*
-.bi{
-    color: #512A5F;
-}
+    line-height: 0;
+    text-align: left;
+} /* Styli redes sociales*/
 
 .bi:focus, .bi:hover {
     color: #837295 !important;
-}
+} /* hover bi-redes */ 
 
-.card-body, .card-text{
-    color: #512A5F;
-    font-size: 13px;
+.redes{
+    display: flex;
     justify-content: center;
-    align-content: center;
-}
-
-.form-control{
-    align-content: center;
-    background: #ffffff; 
-    border-radius: 10px; 
-}
-
-.textjv{
-    color: #24071a;
-    font-weight: 700;
-    text-decoration: none;
-}
-
+} /* Posición iconos redes sociales */
 
 .btnSuscribirse{
-    margin-left: 20px;
-}
+    display: flex;
+    justify-content: center;
+    background: #A97798; 
+    border-radius: 10px; 
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 20px 5px 20px;
+    margin-top: 10px;
 
-*/
+}/* Stylo botón suscribirse*/
+
+.botonSus{
+    margin-left: 40px;
+    margin-right:40px;
+}/* Margen card botón*/
+
+.textjv{
+    color: #24071a;
+    font-weight: 700;
+    text-decoration: none;
+}/* Styli textjv*/
+
 
 @media screen and (max-width: 576px) {
 
@@ -207,123 +160,34 @@ footer{
         font-size: 26px;
         top: 50px;
     }
-
     .card-body {
         text-align: center;
     }
-
-    .btnSuscribirse{
-        width: auto;
-        margin-top: 0.1rem;
-        padding-top: 6px;
-        padding-bottom: 6px;
-    }
-    .form-inline .btn-input{
+    .form-inline{
         align-content: center;
     }
-    .titulo4{
-        text-align: center;
+    .navSuper{
+        display: none;
     }
 
-    /* .navbar-toggler{
-        position: fixed;
-        margin-top: 0%;
-        bottom: 0%;
-        top: 0%;
-    } */
-    
-    /* .textobg{
-        position:static;
-        margin-top: 5px;
-        margin-left: 300%;
-    } */
-    /* .imgSpa{
-        position:static;
-        margin-top: 9px;
-        margin-left: 25%;
-    }
-    .menuStatic{
-        position:fixed;
-        top: 15px;
-        text-decoration-color: white;
-    } */
-
-
-    /* 
-    .imgSpa{
-        position:fixed;
-        margin-top: 75px;
-        margin-left: 25%;
-    }
-    .bi-movil{
-        font-size: 26px;
-        position:fixed;
-        margin-top: 15px;
-        margin-left: 250px;
-    }
-    .bi-person{
-        padding-left: 15px;
-    }
-    .menuStatic{
-        position:static;
-        padding-top: 0%;
-        text-decoration-color: white;
-    }
-
-    .menutop{
-        margin: 0px 0px;
-        padding: 0px 0px;
-    }
-    */
-
-
-
-    /* .imgSpa{
-        position:relative;
-        top: 50px;
-        left: 110px;
-    }
-    .bi-movil{
-        position:relative;
-        top: 45px;
-        right: 10px;
-    }
-    .bi-person{
-        position:relative;
-        top: 45px;
-        right: 15px;
-
-    }
-    .bi-cart4{
-        right: 0px;
-        left: px;
-        margin: 0% 0% 0% 0%;
-        padding: 0% 0% 0% 0%;
-    }
-    .menuStatic{
-        position:relative;
-        top: 0px;
-        margin-top: 0%;
-        padding-top: 0%;
-        text-decoration-color: white;
-    }
-
-    .menutop{
-        margin: 0px 0px 0% 0%;
-        padding: 0% 0% 0% 0%
-    } */
-    
-    .prueba{
+    .navBotones{
         display: block;
         position: absolute;
         right: 30px;
     }
-    .prueba2{
-        display: none;
-    }
 
+    body{
+        position: relative;
+        padding-bottom: 45rem ;
+        min-height: 100vh;
+    }/* Ajuste body para no alterar footer*/
 
-
+    .row{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 20px;
+    }/* margen del div general row*/
+    
 }
 
 

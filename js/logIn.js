@@ -1,4 +1,4 @@
-//Este codigo queda pendiente de corregir ya que unicamente funciona en la pagina de login.js 
+//Este código queda pendiente de corregir ya que unicamente funciona en la página de login.js 
 
 
 let btnSubmit = document.getElementById("btnIniciarSesion");
@@ -18,6 +18,8 @@ btnSubmit.addEventListener("click", function(e){
     let valorcorreo = document.getElementById("correo").value;
     let contraseña = document.getElementById("contraseña");
     let valorcontraseña = document.getElementById("contraseña").value;
+    let alerterror = document.getElementById("alertaerror");
+    let formulario = document.getElementById("formulario");    
 
     //VALIDACIONES DE FORMULARIO
     const flag = {
@@ -25,7 +27,7 @@ btnSubmit.addEventListener("click", function(e){
     contraseña:false
     }
 
-    //validacion correo
+    //Validación correo
      function validarCorreo (correo) {
      let expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
      let verificar = expReg.test(correo);
@@ -42,7 +44,7 @@ btnSubmit.addEventListener("click", function(e){
      }
      validarCorreo(valorcorreo); 
 
-    //validacion contraseña
+    //Validación contraseña
     function validarContraseña (contra) {
         let expReg =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,15}$/;
         let verificarcontraseña = expReg.test(contra);
@@ -58,6 +60,16 @@ btnSubmit.addEventListener("click", function(e){
     }
     }
     validarContraseña(valorcontraseña); 
+
+    if (flag.correoe && flag.contraseña){
+        AlertLogin();
+        formulario.reset();
+        nombre.classList.remove("is-valid")
+        apellido.classList.remove("is-valid")
+    } else {
+    alerterror.style.display = "block";
+    setTimeout(()=>{alerterror.style.display = "none"}, (7000));      
+    }//else
 
 });//btnSubmit
 
@@ -102,3 +114,20 @@ e.preventDefault();
     }
 
 }) 
+
+//------------AlertLogin en Flag general--------------
+const AlertLogin = () => {
+    Swal.fire({
+                    position: 'top',
+                    color: '#A97798',
+                    background: '#F9F9F9',
+                    icon: 'success',
+                    title: '¡Bienvenido!',
+                    text: 'Disfruta la mágia de los productos BG SPA.',
+                    confirmButtonText: 'Aceptar',
+                    confirmButtonColor: '#A058A1',
+                    showConfirmButton: true,
+                    showCloseButton: true,
+                    toast: true
+                  }) 
+                };
