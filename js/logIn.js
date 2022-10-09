@@ -1,6 +1,6 @@
 //Este código queda pendiente de corregir ya que unicamente funciona en la página de login.js 
-
-
+const usuarios = localStorage.getItem("info")
+let existenciaStorage = false
 let btnSubmit = document.getElementById("btnIniciarSesion");
 
 function mostrarContraseña(){
@@ -63,13 +63,38 @@ btnSubmit.addEventListener("click", function(e){
 
     if (flag.correoe && flag.contraseña){
         AlertLogin();
-        formulario.reset();
-        nombre.classList.remove("is-valid")
-        apellido.classList.remove("is-valid")
     } else {
-    alerterror.style.display = "block";
-    setTimeout(()=>{alerterror.style.display = "none"}, (7000));      
+        alerterror.style.display = "block";
+        setTimeout(()=>{alerterror.style.display = "none"}, (7000));      
     }//else
+
+    if(usuarios){
+        let conversion = JSON.parse(usuarios);
+        arregloUsuarios = conversion;
+        existenciaStorage = true;
+    }//if para comprobar que existan usuarios registrados
+
+    let sesion = false;
+    if(existenciaStorage){
+        for (let i = 0; i < arregloUsuarios.length; i++) {
+            if((arregloUsuarios[i].correo === valorcorreo)&&(arregloUsuarios[i].contraseña === valorcontraseña)){
+                nombreUsuario = arregloUsuarios[i].name
+                localStorage.setItem("sesionIniciada", "true")
+                localStorage.setItem("nombreUsuario", nombreUsuario)
+                sesion = true
+                break
+            }//if si coinciden contrasena y email.
+        }//for para verificar que los campos coincidan con el storage
+        
+        if(sesion){
+            location.href = "http://127.0.0.1:5503/index.html"
+        } else {
+            valorcorreo = "";
+            valorcontraseña = "";
+        }
+        
+    
+    }// if que exista algun usuario en el estorage
 
 });//btnSubmit
 

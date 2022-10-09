@@ -31,12 +31,14 @@ a.text-primary:focus, a.text-primary:hover {
     color: white !important;
 }
 
-
-
 .navBotones{
     display: none;
 }
 
+#cerrarSesion{
+    font-size: 1.2rem;
+    color: white !important;
+}
 /* ----FOOTER---------------------------------*/
 
 body{
