@@ -14,8 +14,18 @@
   <!--<link rel="stylesheet" href="../css/logIn.css">    Por el momento este css choca con el disenio general de la pagina-->
   <link rel="stylesheet" href="./css/headerFooter.css">
   <link rel="stylesheet" href="./css/index.css">
+  <!--<link rel="stylesheet" href="./css/busqueda.css">-->
   <!--SWEET ALERTS-->
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!--
+  <style>
+    #navegacion{
+      z-index: 12;
+    }
+  </style>
+  -->
+
   <title>BGSpa - Inicio</title>
 </head>
 
@@ -35,8 +45,9 @@
     <nav class="navbar navSuper">
       <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG SPA</strong></span></a>
       <form class="form-inline">
-        <input class="form-control mr-sm-2" id="btnBq" type="search" placeholder="Buscar" aria-label="Search">
-        <a class="btn my-2 my-sm-0" type="submit" id="btnBq"><i class="bi bi-search binav"></i></a>
+        <!--<input class="form-control mr-sm-2" id="btnBq" type="search" placeholder="Buscar" aria-label="Search">-->
+        <!--<a class="btn my-2 my-sm-0" type="submit" id="btnBq"><i class="bi bi-search binav"></i></a>-->
+        <a class="btn my-2 my-sm-0" type="submit" id="lupacont"><i id="lupa" class="bi bi-search binav"></i></a>
         <a class="btn my-2 my-sm-0" type="submit" href="./pages/carrito.html"><i
             class="bi bi-cart4 bi-movil binav"></i></a>
         <a id="acceder" class="btn my-2 my-sm-0" type="submit" href="./pages/logIn.html"><i
@@ -73,6 +84,20 @@
       <button class="btn my-2 my-sm-0" type="submit"><i class="bi bi-person bi-movil binav"></i></button>
     </div>
   </header>
+
+<!--Barra de busqueda | EN DESARROLLO |
+  <div id="contenedorBusqueda">
+    <div id="barraBusqueda">
+      <input id="entradaBusqueda" type="text" placeholder="Buscar producto">
+    </div>
+    <ul id="cajaBusqueda"></ul>
+    <div id="cover"></div>
+    <div id="lupacont">
+        <i id="lupa" class="bi bi-search btn my-2 my-sm-0"></i>
+      </div>
+  </div> -->
+
+
 
   <!--Banner | inicio-->
   <section>
@@ -349,6 +374,10 @@
   <script src="./js/cerrarsesion.js"></script>
   <script src="./js/index.js"></script>
   <script src="./js/valfooter.js"></script>
+
+  <!--<script src="./js/busqueda.js"></script>
+  <script src="./js/prodLocalStorage.js"></script>-->
+
   <!--Script para bootstrap 4.6-->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
