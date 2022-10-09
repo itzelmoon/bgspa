@@ -8,7 +8,7 @@ btnSuscribirse.addEventListener("click", function(e){
 
     let flagfooter = false;
     
-    //validacion correo footer
+    //Validación correo footer
     function validarCorreo (correo) {
         let expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
         let verificar = expReg.test(correo);

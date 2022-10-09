@@ -72,7 +72,7 @@ btnSubmit.addEventListener("click", function(e){
         descripcion: false,
         archivo:false
     }
-    //validación de nombreProducto
+    //validación de nombre producto
     nombre.classList.remove("is-invalid");
     nombre.classList.add("is-valid");
 
@@ -85,7 +85,7 @@ btnSubmit.addEventListener("click", function(e){
         flag.nombre = false
     }
 
-        //validacion precio
+        //validación precio
         function validarC (campoPrecio){
             precio.classList.add("is-invalid");
             let expReg=  /^\d+(?:\.\d{0,2})$/;
@@ -104,7 +104,7 @@ btnSubmit.addEventListener("click", function(e){
         validarC (envia);
 
     
-    //Validacion categoria
+    //Validación categoría
     if (categoria.selectedIndex!=0){   //validar estados
         categoria.classList.remove("is-invalid")
         categoria.classList.add("is-valid");
@@ -115,7 +115,7 @@ btnSubmit.addEventListener("click", function(e){
         flag.categoria = false
     }; // != 0
 
-    // validación de la descripcion
+    // validación de la descripción
     descripcion.classList.remove("is-invalid");
     descripcion.classList.add("is-valid");
 

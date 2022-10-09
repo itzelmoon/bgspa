@@ -37,12 +37,12 @@ o ver repositorio en Github-->
     </div>
   </div> -->
   <header>
-    <nav class="navbar prueba2">
+    <nav class="navbar navSuper">
       <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG SPA</strong></span></a>
       <form class="form-inline">
         <input class="form-control mr-sm-2" id="btnBq" type="search" placeholder="Buscar" aria-label="Search"
           style="border: none;">
-        <a class="btn my-2 my-sm-0" type="submit" id="btnBq"><i class="bi bi-search"></i></a>
+        <a class="btn my-2 my-sm-0" type="submit" id="btnBq"><i class="bi bi-search binav"></i></a>
         <a class="btn my-2 my-sm-0" type="submit" href="./carrito.html"><i class="bi bi-cart4 bi-movil binav"></i></a>
         <a class="btn my-2 my-sm-0" type="submit" href="./logIn.html"><i class="bi bi-person bi-movil binav"></i></a>
       </form>
@@ -70,7 +70,7 @@ o ver repositorio en Github-->
           </li>
       </div>
     </nav>
-    <div class="prueba pruebaPosi1">
+    <div class="navBotones pruebaPosi1">
       <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG SPA</strong></span></a>
       <button class="btn my-2 my-sm-0" type="submit"><i class="bi bi-cart4 bi-movil binav"></i></button>
       <button class="btn my-2 my-sm-0" type="submit"><i class="bi bi-person bi-movil binav"></i></button>
@@ -85,7 +85,7 @@ o ver repositorio en Github-->
     <br>
     <br>
     <div class="alert alert-danger" role="alert" style="display: none" id="alertaerror">Revisa que todos los campos se
-      hayan llenando correctamente.</div>
+      hayan llenado correctamente.</div>
 
     <!-- Se añadió acción de LogIn para vincular con el html -->
     <form id="formulario" action="logIn.html">
@@ -96,15 +96,16 @@ o ver repositorio en Github-->
             <label for="Nombre">Nombre (s)</label>
             <input type="text" class="form-control holder" id="Nombre" placeholder="Tu nombre(s) aquí">
             <div class="invalid-feedback alertaWarning" id="alertacampo1">
-              Verifique que el campo contenga mas de 3 caracteres.
+              Verifique que el campo contenga más de 3 caracteres.
             </div>
           </div>
+          
 
           <div class="form-group inputs compos">
             <label for="Apellido">Apellido (s)</label>
             <input type="text" class="form-control holder" id="Apellido" placeholder="Tu apellido(s) aquí">
             <div class="invalid-feedback alertaWarning" id="alertacampo2">
-              Verifique que el campo contenga mas de 3 caracteres.
+              Verifique que el campo contenga más de 3 caracteres.
             </div>
           </div>
 
@@ -118,9 +119,9 @@ o ver repositorio en Github-->
           </div>
 
         </div>
-
+        
         <!--Segunda fila-->
-        <div class="form col-md-6">
+        <div class="form col-md-6 confcorreo">
 
           <div class="form-group inputs">
             <label for="correo">Correo electrónico</label>
@@ -129,30 +130,30 @@ o ver repositorio en Github-->
               Verifique su correo.
             </div>
           </div>
-          <div class="row">
-            <div class="form-group col-10 inputs compos" style="margin-left: 15px;">
+          <div class="row" style="margin-left:0rem ;">
+            <div class="form-group col-11 inputs compos ojo" style="margin-left:0rem; padding-left: 0rem; padding-top:0rem;">
               <label for="contraseña">Contraseña</label>
               <input type="password" class="form-control holder" id="contraseña" placeholder="Contraseña">
               <div class="invalid-feedback alertaWarning" id="alertacampo5">Restricciones: De 8 a 15 caracteres, una
-                mayúscula, un numero, sin espacios, un caracter especial.</div>
+                mayúscula, un número, sin espacios, un carácter especial.</div>
             </div>
 
-            <div class="col-1" style="padding:0px 0px;">
+            <div class="col-1 " style="padding:0px 0px; margin-top: -1.5em;">
               <button type="button" style="border: none; margin-top: 1.4em; background: none; font-size: 28px"
                 onclick="mostrarContraseña()"><i class="bi bi-eye"></i></button>
             </div>
           </div>
 
-          <div class="row">
-            <div class="form-group col-10 inputs compos" style="margin-left: 15px;">
-              <label for="validacionContraseña">Confirma tu contraseña</label>
+          <div class="row" style="margin-left:0rem ;">
+            <div class="form-group col-11 inputs compos ojo" style="margin-left:0rem; padding-left: 0rem; padding-top:0rem;">
+              <label for="validacionContraseña">Confirme contraseña</label>
               <input type="password" class="form-control holder" id="validacionContraseña"
                 placeholder="Confirmar contraseña">
               <div class="invalid-feedback alertaWarning" id="alertacampo6">Verifique que las contraseñas coincidan.
               </div>
             </div>
 
-            <div class="col-1" style="padding:0px 0px;">
+            <div class="col-1 ojo1" style="padding:0px 0px; margin-top: -1.5em;">
               <button type="button" style="border: none; margin-top: 1.4em; background: none; font-size: 28px"
                 onclick="mostrarContraseña2()"><i class="bi bi-eye"></i></button>
             </div>

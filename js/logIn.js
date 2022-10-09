@@ -1,4 +1,4 @@
-//Este codigo queda pendiente de corregir ya que unicamente funciona en la pagina de login.js 
+//Este código queda pendiente de corregir ya que unicamente funciona en la página de login.js 
 
 
 let btnSubmit = document.getElementById("btnIniciarSesion");
@@ -27,7 +27,7 @@ btnSubmit.addEventListener("click", function(e){
     contraseña:false
     }
 
-    //validacion correo
+    //Validación correo
      function validarCorreo (correo) {
      let expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
      let verificar = expReg.test(correo);
@@ -44,7 +44,7 @@ btnSubmit.addEventListener("click", function(e){
      }
      validarCorreo(valorcorreo); 
 
-    //validacion contraseña
+    //Validación contraseña
     function validarContraseña (contra) {
         let expReg =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,15}$/;
         let verificarcontraseña = expReg.test(contra);

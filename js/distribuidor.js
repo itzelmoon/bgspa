@@ -105,7 +105,7 @@ btnSubmit1.addEventListener("click", function(e){
 
 
 
-    //Validacion Telefono
+    //Validación Teléfono
     if((campoTelefono.value.length == 10) 
     && (!isNaN(campoTelefono.value))
     && (campoTelefono.value!=0)
@@ -121,7 +121,7 @@ btnSubmit1.addEventListener("click", function(e){
         flag.campoTelefono = false
     }
 
-    // Validacion Mensaje
+    // Validación Mensaje
     if ((campoMensaje.value.length >= 10) && (campoMensaje.value.length <120) && !(campoMensaje.value.trim() == "") && (campoMensaje.value[0] != " ")) {
         campoMensaje.classList.remove("is-invalid");
         campoMensaje.classList.add("is-valid");
@@ -132,7 +132,7 @@ btnSubmit1.addEventListener("click", function(e){
         flag.campoMensaje = false
     }
 
-    //validacion correo
+    //validación correo
     function validarCorreo (correo) {
         let expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
         let verificar = expReg.test(correo);
@@ -149,7 +149,7 @@ btnSubmit1.addEventListener("click", function(e){
     }
     validarCorreo(valorcorreo);
 
-    //confirmacion correo
+    //Confirmación correo
     if ((valorcorreo === confirmar) && (confirmarCorreo.value.length!=0)){
         confirmarCorreo.classList.remove("is-invalid");
         confirmarCorreo.classList.add("is-valid");
@@ -160,7 +160,7 @@ btnSubmit1.addEventListener("click", function(e){
         flag.confirmarCorreo = false
     }
 
-    //validación empresa
+    //Validación empresa
     if ((empresa.value.length >= 3)
         && !(empresa.value.trim() == "") 
         && (empresa.value[0] != " ") 

@@ -66,6 +66,23 @@ p {
 }
 
 
+
+/*Ver Ipad*/
+
+@media screen and (max-width: 820px) {
+
+    .txtfot{ font-size: 14px;    
+    }
+}
+
+/*Ver IpadMin*/
+@media screen and (max-width: 768px) {
+    
+        .txtfot{ font-size: 12px;    
+        }
+ }
+    
+
 @media screen and (max-width: 576px) {
 
     header{
@@ -86,7 +103,9 @@ p {
     .card-body {
         text-align: center;
     }
-
+    
+    .txtfot{ font-size: 18px;    
+    }/* ajuste de letras fotter*/
 
 
 

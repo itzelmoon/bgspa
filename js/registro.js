@@ -58,7 +58,7 @@ btnSubmit.addEventListener("click", function(e){
         valcontraseña:false
     }
     
-     //validación de nombre
+     //Validación de nombre
      nombre.classList.remove("is-invalid");
      nombre.classList.add("is-valid");
  
@@ -71,7 +71,7 @@ btnSubmit.addEventListener("click", function(e){
          flag.nombre = false
      }
  
-     //validación de apellido
+     //Validación de apellido
      apellido.classList.remove("is-invalid");
      apellido.classList.add("is-valid");
      
@@ -84,7 +84,7 @@ btnSubmit.addEventListener("click", function(e){
          flag.apellido = false
      }
  
-     //Validacion Telefono
+     //Validación Teléfono
      if((telefono.value.length == 10)&&(telefono.value!=0)
      ) {
          telefono.classList.remove("is-invalid");
@@ -96,7 +96,7 @@ btnSubmit.addEventListener("click", function(e){
          flag.telefono = false
      }
  
-     //validacion correo
+     //Validación correo
      function validarCorreo (correo) {
      let expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
      let verificar = expReg.test(correo);
@@ -113,7 +113,7 @@ btnSubmit.addEventListener("click", function(e){
      }
      validarCorreo(valorcorreo); 
 
-    //validacion contraseña
+    //validación contraseña
     function validarContraseña (contra) {
         let expReg =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,15}$/;
         let verificarcontraseña = expReg.test(contra);
@@ -130,7 +130,7 @@ btnSubmit.addEventListener("click", function(e){
         }
     validarContraseña(valorcontraseña); 
         
-    //confirmacion contraseña
+    //Confirmación contraseña
     function confirmarContraseña (verifcontra) {
         let expReg =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,15}$/;
         let confirmarcontraseña = expReg.test(verifcontra);   
