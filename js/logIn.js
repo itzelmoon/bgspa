@@ -1,4 +1,4 @@
-//Este código queda pendiente de corregir ya que unicamente funciona en la página de login.js 
+//Ya se realizaron las actualizaciones
 const usuarios = localStorage.getItem("info")
 let existenciaStorage = false
 let btnSubmit = document.getElementById("btnIniciarSesion");
@@ -61,13 +61,13 @@ btnSubmit.addEventListener("click", function(e){
     }
     validarContraseña(valorcontraseña); 
 
-    if (flag.correoe && flag.contraseña){
-        AlertLogin();
-    } else {
-        alerterror.style.display = "block";
-        setTimeout(()=>{alerterror.style.display = "none"}, (7000));      
-    }//else
+    // if (!(flag.correoe && flag.contraseña)){ SE ACTUALIZO POR UN DISEÑO DE MODAL
+    //     alerterror.style.display = "block";
+    //     setTimeout(()=>{alerterror.style.display = "none"}, (7000)); 
+    // } // if para que se hayan rellenado los campos correctos
 
+
+    // Codigo para logear a un usuario -----------------------------------------------------------------------------
     if(usuarios){
         let conversion = JSON.parse(usuarios);
         arregloUsuarios = conversion;
@@ -85,40 +85,21 @@ btnSubmit.addEventListener("click", function(e){
                 break
             }//if si coinciden contrasena y email.
         }//for para verificar que los campos coincidan con el storage
-        
+    console.log(sesion);
         if(sesion){
-            location.href = "http://127.0.0.1:5503/index.html"
+            AlertLogin();
+            setTimeout(()=>{location.href = "http://127.0.0.1:5503/index.html"}, (2500)); 
         } else {
-            valorcorreo = "";
-            valorcontraseña = "";
+            WarningLogin();
+            formulario.reset();
+            correoe.classList.remove("is-valid");
+            contraseña.classList.remove("is-valid");
         }
         
     
     }// if que exista algun usuario en el estorage
 
 });//btnSubmit
-
-function checkData(){
-    let enterEmail = document.getElementById("correo").value;
-    let enterPwd = document.getElementById("contraseña").value;
-
-    //get data from localstorage
-    let getEmail = localStorage.getItem("userEmail");
-    let getPwd = localStorage.getItem("userPwd");
-
-    if(enterEmail == getEmail){
-        if(enterPwd == getPwd){
-            alert("Login Successful");
-            myFunction();
-
-    }else{
-        alert("wrong password")
-        }
-    }else{
-        alert("Invalid")
-    }
-
-}
 
 let x = document.getElementById("a");
 
@@ -149,10 +130,26 @@ const AlertLogin = () => {
                     icon: 'success',
                     title: '¡Bienvenido!',
                     text: 'Disfruta la mágia de los productos BG SPA.',
-                    confirmButtonText: 'Aceptar',
+                    // confirmButtonText: 'Aceptar',
                     confirmButtonColor: '#A058A1',
-                    showConfirmButton: true,
-                    showCloseButton: true,
-                    toast: true
+                    // showConfirmButton: true,
+                    // showCloseButton: true,
+                    // toast: true
                   }) 
+                };
+
+const WarningLogin = () => {
+    Swal.fire({
+                    position: 'top',
+                    color: '#A97798',
+                    background: '#F9F9F9',
+                    icon: 'warning',
+                    title: '¡Advertencia!',
+                    text: 'El correo y/o contraseña no son válidos.',
+                    // confirmButtonText: 'Aceptar',
+                    confirmButtonColor: '#A058A1',
+                    // showConfirmButton: true,
+                    // showCloseButton: true,
+                    // toast: true
+                    }) 
                 };
