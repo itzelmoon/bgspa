@@ -39,7 +39,7 @@ a.text-primary:focus, a.text-primary:hover {
 
 body{
     position: relative;
-    padding-bottom: 15rem ;
+    padding-bottom: 20rem ;
     min-height: 100vh;
 }/* Ajuste body para no alterar footer*/
 
