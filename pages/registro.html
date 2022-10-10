@@ -28,7 +28,7 @@ o ver repositorio en Github-->
 <body>
   <!--header de la página web-->
 
-  <!-- <div class="btn-group b" id="a">     ESTE CODIGO ESTA EN PROCESO DE MEJORA
+  <!-- <div class="btn-group b" id="a">     ESTE CODIGO YA NO SE UTILIZO
     <button class="btn btn-secondary btn-sm dropdown-toggle btn1" type="button" data-toggle="dropdown" aria-expanded="false">
       Activo
     </button>
@@ -44,7 +44,7 @@ o ver repositorio en Github-->
           style="border: none;">
         <a class="btn my-2 my-sm-0" type="submit" id="btnBq"><i class="bi bi-search binav"></i></a>
         <a class="btn my-2 my-sm-0" type="submit" href="./carrito.html"><i class="bi bi-cart4 bi-movil binav"></i></a>
-        <a class="btn my-2 my-sm-0" type="submit" href="./logIn.html"><i class="bi bi-person bi-movil binav"></i></a>
+        <a class="btn my-2 my-sm-0" type="submit" href="../pages/logIn.html"><i class="bi bi-person bi-movil binav"></i></a>
       </form>
     </nav>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -88,7 +88,8 @@ o ver repositorio en Github-->
       hayan llenado correctamente.</div>
 
     <!-- Se añadió acción de LogIn para vincular con el html -->
-    <form id="formulario" action="logIn.html">
+    <!-- action="logIn.html" Se elimino este evento para usar la nueva actualizacion de log in-->
+    <form id="formulario" >
       <!--Primer fila-->
       <div class="row">
         <div class="form col-md-6">
@@ -164,8 +165,9 @@ o ver repositorio en Github-->
     </form>
 
     <!--boton enviar-->
+    <!-- onclick="addData()" Se elimino este evento para utilizar la nueva actualizacion de la funcion log in en la etiqueta bottom-->
     <div class="boton col-md-6">
-      <button type="submit" onclick="addData()" class="col-md-12 btnRegistrar" id="btnRegistrarse">Registrarse</button>
+      <button type="submit" class="col-md-12 btnRegistrar" id="btnRegistrarse">Registrarse</button>
     </div>
 
   </main>
@@ -233,7 +235,7 @@ o ver repositorio en Github-->
   <!-- <script src="../js/login.js"></script> -->
 
   <!--Función para LogIn------------------->
-  <script>
+  <!-- <script> Se actualizo funcion de log con la cadena de datos
     function addData() {
       let valorcorreo = document.getElementById("correo").value;
       let valorcontraseña = document.getElementById("contraseña").value
@@ -244,7 +246,7 @@ o ver repositorio en Github-->
       localStorage.setItem('userPwd', valorcontraseña);
     }//addData
 
-  </script>
+  </script> -->
 
   <!--Script para bootstrap 4.6-->
   <!--<script src="../js/registro.js"></script>-->

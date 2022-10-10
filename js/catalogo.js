@@ -287,7 +287,7 @@ function addItem(item){
      'id':'14'});
  
      addItem({'name':'Bio Jelly Spa 90g. Flowers',
-     'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 1 kg. TROPICAL.png',
+     'img':'/img/Productos/bioJellySpa/BIO JELLY SPA 90g. FLOWERS.png',
      'description':'Producto libre de químicos o conservantes dañinos para la piel y es totalmente biodegradable. En sus beneficios destaca una hidratación profunda para la piel, activa la circulación sanguínea, desinflama tus pies, relaja músculos, suaviza la piel, exfolia ligeramente y elimina toxinas que se encuentran en nuestro cuerpo.',
      'precio':'79',
      'categoria':'Bio Jelly Spa',

@@ -1,9 +1,9 @@
 let btnSubmit = document.getElementById("btnAgregar");
 let productos = [];
-let cont = 1;
+let cont = 85;
 let ident = 0;
 let lista = document.getElementById("lista");
-const key = "info";
+const key = "productos";
 
 btnSubmit.addEventListener("click", function(e){ 
     e.preventDefault();
@@ -31,9 +31,7 @@ btnSubmit.addEventListener("click", function(e){
         "sku": sku.value
     };
 
-    cont++;
-    ident++;
-    productos.push(arregloProductos);
+    
     console.log(productos);
 
 
@@ -45,9 +43,7 @@ btnSubmit.addEventListener("click", function(e){
     $("#lista").append(fila_todascolumnas); //
 
      //------------LocalStorage--------------------------------------
-     JSON.stringify(productos);
-     localStorage.setItem(key, JSON.stringify(productos));
- 
+     
      //Comprobación de valores en la consola.
      let n = nombre.value;
      let a = archivo.value;
@@ -166,6 +162,11 @@ btnSubmit.addEventListener("click", function(e){
 
     //ALERTA GENERAL
     if (flag.nombre && flag.precio && flag.descripcion && flag.categoria && flag.archivo){
+        cont++;
+        ident++;
+        productos.push(arregloProductos);
+        JSON.stringify(productos);
+        localStorage.setItem(key, JSON.stringify(productos));
         alertexitosa.style.display = "block";
         setTimeout(()=>{alertexitosa.style.display = "none"}, (5000));
         formulario.reset();

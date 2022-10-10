@@ -39,7 +39,10 @@
       <input class="form-control mr-sm-2" id="btnBq" type="search" placeholder="Buscar" aria-label="Search">
       <a class="btn my-2 my-sm-0" type="submit" id="btnBq"><i class="bi bi-search binav"></i></a>
       <a class="btn my-2 my-sm-0" type="submit" href="./carrito.html"><i class="bi bi-cart4 bi-movil binav"></i></a>
-      <a class="btn my-2 my-sm-0" type="submit" href="./logIn.html"><i class="bi bi-person bi-movil binav"></i></a>
+      <a class="btn my-2 my-sm-0 acceder" type="submit" href="../pages/logIn.html"><i class="bi bi-person bi-movil binav"></i></a>
+      <div class="cerrarSesion">
+        
+      </div>
     </form>
   </nav>
   <nav class="navbar navbar-expand-lg navbar-light">
@@ -67,8 +70,13 @@
   </nav>
   <div class="navBotones pruebaPosi1">
     <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG SPA</strong></span></a>
-    <button class="btn my-2 my-sm-0" type="submit"><i class="bi bi-cart4 bi-movil binav"></i></button>
-    <button class="btn my-2 my-sm-0" type="submit"><i class="bi bi-person bi-movil binav"></i></button>
+    <a class="btn my-2 my-sm-0" type="submit" href="./pages/carrito.html"><i
+      class="bi bi-cart4 bi-movil binav"></i></a>
+    <a class="btn my-2 my-sm-0 acceder" type="submit" href="./pages/logIn.html"><i
+      class="bi bi-person bi-movil binav"></i></a>
+    <a class="cerrarSesion">
+
+    </a>
   </div>
 
 </header>
@@ -285,12 +293,12 @@
 </footer>
 
   <!-- <script src="../js/registro.js"></script> -->
-  <script src="../js/logIn.js"></script>
   <!--Este link no funciona-->
   <!-- <script src="../js/login.js"></script> -->
   <!--------Correo-------->
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <!--Script------------------------------->
+  <script src="../js/cerrarsesion.js"></script>
   <script src="../js/nosotros.js"></script>
   <script src="../js/valfooter.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

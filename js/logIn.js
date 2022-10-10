@@ -1,6 +1,6 @@
-//Este código queda pendiente de corregir ya que unicamente funciona en la página de login.js 
-
-
+//Ya se realizaron las actualizaciones
+const usuarios = localStorage.getItem("info")
+let existenciaStorage = false
 let btnSubmit = document.getElementById("btnIniciarSesion");
 
 function mostrarContraseña(){
@@ -61,39 +61,45 @@ btnSubmit.addEventListener("click", function(e){
     }
     validarContraseña(valorcontraseña); 
 
-    if (flag.correoe && flag.contraseña){
-        AlertLogin();
-        formulario.reset();
-        nombre.classList.remove("is-valid")
-        apellido.classList.remove("is-valid")
-    } else {
-    alerterror.style.display = "block";
-    setTimeout(()=>{alerterror.style.display = "none"}, (7000));      
-    }//else
+    // if (!(flag.correoe && flag.contraseña)){ SE ACTUALIZO POR UN DISEÑO DE MODAL
+    //     alerterror.style.display = "block";
+    //     setTimeout(()=>{alerterror.style.display = "none"}, (7000)); 
+    // } // if para que se hayan rellenado los campos correctos
+
+
+    // Codigo para logear a un usuario -----------------------------------------------------------------------------
+    if(usuarios){
+        let conversion = JSON.parse(usuarios);
+        arregloUsuarios = conversion;
+        existenciaStorage = true;
+    }//if para comprobar que existan usuarios registrados
+
+    let sesion = false;
+    if(existenciaStorage){
+        for (let i = 0; i < arregloUsuarios.length; i++) {
+            if((arregloUsuarios[i].correo === valorcorreo)&&(arregloUsuarios[i].contraseña === valorcontraseña)){
+                nombreUsuario = arregloUsuarios[i].name
+                localStorage.setItem("sesionIniciada", "true")
+                localStorage.setItem("nombreUsuario", nombreUsuario)
+                sesion = true
+                break
+            }//if si coinciden contrasena y email.
+        }//for para verificar que los campos coincidan con el storage
+    console.log(sesion);
+        if(sesion){
+            AlertLogin();
+            setTimeout(()=>{location.href = "http://127.0.0.1:5503/index.html"}, (2500)); 
+        } else {
+            WarningLogin();
+            formulario.reset();
+            correoe.classList.remove("is-valid");
+            contraseña.classList.remove("is-valid");
+        }
+        
+    
+    }// if que exista algun usuario en el estorage
 
 });//btnSubmit
-
-function checkData(){
-    let enterEmail = document.getElementById("correo").value;
-    let enterPwd = document.getElementById("contraseña").value;
-
-    //get data from localstorage
-    let getEmail = localStorage.getItem("userEmail");
-    let getPwd = localStorage.getItem("userPwd");
-
-    if(enterEmail == getEmail){
-        if(enterPwd == getPwd){
-            alert("Login Successful");
-            myFunction();
-
-    }else{
-        alert("wrong password")
-        }
-    }else{
-        alert("Invalid")
-    }
-
-}
 
 let x = document.getElementById("a");
 
@@ -124,10 +130,26 @@ const AlertLogin = () => {
                     icon: 'success',
                     title: '¡Bienvenido!',
                     text: 'Disfruta la mágia de los productos BG SPA.',
-                    confirmButtonText: 'Aceptar',
+                    // confirmButtonText: 'Aceptar',
                     confirmButtonColor: '#A058A1',
-                    showConfirmButton: true,
-                    showCloseButton: true,
-                    toast: true
+                    // showConfirmButton: true,
+                    // showCloseButton: true,
+                    // toast: true
                   }) 
+                };
+
+const WarningLogin = () => {
+    Swal.fire({
+                    position: 'top',
+                    color: '#A97798',
+                    background: '#F9F9F9',
+                    icon: 'warning',
+                    title: '¡Advertencia!',
+                    text: 'El correo y/o contraseña no son válidos.',
+                    // confirmButtonText: 'Aceptar',
+                    confirmButtonColor: '#A058A1',
+                    // showConfirmButton: true,
+                    // showCloseButton: true,
+                    // toast: true
+                    }) 
                 };

@@ -44,7 +44,10 @@ o ver repositorio en Github-->
         <a class="btn my-2 my-sm-0" type="submit" id="btnBq"><i class="bi bi-search binav"></i></a>
         <a class="btn my-2 my-sm-0" type="submit" href="./pages/carrito.html"><i
             class="bi bi-cart4 bi-movil binav"></i></a>
-        <a class="btn my-2 my-sm-0" type="submit" href="./logIn.html"><i class="bi bi-person bi-movil binav"></i></a>
+        <a id="acceder" class="btn my-2 my-sm-0" type="submit" href="../pages/logIn.html"><i class="bi bi-person bi-movil binav"></i></a>
+        <div id="cerrarSesion">
+
+        </div>
       </form>
     </nav>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -85,11 +88,11 @@ o ver repositorio en Github-->
     <br>
     <br>
 
-    <form>
+    <form id="formulario">
       <!--Primer fila-->
       <div class="form col-md-7">
-        <div class="alert alert-danger" role="alert" style="display: none" id="alertaerror">Revisa que todos los campos
-          se hayan llenando correctamente.</div>
+        <!-- <div class="alert alert-danger" role="alert" style="display: none" id="alertaerror">Revisa que todos los campos
+          se hayan llenando correctamente.</div> SE ACTUALIZO LA ALERTA POR UN MODAL-->
         <div class="form-group inputs compos">
           <label for="correo">Correo electrónico</label>
           <input type="email" class="form-control holder" id="correo" placeholder="correo@ejemplo.com">
@@ -111,29 +114,13 @@ o ver repositorio en Github-->
               onclick="mostrarContraseña()"><i class="bi bi-eye"></i></button>
           </div>
         </div>
-        <!----------------------------------------------------------------------------------------------------->
-        <!--          <div class="form-group inputs">
-              <label for="correo">Correo electrónico</label>
-              <input type="email" class="form-control holder" id="correo" placeholder="correo@ejemplo.com">
-          
-            </div>
-          <div class="row">
-            <div class="form-group col-10 inputs compos" style="margin-left: 15px;">
-                <label for="contraseña">Contraseña</label>
-                <input type="password" class="form-control holder" id="contraseña" placeholder="Contraseña">
-            </div>
-           
-          </div> -->
-
-
-        <!----------------------------------------------------------------------------------------------------->
 
        <br>
       </div>
     </form>
-
+    <!-- onclick="checkData()" Se elimino este evento por actualizacion -->
     <div class="posicion">
-      <button type="submit" value="Submit" onclick="checkData()" class="col-md-6 btnSesion" id="btnIniciarSesion"
+      <button type="submit" value="Submit" class="col-md-6 btnSesion" id="btnIniciarSesion"
         onclick="mostrarContraseña()">Iniciar sesión</button>
     </div>
 
@@ -222,6 +209,7 @@ o ver repositorio en Github-->
 <script src="../js/valfooter.js"></script>
   <!-- <script src="../js/registro.js"></script> -->
   <script src="../js/logIn.js"></script>
+  <script src="../js/cerrarsesion.js"></script>
   <!-- <script src="../js/login.js"></script> -->
 
   <!--Script para bootstrap 4.6-->

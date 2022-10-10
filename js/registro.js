@@ -32,7 +32,7 @@ btnSubmit.addEventListener("click", function(e){
     let valorcontraseña = document.getElementById("contraseña").value
     let valcontraseña = document.getElementById("validacionContraseña");
     let contrase = document.getElementById("validacionContraseña").value;
-    let alertexitosa = document.getElementById("alertaexitosa");
+    // let alertexitosa = document.getElementById("alertaexitosa"); SE ACTUALIZO POR NUEVO MODAL
     let alerterror = document.getElementById("alertaerror");
     let formulario = document.getElementById("formulario"); 
 
