@@ -25,7 +25,7 @@ btnSubmit.addEventListener("click", function(e){
         "id" : cont,
         "name": nombre.value,
         "img": archivo.value,
-        "descripcion": descripcion.value,
+        "description": descripcion.value,
         "precio": parseFloat(precio.value),
         "categoria": categoria.value,
         "sku": sku.value
