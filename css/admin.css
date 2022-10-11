@@ -1,0 +1,92 @@
+
+/* ----Header---------------------------------*/
+body, header, footer{
+    font-family: 'Raleway';
+}
+header{
+    background: linear-gradient(180deg, rgba(141, 106, 175, 0.81) 22.97%, rgba(73, 12, 134, 0) 100%);
+    background-color: #FFFFFF;
+}
+.textobg{
+    color: white;
+    font-size: 25px;
+}
+
+.btnEnviar{
+    align-content: center;
+    background: #A97798;
+    margin-bottom: 2rem; 
+    border-radius: 10px; 
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+.invalid-feedback{
+    font-size: 5px;
+    background: #FFFFFF;
+}
+
+#alertacampo1, #alertacampo2, #alertacampo3, #alertacampo4, #alertacampo5{
+    font-weight: none;
+    font-size: 14px;
+    color: #A97798;
+}
+/* ----Body---------------------------------*/
+p {
+    color: gray;
+    text-align: center;
+    font-size: 20px;
+}
+
+.alertaWarning {
+    font-size: 15px
+}
+
+
+/* ----Footer---------------------------------*/
+body{
+    position: relative;
+    padding-bottom: 15rem ;
+    min-height: 100vh;
+}/* Ajuste body para no alterar footer*/
+
+.card_footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color:  #EEBFFF!important;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+} /*Div card_footer*/
+
+.textjv{
+    color: #24071a;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 576px) {
+
+    header{
+        background: linear-gradient(180deg, rgba(141, 106, 175, 0.81) 22.97%, rgba(73, 12, 134, 0) 100%);
+        background-color: #FFFFFF;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+    }
+    .bi-movil{
+        font-size: 26px;
+        top: 50px;
+    }
+    .card-body {
+        text-align: center;
+    }
+    body{
+        position: relative;
+        padding-bottom: 45rem ;
+        min-height: 100vh;
+    }/* Ajuste body para no alterar footer*/
+
+}

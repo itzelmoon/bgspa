@@ -32,7 +32,7 @@ btnSubmit.addEventListener("click", function(e){
     let valorcontraseña = document.getElementById("contraseña").value
     let valcontraseña = document.getElementById("validacionContraseña");
     let contrase = document.getElementById("validacionContraseña").value;
-    let alertexitosa = document.getElementById("alertaexitosa");
+    // let alertexitosa = document.getElementById("alertaexitosa"); SE ACTUALIZO POR NUEVO MODAL
     let alerterror = document.getElementById("alertaerror");
     let formulario = document.getElementById("formulario"); 
 
@@ -42,18 +42,11 @@ btnSubmit.addEventListener("click", function(e){
         "name": nombre.value,
         "apellido": apellido.value,
         "telefono": telefono.value,
-        "correo": correo.value,
+        "correo": correoe.value,
         "contraseña": valcontraseña.value
     };
 
-    cont++;
-    infoUsuario.push(arregloUsuario);
     console.log(infoUsuario);
-
-    //------------LocalStorage--------------------------------------
-    //JSON.stringify(infoUsuario);
-    localStorage.setItem(key, JSON.stringify(infoUsuario));
-
 
      //VALIDACIONES DE FORMULARIO
      const flag = {
@@ -65,7 +58,7 @@ btnSubmit.addEventListener("click", function(e){
         valcontraseña:false
     }
     
-     //validación de nombre
+     //Validación de nombre
      nombre.classList.remove("is-invalid");
      nombre.classList.add("is-valid");
  
@@ -78,7 +71,7 @@ btnSubmit.addEventListener("click", function(e){
          flag.nombre = false
      }
  
-     //validación de apellido
+     //Validación de apellido
      apellido.classList.remove("is-invalid");
      apellido.classList.add("is-valid");
      
@@ -91,7 +84,7 @@ btnSubmit.addEventListener("click", function(e){
          flag.apellido = false
      }
  
-     //Validacion Telefono
+     //Validación Teléfono
      if((telefono.value.length == 10)&&(telefono.value!=0)
      ) {
          telefono.classList.remove("is-invalid");
@@ -103,7 +96,7 @@ btnSubmit.addEventListener("click", function(e){
          flag.telefono = false
      }
  
-     //validacion correo
+     //Validación correo
      function validarCorreo (correo) {
      let expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
      let verificar = expReg.test(correo);
@@ -120,9 +113,9 @@ btnSubmit.addEventListener("click", function(e){
      }
      validarCorreo(valorcorreo); 
 
-      //validacion contraseña
+    //validación contraseña
     function validarContraseña (contra) {
-        let expReg =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
+        let expReg =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,15}$/;
         let verificarcontraseña = expReg.test(contra);
         console.log(verificarcontraseña)
         if(verificarcontraseña){
@@ -137,9 +130,9 @@ btnSubmit.addEventListener("click", function(e){
         }
     validarContraseña(valorcontraseña); 
         
-    //confirmacion contraseña
+    //Confirmación contraseña
     function confirmarContraseña (verifcontra) {
-        let expReg =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
+        let expReg =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,15}$/;
         let confirmarcontraseña = expReg.test(verifcontra);   
         console.log(confirmarcontraseña);
 
@@ -158,8 +151,10 @@ btnSubmit.addEventListener("click", function(e){
 
     //ALERTA GENERAL
     if (flag.nombre && flag.apellido && flag.telefono && flag.correoe && flag.contraseña && flag.valcontraseña){
-        alertexitosa.style.display = "block";
-        setTimeout(()=>{alertexitosa.style.display = "none"}, (5000));
+        cont++;
+        infoUsuario.push(arregloUsuario);
+        localStorage.setItem(key, JSON.stringify(infoUsuario));
+        AlertRegistro();
         formulario.reset();
         nombre.classList.remove("is-valid")
         apellido.classList.remove("is-valid")
@@ -172,8 +167,22 @@ btnSubmit.addEventListener("click", function(e){
         setTimeout(()=>{alerterror.style.display = "none"}, (7000));
     }
       
-
-
-
-
     });//btnSubmit
+
+
+    //-------ALERTA REGISTRO EN FLAGS GENERAL-------
+    const AlertRegistro = () => {
+        Swal.fire({
+                        position: 'top',
+                        color: '#A97798',
+                        background: '#F9F9F9',
+                        icon: 'success',
+                        title: 'Registro exitoso',
+                        text: 'Ahora formas parte de la familia BG SPA.',
+                        confirmButtonText: 'Aceptar',
+                        confirmButtonColor: '#A058A1',
+                        showConfirmButton: true,
+                        showCloseButton: true,
+                        toast: true
+                      }) 
+                    };
