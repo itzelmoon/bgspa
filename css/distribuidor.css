@@ -46,7 +46,19 @@ body {
     border: none;
     color: white;
     font-size: 18px;
+    /* Actualizacion para efecto boton*/
+    transition: color 0.5s, background 0.5s;
 }
+/*-----Efecto------------------*/
+.btnEnviar:hover{
+    color: white;
+    background-color:  #C4ACD8 ;
+}
+.btnEnviar:active{
+    box-shadow: inset 0 0 20px white;
+}
+
+/*-----------------------------*/
 
 .alert{
     background-color: #ecd2f5;

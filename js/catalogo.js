@@ -849,7 +849,7 @@ function addItem(item){
     'id':'81'});
 
     addItem({'name':'Shampoo espumante antibacterial aroma arándano 1 litro',
-    'img':'/img/Productos/sanitizanteYLimpiadores/Shampoo_Espumante_Antibacterial_ARANDANO250ml.png',
+    'img':'/img/Productos/sanitizanteYLimpiadores/Shampoo Espumante Antibacterial ARANDANO 1 Litro  .png',
     'description':'El shampoo espumante antibacterial es un producto muy efectivo con un agradable aroma dejando el área completamente limpia, suaves y humectada y con su protección antibacterial elimina efectivamente las bacterias causantes de múltiples enfermedades. Este shampoo es biodegradable.',
     'precio':'187',
     'categoria':'Sanitizantes y Limpiadores',
@@ -872,8 +872,24 @@ function addItem(item){
     'SKU':'SA1L',
     'id':'84'});
 
+/////////////////////////////////////////////////PRODUCTOS AGREGADOS DESDE ADMIN////////////////////////////////////////////////////////////////////////////////
 
-  
+const productosAdmin = localStorage.getItem("productos")
+let flagProduct = false
+console.log(productosAdmin)
+if(productosAdmin){
+    let temporal = JSON.parse(productosAdmin);
+    listaProducto = temporal;
+    flagProduct = true;
+}
+
+if(flagProduct){
+  for (let i = 0; i < listaProducto.length; i++) {
+    let productoAgregar = listaProducto[i];
+    console.log(productoAgregar)
+    addItem(productoAgregar)
+  }
+}
 
 
 

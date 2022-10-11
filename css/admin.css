@@ -26,10 +26,6 @@ header{
     background: #FFFFFF;
 }
 
-.card-footer{
-    margin-bottom: 0%;
-}
-
 #alertacampo1, #alertacampo2, #alertacampo3, #alertacampo4, #alertacampo5{
     font-weight: none;
     font-size: 14px;
@@ -47,41 +43,29 @@ p {
 }
 
 
-
 /* ----Footer---------------------------------*/
+body{
+    position: relative;
+    padding-bottom: 15rem ;
+    min-height: 100vh;
+}/* Ajuste body para no alterar footer*/
 
-.card-footer{
-    position: sticky;
+.card_footer{
+    position: absolute;
     bottom: 0;
     width: 100%;
     background-color:  #EEBFFF!important;
     text-align: center;
     padding-top: 0px;
     padding-bottom: 0px;
-}
+} /*Div card_footer*/
+
 .textjv{
     color: #24071a;
     font-weight: 700;
     text-decoration: none;
 }
 
-
-
-/*Ver Ipad*/
-
-@media screen and (max-width: 820px) {
-
-    .txtfot{ font-size: 14px;    
-    }
-}
-
-/*Ver IpadMin*/
-@media screen and (max-width: 768px) {
-    
-        .txtfot{ font-size: 12px;    
-        }
- }
-    
 
 @media screen and (max-width: 576px) {
 
@@ -92,21 +76,17 @@ p {
         padding-bottom: 1rem;
         display: flex;
     }
-    #btnBq{
-        display: none;
-    }
     .bi-movil{
         font-size: 26px;
         top: 50px;
     }
-
     .card-body {
         text-align: center;
     }
-    
-    .txtfot{ font-size: 18px;    
-    }/* ajuste de letras fotter*/
-
-
+    body{
+        position: relative;
+        padding-bottom: 45rem ;
+        min-height: 100vh;
+    }/* Ajuste body para no alterar footer*/
 
 }
