@@ -90,7 +90,7 @@ function emailOfertasUser(){
 //----- ALERTAS DE SUSCRIPCION------------------
 const AlertSuscriS = () => {
   Swal.fire({
-    position: 'top-end',
+    position: 'center',
     color: '#A97798',
     background: '#F9F9F9',
     icon: 'success',
@@ -99,13 +99,13 @@ const AlertSuscriS = () => {
     confirmButtonText: 'Aceptar',
     confirmButtonColor: '#A058A1',
     showConfirmButton: true,
-    toast: true,
+    //toast: true,
   }) 
 };
 
 const AlertSuscriE = () => {
   Swal.fire({
-    position: 'top-end',
+    position: 'center',
     color: '#A97798',
     background: '#F9F9F9',
     icon: 'error',
@@ -114,6 +114,6 @@ const AlertSuscriE = () => {
     confirmButtonText: 'Aceptar',
     confirmButtonColor: '#A058A1',
     showConfirmButton: true,
-    toast: true,
+    //toast: true,
   }) 
 };

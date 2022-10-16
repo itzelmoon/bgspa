@@ -173,7 +173,7 @@ btnSubmit.addEventListener("click", function(e){
     //-------ALERTA REGISTRO EN FLAGS GENERAL-------
     const AlertRegistro = () => {
         Swal.fire({
-                        position: 'top',
+                        position: 'center',
                         color: '#A97798',
                         background: '#F9F9F9',
                         icon: 'success',
@@ -183,6 +183,6 @@ btnSubmit.addEventListener("click", function(e){
                         confirmButtonColor: '#A058A1',
                         showConfirmButton: true,
                         showCloseButton: true,
-                        toast: true
+                        //toast: true
                       }) 
                     };

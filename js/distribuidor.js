@@ -231,7 +231,7 @@ btnSubmit1.addEventListener("click", function(e){
 //--------ALERTAS DISTRIBUIDOR, EN FUNCION CORREO------------
 const AlertDistribuidorS = () => {
     Swal.fire({
-        position: 'top',
+        position: 'center',
         color: '#A97798',
         background: '#F9F9F9',
         icon: 'success',
@@ -241,13 +241,13 @@ const AlertDistribuidorS = () => {
         confirmButtonColor: '#A058A1',
         showConfirmButton: true,
         showCloseButton: true,
-        toast: true
+        //toast: true
       }) 
   };
 
   const AlertDistribuidorE = () => {
     Swal.fire({
-        position: 'top',
+        position: 'center',
         color: '#A97798',
         background: '#F9F9F9',
         icon: 'error',
@@ -257,7 +257,7 @@ const AlertDistribuidorS = () => {
         confirmButtonColor: '#A058A1',
         showConfirmButton: true,
         showCloseButton: true,
-        toast: true
+        //toast: true
       }) 
         
   };
