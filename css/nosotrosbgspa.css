@@ -1,0 +1,69 @@
+.container-fluid{
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.titulo{
+    font-weight: 400;
+    font-size: 73px;
+    line-height: 86px;
+    text-align: center;
+    color: #512A5F; 
+}
+
+.descripcion{
+    display: flex;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: justify;
+    color:  #512A5F; 
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    background: #F9F9F9;
+    border-radius: 10px;
+}
+
+.subtitulos{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 23px;
+    text-align: justify;
+    color:  #512A5F; 
+    margin-top: 2.5rem;
+}
+
+.img1{ 
+    width: 100%;
+    margin-top: .5rem;
+}
+.posicion{
+    display: flex;
+    justify-content: center;
+}
+
+.btnCatalogo{
+    background: #A97798; 
+    border-radius: 10px; 
+    border: none;
+    color: white;
+    font-size: 19px;
+}
+
+@media (max-width: 992px)  {
+    .titulo{
+        font-weight: 400;
+        font-size: 40px;
+    }
+
+    .subtitulos{
+        font-size: 30px;
+    }
+    .parrafo{
+        font-size: 20px;
+    }
+
+    .img1{
+        margin: 105px 0px 0px;
+    }
+}

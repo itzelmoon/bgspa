@@ -1,11 +1,15 @@
 
+body {
+    font-family: Raleway, sans-serif;
+}
+
 .titulo{
     font-weight: 400;
     font-size: 73px;
     line-height: 86px;
     text-align: center;
     color: #512A5F; 
-}
+} /*titulo sobre nosotros*/
 
 
 .ancla{
@@ -15,12 +19,12 @@
     padding: 0px;
     letter-spacing: 8px;
     margin-bottom: auto;
-}
+} /* Ícono LinkedIn */
 
 
 .ico{
     color: #512A5F !important;
-}
+}  /* Ícono*/
 
 .ico:hover{
     color: #8f52a5 !important;
@@ -104,6 +108,14 @@
     .espacio2{
         margin-top: 1.5rem;
     }
- 
      
 }
+
+
+
+
+
+
+
+
+
