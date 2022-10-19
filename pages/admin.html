@@ -13,7 +13,7 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/distribuidor.css">
     <link rel="stylesheet" href="../css/admin.css">
-    <title>BGSpa Contacto</title>
+    <title>BGSpa - Administrador</title>
 </head>
 
 <!-- Header -->
@@ -76,15 +76,16 @@
                         <option value="Bio Jelly Spa">Bio Jelly Spa</option>
                         <option value="Bombas Efervescentes">Bombas Efervescentes</option>
                         <option value="Complementos">Complementos</option>
-                        <option value="Cremas Hidratantes">Hidratación</option>
                         <option value="Exfoliantes">Exfoliantes</option>
-                        <option value="Lociones">Lociones</option>
+                        <option value="Herramientas">Herramientas</option>
+                        <option value="Hidratación">Hidratación</option>
                         <option value="Kit">Kit</option>
+                        <option value="Lociones">Lociones</option>
                         <option value="Mascarillas">Mascarillas</option>
                         <option value="Sales Efervescentes">Sales Efervescentes</option>
                         <option value="Sales Minerales">Sales Minerales</option>
                         <option value="Sanitizantes y Limpiadores">Sanitizantes y Limpiadores</option>
-                        <option value="Herramientas">Herramientas</option>
+                        
                     </select>
                     <div class="invalid-feedback alertaWarning">
                         Seleccione una categoría.
@@ -112,7 +113,10 @@
                 </div>
                 <div class="form-group inputs col-md-6">
                     <label for="campoArchivo">Adjuntar Archivo</label>
-                    <input type="file" id="campoArchivo" accept=".jpg,.png">
+                    <input type="button" class="form-control btn-primary btnEnviar" value="Subir imagen" id="btnFake"> 
+                    <input type="file" class="form-control-file" id="campoArchivo" style="display:none" accept=".jpg,.png" onchange="encodeImageFileAsURL(this)">
+
+                    <!--<input type="file" id="campoArchivo" accept=".jpg,.png">-->
                     <div class="invalid-feedback alertaWarning">
                         Selecciona una imagen.
                     </div>
@@ -128,6 +132,12 @@
         <div class="posicion">
             <button type="button" class="col-md-4 btnEnviar" id="btnAgregar">Agregar</button>
         </div>
+        <br>
+        <h3>Lista de nuevos productos</h3>
+        <hr>
+        <br>
+        <p>Primero llene el formulario y agregre el nuevo producto para poder visualizarlo</p>
+        <div id="conta" class="container"></div>
     </main>
 
 

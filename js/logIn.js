@@ -124,7 +124,7 @@ e.preventDefault();
 //------------AlertLogin en Flag general--------------
 const AlertLogin = () => {
     Swal.fire({
-                    position: 'top',
+                    position: 'center',
                     color: '#A97798',
                     background: '#F9F9F9',
                     icon: 'success',
@@ -132,15 +132,15 @@ const AlertLogin = () => {
                     text: 'Disfruta la mágia de los productos BG SPA.',
                     confirmButtonText: 'Aceptar',
                     confirmButtonColor: '#A058A1',
-                    // showConfirmButton: true,
-                    // showCloseButton: true,
+                    //showConfirmButton: true,
+                    //showCloseButton: true,
                     // toast: true
                   }) 
                 };
 
 const WarningLogin = () => {
     Swal.fire({
-                    position: 'top',
+                    position: 'center',
                     color: '#A97798',
                     background: '#F9F9F9',
                     icon: 'warning',
@@ -148,8 +148,8 @@ const WarningLogin = () => {
                     text: 'El correo y/o contraseña no son válidos.',
                     confirmButtonText: 'Aceptar',
                     confirmButtonColor: '#A058A1',
-                    // showConfirmButton: true,
-                    // showCloseButton: true,
+                    showConfirmButton: true,
+                    showCloseButton: true,
                     // toast: true
                     }) 
                 };

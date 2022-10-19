@@ -3,12 +3,35 @@ let productos = [];
 let cont = 85;
 let ident = 0;
 let lista = document.getElementById("lista");
+let contenedor = document.querySelector("#conta");
 const key = "productos";
+let imgf ="";
+let archivo = document.getElementById("campoArchivo");
+let btnFake = document.getElementById("btnFake");
+
+//Evento para cargar imagen
+btnFake.addEventListener("click", function () {
+    archivo.click();
+  });
+  
+  //imagen a base64
+  archivo.addEventListener("change", function () {
+    //const file = archivo.files[0];
+    let reader = new FileReader();
+  
+    reader.addEventListener("load", function(){
+      //console.log(reader.result)
+      imgf = reader.result;
+    });
+    let src = "";
+    src = reader.readAsDataURL(archivo.files[0]);
+    //console.log(imgf);
+  });
 
 btnSubmit.addEventListener("click", function(e){ 
     e.preventDefault();
     let nombre = document.getElementById("campoProducto");
-    let archivo = document.getElementById("campoArchivo");
+    //let archivo = document.getElementById("campoArchivo");
     let categoria = document.getElementById("inlineFormCustomSelect");
     let precio = document.getElementById("campoPrecio");
     let envia = document.getElementById("campoPrecio").value;
@@ -24,18 +47,18 @@ btnSubmit.addEventListener("click", function(e){
     let arregloProductos = {
         "id" : cont,
         "name": nombre.value,
-        "img": archivo.value,
+        "img": imgf,
         "description": descripcion.value,
-        "precio": parseFloat(precio.value),
+        "precio": parseFloat(envia),
         "categoria": categoria.value,
-        "sku": sku.value
+        "sku": enviosku
     };
 
     
     console.log(productos);
 
 
-    let id_row = 'row' + cont; //
+    /* let id_row = 'row' + cont; //
     let fila_todascolumnas = `<tr id= ${id_row} row-sm-12 row-md-12 ><td> ${ident} </td><td>        
     ${nombre.value} </td><td> ${archivo.value} </td><td> ${descripcion.value} </td><td>$ ${parseFloat(precio.value)} </td><td> ${categoria.value} </td><td> ${sku.value} </td></tr>`;
    
@@ -58,7 +81,7 @@ btnSubmit.addEventListener("click", function(e){
      console.log(d);
      console.log(p);
      console.log(c);
-     console.log(s);
+     console.log(s); */
 
      //VALIDACIONES DE FORMULARIO
      const flag = {
@@ -66,7 +89,8 @@ btnSubmit.addEventListener("click", function(e){
         precio: false,
         categoria: false,
         descripcion: false,
-        archivo:false
+        archivo:false,
+        sku:false
     }
     //validación de nombre producto
     nombre.classList.remove("is-invalid");
@@ -161,7 +185,7 @@ btnSubmit.addEventListener("click", function(e){
 
 
     //ALERTA GENERAL
-    if (flag.nombre && flag.precio && flag.descripcion && flag.categoria && flag.archivo){
+    if (flag.nombre && flag.precio && flag.descripcion && flag.categoria && flag.archivo && flag.sku){
         cont++;
         ident++;
         productos.push(arregloProductos);
@@ -175,11 +199,27 @@ btnSubmit.addEventListener("click", function(e){
         descripcion.classList.remove("is-valid")
         categoria.classList.remove("is-valid")
         archivo.classList.remove("is-valid")
+        sku.classList.remove("is-valid")
     } else {
         alerterror.style.display = "block";
         setTimeout(()=>{alerterror.style.display = "none"}, (7000));
     }
-      
+    
+    /// añadir card a pagina admin
+    let item = JSON.parse(localStorage.getItem(key));
 
-
+    // es igual a un forEach
+    for (let producto of item) {
+        contenedor.innerHTML += `<div class="card" style="width: 18rem;">
+            <img src="${producto.img}" class="card-img-top imageFile" id="imgCard alt="Imagen de nuevo producto">
+            <div class="card-body">
+              <p class="card-title">Nombre: <strong>${producto.name}</strong><p>
+              <hr/>
+              <p class="card-text">Descripción: ${producto.description}</p>
+              <p class="card-text">Precio: $${producto.precio}</p>
+              <p class="card-text">Categoría: ${producto.categoria}</p>
+              <p class="card-text">SKU: ${producto.sku}</p>
+            </div>
+          </div>`;
+      }
 });
