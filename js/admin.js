@@ -89,7 +89,8 @@ btnSubmit.addEventListener("click", function(e){
         precio: false,
         categoria: false,
         descripcion: false,
-        archivo:false
+        archivo:false,
+        sku:false
     }
     //validación de nombre producto
     nombre.classList.remove("is-invalid");
@@ -184,7 +185,7 @@ btnSubmit.addEventListener("click", function(e){
 
 
     //ALERTA GENERAL
-    if (flag.nombre && flag.precio && flag.descripcion && flag.categoria && flag.archivo){
+    if (flag.nombre && flag.precio && flag.descripcion && flag.categoria && flag.archivo && flag.sku){
         cont++;
         ident++;
         productos.push(arregloProductos);
@@ -198,6 +199,7 @@ btnSubmit.addEventListener("click", function(e){
         descripcion.classList.remove("is-valid")
         categoria.classList.remove("is-valid")
         archivo.classList.remove("is-valid")
+        sku.classList.remove("is-valid")
     } else {
         alerterror.style.display = "block";
         setTimeout(()=>{alerterror.style.display = "none"}, (7000));
