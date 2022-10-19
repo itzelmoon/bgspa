@@ -31,56 +31,53 @@
     </div>
   </div> -->
 
-<header>
-  <!--header de la página web-->
+  <header>
+    <!--Menú de navegación | inicio-->
+    <nav class="navbar navSuper">
+      <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG SPA</strong></span></a>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" id="btnBq" type="search" placeholder="Buscar" aria-label="Search">
+        <a class="btn my-2 my-sm-0" type="submit" id="btnBq"><i class="bi bi-search binav"></i></a>
+        <a class="btn my-2 my-sm-0" type="submit" href="./carrito.html"><i class="bi bi-cart4 bi-movil binav"></i></a>
+        <a class="btn my-2 my-sm-0 acceder" type="submit" href="../pages/logIn.html"><i class="bi bi-person bi-movil binav"></i></a>
+        <div class="cerrarSesion">
+          
+        </div>
+      </form>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content:center;">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="../index.html">Inicio</a>
+          </li>
 
-  <nav class="navbar navSuper">
-    <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG SPA</strong></span></a>
-    <form class="form-inline">
-      <input class="form-control mr-sm-2" id="btnBq" type="search" placeholder="Buscar" aria-label="Search">
-      <a class="btn my-2 my-sm-0" type="submit" id="btnBq"><i class="bi bi-search binav"></i></a>
-      <a class="btn my-2 my-sm-0" type="submit" href="./carrito.html"><i class="bi bi-cart4 bi-movil binav"></i></a>
-      <a class="btn my-2 my-sm-0 acceder" type="submit" href="../pages/logIn.html"><i class="bi bi-person bi-movil binav"></i></a>
-      <div class="cerrarSesion">
-        
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="./catalogo.html">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="./nosotrosbgspa.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="./distribuidor.html">Distribuidor</a>
+          </li>
       </div>
-    </form>
-  </nav>
-  <nav class="navbar navbar-expand-lg navbar-light">
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content:center;">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link text-primary" href="../index.html">Inicio</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link text-primary" href="./catalogo.html">Catálogo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-primary" href="./nosotrosbgspa.html">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-primary" href="./distribuidor.html">Distribuidor</a>
-        </li>
+    </nav>
+    <div class="navBotones pruebaPosi1">
+      <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG SPA</strong></span></a>
+      <a class="btn my-2 my-sm-0" type="submit" href="/pages/carrito.html"><i
+        class="bi bi-cart4 bi-movil binav"></i></a>
+      <a class="btn my-2 my-sm-0 acceder" type="submit" href="/pages/logIn.html"><i
+        class="bi bi-person bi-movil binav"></i></a>
+      <a class="cerrarSesion">
+  
+      </a>
     </div>
-  </nav>
-  <div class="navBotones pruebaPosi1">
-    <a><img src="../img/blanco_bg.png" alt="" class="imgSpa"><span class="textobg"><strong>BG SPA</strong></span></a>
-    <a class="btn my-2 my-sm-0" type="submit" href="/pages/carrito.html"><i
-      class="bi bi-cart4 bi-movil binav"></i></a>
-    <a class="btn my-2 my-sm-0 acceder" type="submit" href="/pages/logIn.html"><i
-      class="bi bi-person bi-movil binav"></i></a>
-    <a class="cerrarSesion">
-
-    </a>
-  </div>
-
-</header>
+  </header>
 <br>
 <br>
 
@@ -199,6 +196,7 @@
   <!--Script------------------------------->
   <script src="/js/nosotrosbgspa.js"></script>
   <script src="../js/valfooter.js"></script>
+  <script src="../js/cerrarsesion.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
