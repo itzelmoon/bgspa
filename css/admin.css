@@ -31,6 +31,38 @@ header{
     font-size: 14px;
     color: #A97798;
 }
+
+.card-body {
+    background-color: #F9F9F9;
+    border-radius: 0px 0px 10px 10px;
+    
+}
+.card{
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+}
+.card-img-top{
+    border-radius: 10px 10px 0px 0px;
+}
+.btn-primary{
+    background-color: #A97798;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+}
+.btn-primary:hover{
+    background-color: #A97798;
+    border: none;
+}
+
+.card-title{
+    color: #512A5F;
+    font-size: 1.2rem;
+    text-align: left;
+}
+.card-text{
+    font-size: 1.2rem;
+    text-align: left;
+}
 /* ----Body---------------------------------*/
 p {
     color: gray;
@@ -82,6 +114,7 @@ body{
     }
     .card-body {
         text-align: center;
+        background-color: #F9F9F9;
     }
     body{
         position: relative;
